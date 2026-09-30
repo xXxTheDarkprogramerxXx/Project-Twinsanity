@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12386, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEditor.dll::UnityEditor.UIElements.SerializableJsonDictionary
+  m_Keys:
+  - __PanelContainer__rootVisualContainer__unity-multi-column-header-container__Header__UnityEngine.UIElements.HierarchyV2.CollectionViewMultiColumnCollectionHeader+ViewState
+  m_Values:
+  - '{"m_HasPersistedData":true,"m_SortDescriptions":[],"m_OrderedColumnStates":[{"index":0,"name":"Visibility","actualWidth":20.0,"width":{"m_Value":20.0,"m_Unit":0},"visible":true},{"index":1,"name":"Picking","actualWidth":20.0,"width":{"m_Value":20.0,"m_Unit":0},"visible":true},{"index":2,"name":"HierarchyViewColumn Name","actualWidth":304.0,"width":{"m_Value":304.0,"m_Unit":0},"visible":true},{"index":3,"name":"GameObject/Active","actualWidth":NaN,"width":{"m_Value":50.0,"m_Unit":0},"visible":false},{"index":4,"name":"GameObject/Tag","actualWidth":NaN,"width":{"m_Value":100.0,"m_Unit":0},"visible":false},{"index":5,"name":"GameObject/Static","actualWidth":NaN,"width":{"m_Value":75.0,"m_Unit":0},"visible":false},{"index":6,"name":"GameObject/Layer","actualWidth":NaN,"width":{"m_Value":150.0,"m_Unit":0},"visible":false},{"index":7,"name":"HierarchyViewColumn Navigate","actualWidth":18.0,"width":{"m_Value":18.0,"m_Unit":0},"visible":true}]}'

@@ -1,0 +1,1222 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 74496)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 74464)
+VBCSCompiler prewarm took 128.59 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw" at "2026-09-30T08:11:54.6247648Z"
+Built from '6000.6/staging' branch; Version is '6000.6.3f1 (45d8eee7de74) revision 4577518'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) CoreSingleLanguage' Language: 'en' Physical Memory: 32506 MB
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-09-30T08:11:54Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 46504, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              c56e0c2ace594468bbfa9f7a91f53e6f
+  Correlation Id:          ed68eea77a6dacde98dffb721a3ca9b1
+  External correlation Id: 7229249335315313712
+  Machine Id:              HJKSOXajvVm0mGT1RtspIzejp2w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eonvw" (connect: 0.00s, validation: 0.00s, handshake: 0.08s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw-notifications" at "2026-09-30T08:11:54.7087042Z"
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated the access token lqJf4nRAVO...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 5646382-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.12s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Unity.exe
+-projectpath
+C:\Users\eonvw\source\repos\Project-Twinsanity
+-acceptSoftwareTermsForThisRunOnly
+-useHub
+-hubIPC
+-cloudEnvironment
+production
+-licensingIpc
+LicenseClient-eonvw
+-hubSessionId
+946b18b8-befe-4e0c-8f98-c8c74a6c6015
+-accessToken
+lqJf4nRAVO8Jde2ss66tSEI7tSE6bwFIyPhQLKD_0-U00af
+Successfully changed project path to: C:\Users\eonvw\source\repos\Project-Twinsanity
+C:/Users/eonvw/source/repos/Project-Twinsanity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [45064]  Target information:
+
+Player connection [45064]  * "[IP] 192.168.3.7 [Port] 55504 [Flags] 2 [Guid] 934202489 [EditorId] 934202489 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45064]  * "[IP] 10.185.89.24 [Port] 55504 [Flags] 2 [Guid] 934202489 [EditorId] 934202489 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [45064] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [45064] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-74332" after 0.0 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: c3461644d780cfe5a7dec9d3fcd3aebe
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/eonvw/source/repos/Project-TwinsanityUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.3f1 (45d8eee7de74)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/eonvw/source/repos/Project-Twinsanity/Assets
+[D3D12 Device Filter] Vendor Name: NVIDIA
+[D3D12 Device Filter] Device Name: NVIDIA GeForce RTX 3050 Laptop GPU
+[D3D12 Device Filter] Driver Version: 32.0.16.1714
+[D3D12 Device Filter] Feature Level: 12.2
+[D3D12 Device Filter] Graphics Memory: 3962 MB
+[D3D12 Device Filter] Processor Count: 12
+[D3D12 Device Filter] Device Type: Discrete
+GfxDevice: creating device client; kGfxThreadingModeSplitJobs
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:          NVIDIA
+    VRAM:            3962 MB
+    App VRAM Budget: 3367 MB
+    Driver:          32.0.16.1714
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007653 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.713 seconds
+Domain Reload Profiling: 2695ms
+	BeginReloadAssembly (270ms)
+		CreateAndSetChildDomain (8ms)
+	RebuildCommonClasses (9ms)
+	RebuildNativeTypeToScriptingClass (33ms)
+	initialDomainReloadingComplete (154ms)
+	LoadAllAssembliesAndSetupDomain (514ms)
+		LoadAssemblies (255ms)
+		TypeCache.Refresh (371ms)
+			TypeCache.ScanAssembly (348ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (1715ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (218ms)
+			ProcessInitializeOnLoadAttributes (206ms)
+			ProcessInitializeOnLoadMethodAttributes (925ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Done resolving packages in 1.38 seconds
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 42 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ide.rider@3.0.38 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+  Built-in packages:
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.test-framework@1.8.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/eonvw/source/repos/Project-Twinsanity
+ExitCode: 4 Duration: 30s
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aEDbg-inputdata.json
+[BUSY       6s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[BUSY      16s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[BUSY      26s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (30.16 seconds), 1 items updated, 208 evaluated
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aEDbg.dag.json" "Library/Bee/1900b0aEDbg-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/eonvw/source/repos/Project-Twinsanity
+ExitCode: 0 Duration: 0s636ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aEDbg.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/eonvw/source/repos/Project-Twinsanity
+ExitCode: 0 Duration: 0s524ms
+Finished compiling graph: 225 nodes, 1511 flattened edges (1443 ToBuild, 12 ToUse), maximum node priority 72
+[ 96/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.rsp2
+[156/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt
+[175/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt
+[179/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VisualStudio.Editor.UnityAdditionalFile.txt
+[180/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Rider.Editor.UnityAdditionalFile.txt
+[181/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Rider.Editor.rsp2
+[182/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VisualStudio.Editor.rsp2
+[183/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.UnityAdditionalFile.txt
+[184/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt
+[185/222    0s] WriteText Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.TestRunner.rsp2
+[186/222    0s] WriteResponseFile Library/Bee/artifacts/rsp/12534682869382200696.rsp
+[187/222    0s] WriteResponseFile Library/Bee/artifacts/rsp/13279423640760612673.rsp
+[188/222    0s] WriteResponseFile Library/Bee/artifacts/rsp/12118716115387493619.rsp
+[189/222    0s] WriteResponseFile Library/Bee/artifacts/rsp/12244479590358847285.rsp
+[209/222    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[210/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/UnityEngine.TestRunner.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.TestRunner.dll, with 149 defines and 287 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[211/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/UnityEditor.TestRunner.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.TestRunner.dll, with 147 defines and 297 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[212/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 146 defines and 302 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[213/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp.dll, with 148 defines and 289 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+*** Tundra build success (0.49 seconds), 19 items updated, 222 evaluated
+Total cache size 3939196
+AssetDatabase: script compilation time: 32.006496s
+Total cache size after purge 3939196, took 00:00:00.0371372
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.662 seconds
+Domain Reload Profiling: 1433ms
+	BeginReloadAssembly (375ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (303ms)
+		LoadAssemblies (295ms)
+		TypeCache.Refresh (18ms)
+			TypeCache.ScanAssembly (10ms)
+		AnalyzeDomain (11ms)
+			BuildScriptInfoCaches (9ms)
+	FinalizeReload (664ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (4ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (140ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (15ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Starting new worker id: 0 with log in C:/Users/eonvw/source/repos/Project-Twinsanity/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=28609d4e3fb6f0f42992b9b28fcc0561): Total: 35.326 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=936 ms
+		Asset DB Callback time: managed=125 ms, native=1414 ms
+		Scripting: domain reloads=1, domain reload time=816 ms, compile time=32010 ms, other=22 ms
+		Project Asset Count: scripts=217, non-scripts=4086
+		Asset File Changes: new=0, changed=0, moved=0, deleted=3
+		Scan Filter Count: 0
+	InvokePackagesCallback: 1404.551ms
+	ApplyChangesToAssetFolders: 0.777ms
+	Scan: 65.450ms
+	Collect global state as custom dependencies: 14.479ms
+	OnSourceAssetsModified: 0.838ms
+	CategorizeScriptCompilationAssets: 8.263ms
+	ProcessAssetsWithTransientArtifactChanges: 13.534ms
+	CategorizeAssets: 29.816ms
+	CompileScripts: 32010.293ms
+	ImportOutOfDateAssets: 680.242ms (665.855ms without children)
+		UnloadImportedAssets: 2.315ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.586ms
+		ImportSchedulerStart: 11.482ms
+	PostProcessAllAssets: 127.267ms
+		VCAutoAddAssetPostprocess 3.026ms
+		MonoPostProcessAllAssets: 123.129ms
+			AssetPostprocessor.OnPostprocessAllAssets 51.688ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 18.865ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 9.291ms
+			AssetChangedListener.OnPostprocessAllAssets 8.856ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.986ms
+			SyncVS.PostprocessSyncProject 5.621ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.496ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.149ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.953ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.838ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.596ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.424ms
+			AssetEvents.OnPostprocessAllAssets 0.419ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.404ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.308ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.307ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.305ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.277ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.252ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.186ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.149ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.147ms
+	PostAssetChangesProfiler: 10.111ms
+	UnloadStreamsBegin: 2.106ms
+	PersistCurrentRevisions: 0.303ms
+	GenerateScriptTypeHashes: 0.131ms
+	GenerateScriptTypeSerializationHashes: 0.126ms
+	Untracked: 951.141ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Scanning for USB devices : 4.569ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Twinsanity-Unity-Title-Screen (1)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Twinsanity/Scenes/BeachLevel.unity'
+	Deserialize:            67.271 ms
+	Integration:            1048.190 ms
+	Integration of assets:  2.870 ms
+	Thread Wait Time:       0.246 ms
+	Total Operation Time:   1118.577 ms
+Unloading 517 unused Assets / (0.7 MB). Loaded Objects now: 7099.
+Memory consumption went from 347.9 MB to 347.3 MB.
+Total: 6.887100 ms (FindLiveObjects: 0.790400 ms CreateObjectMapping: 0.089400 ms MarkObjects: 5.386800 ms  DeleteObjects: 0.383000 ms)
+
+[LAYOUT] About to load UserSettings\Layouts\default-6000.dwlt, keepMainWindow=False
+Worker ready: AssetImportWorkerHW0 0
+[LAYOUT] About to save layout C:\Users\eonvw\source\repos\Project-Twinsanity\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/eonvw/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[MODES] ModeService[default].InitializeCurrentMode
+[MODES] ModeService[default].RaiseModeChanged(default, default)
+This project uses Input Manager, which is marked for deprecation. To manage input in your project, use the <a href="https://docs.unity3d.com/Packages/com.unity.inputsystem@latest">Input System package</a> instead.
+<RI> Initializing input.
+<RI> Input initialized.
+[Project] Loading completed in 44.335 seconds
+	Project init time: 				41.201 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.005 seconds
+		Asset Database init time: 		0.627 seconds
+		Global illumination init time: 	0.018 seconds
+		Assemblies load time: 			2.785 seconds
+		Unity extensions init time: 	0.003 seconds
+		Asset Database refresh time: 	35.327 seconds
+	Scene opening time: 			2.509 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1790755958765,"processId":74332,"projectLoad":44.3352315,"projectInit":41.2006303,"templateInit":0.0,"packageManagerInit":0.0045514,"assetDatabaseInit":0.6273966,"globalIlluminationInit":0.0179089,"assembliesLoad":2.7850958,"unityExtensionsInit":0.0025737,"assetDatabaseRefresh":35.3267737,"sceneOpening":2.5085138}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1790755958765,"processId":74332,"editorVersion":"6000.6.3f1 (45d8eee7de74)","branch":"6000.6/staging","buildType":"Release","platform":"Windows"}
+[MODES] ModeService[default].LoadModes
+Created GICache directory at C:/Users/eonvw/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.034s, timestamps: [45.797 - 45.832]
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully updated the access token
+[Licensing::Module] Successfully updated access token: "lqJf4nRA"... (expires: 2026-09-30T08:23:32Z)
+[Licensing::Client] Successfully resolved entitlement details
+TrimDiskCacheJob: Current cache size 0mb
+Start Indexing on Editor startup
+[Indexing] Starting Initial Indexing for Assets
+Asset Pipeline Refresh (id=eefde2e16b86d49428116ebae2a1fdeb): Total: 0.040 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Starting new worker id: 1 with log in C:/Users/eonvw/source/repos/Project-Twinsanity/Logs/AssetImportWorkerHW1.log
+[Worker0] Imported GUID: bef55a9e49cc47459a9d099ebf0ca2a3 - Path: Assets/Twinsanity/Scripts/CrashRigAnimator.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B -> (ImportResultId: '223166d8c49c197c73fbb625ed81101f') in 0.133007 seconds
+Worker ready: AssetImportWorkerHW1 1
+Asset Pipeline Refresh (id=8d455083ebca5bc4f9dd153d978ac3b2): Total: 0.005 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  1.760 seconds
+Domain Reload Profiling: 2636ms
+	BeginReloadAssembly (624ms)
+		DisableScriptedObjects (137ms)
+		CreateAndSetChildDomain (220ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (164ms)
+		LoadAssemblies (186ms)
+		TypeCache.Refresh (5ms)
+		AnalyzeDomain (3ms)
+	FinalizeReload (1761ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (964ms)
+No restricted APIs configured; Validation skipped.
+Checking 2 assemblies for restricted APIs found 0 usage(s) in 5 ms
+
+Asset Pipeline Refresh (id=5e5ba5c52691ac24bb4279d86af81656): Total: 3.168 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1857 ms
+		Asset DB Callback time: managed=309 ms, native=74 ms
+		Scripting: domain reloads=1, domain reload time=922 ms, compile time=2 ms, other=0 ms
+		Project Asset Count: scripts=217, non-scripts=4086
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 3.349ms
+	ApplyChangesToAssetFolders: 0.244ms
+	Collect global state as custom dependencies: 1.232ms
+	ProcessAssetsWithTransientArtifactChanges: 16.214ms
+	CategorizeAssets: 21.788ms
+	CompileScripts: 2.486ms
+	ImportOutOfDateAssets: 1765.618ms (1761.536ms without children)
+		CollectScriptTypesHashes: 0.351ms
+		ReloadNativeAssets: 0.794ms
+		UnloadImportedAssets: 2.163ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.506ms
+		ImportSchedulerStart: 0.610ms
+	PostProcessAllAssets: 366.873ms
+		AssemblyValidation.PostprocessAllAssets 3.827ms
+		PostProcessCallbackCreateDeferredMaterials 1.482ms
+		PostprocessAssetsUpdateCachedIcon 1.448ms
+		ShaderAssetModifiedCallback 0.792ms
+		RaytracingShaderImportPostprocess 0.609ms
+		ComputeShaderImportPostprocess 0.588ms
+		SpeedTreeImporter.PostprocessAllAssets 0.420ms
+		BlockShaderImporter.PostprocessAllAssets 0.285ms
+		LocalizationDatabase.AssetDatabasePostprocessCallback 0.281ms
+		MonoPostProcessAllAssets: 307.186ms
+			SyncVS.PostprocessSyncProject 245.479ms
+			AssetPostprocessor.OnPostprocessAllAssets 11.009ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 10.544ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 8.382ms
+			AssetChangedListener.OnPostprocessAllAssets 3.758ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 2.729ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.784ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.676ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.375ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.603ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.570ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.491ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.419ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.342ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.340ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.339ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.310ms
+			AssetEvents.OnPostprocessAllAssets 0.282ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.261ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.240ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.217ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.185ms
+	PostAssetChangesProfiler: 17.355ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.222ms
+	UnloadStreamsBegin: 2.042ms
+	PersistCurrentRevisions: 0.141ms
+	GenerateScriptTypeHashes: 0.054ms
+	Untracked: 964.678ms
+
+The referenced script (Unknown) on this Behaviour is missing!
+The referenced script (Unknown) on this Behaviour is missing!
+Crash joint hierarchy:
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:208)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 208)
+
+Joint 0 -> Parent -1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 1 -> Parent 0
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 2 -> Parent 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 3 -> Parent 2
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 4 -> Parent 3
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 5 -> Parent 4
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 6 -> Parent 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 7 -> Parent 6
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 8 -> Parent 7
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 9 -> Parent 8
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 10 -> Parent 1
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 11 -> Parent 10
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 12 -> Parent 11
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 13 -> Parent 12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 14 -> Parent 13
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 15 -> Parent 14
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 16 -> Parent 15
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 17 -> Parent 14
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 18 -> Parent 17
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 19 -> Parent 14
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 20 -> Parent 19
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 21 -> Parent 14
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 22 -> Parent 14
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 23 -> Parent 12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 24 -> Parent 23
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 25 -> Parent 24
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 26 -> Parent 25
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 27 -> Parent 26
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 28 -> Parent 27
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 29 -> Parent 26
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 30 -> Parent 29
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 31 -> Parent 26
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 32 -> Parent 31
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 33 -> Parent 26
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 34 -> Parent 33
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 35 -> Parent 26
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 36 -> Parent 35
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 37 -> Parent 12
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 38 -> Parent 37
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 39 -> Parent 38
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 40 -> Parent 39
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 41 -> Parent 40
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 42 -> Parent 41
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 43 -> Parent 40
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 44 -> Parent 43
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 45 -> Parent 40
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 46 -> Parent 45
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 47 -> Parent 40
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 48 -> Parent 47
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 49 -> Parent 40
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+Joint 50 -> Parent 49
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:212)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 212)
+
+CrashRigAnimator loaded 12 native animation clips with 51 joints.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:Log (object,UnityEngine.Object)
+CrashRigAnimator:LoadAnimations () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:286)
+CrashRigAnimator:Initialize (UnityEngine.Transform[]) (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:220)
+CrashRigAnimator:Awake () (at C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs:113)
+
+(Filename: C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Assets/Twinsanity/Scripts/CrashRigAnimator.cs Line: 286)
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            340.551 ms
+	Integration:            789.028 ms
+	Integration of assets:  2.327 ms
+	Thread Wait Time:       -0.317 ms
+	Total Operation Time:   1131.588 ms
+[Licensing::Client] Successfully resolved entitlement details
+Asset Pipeline Refresh (id=5467e04413d2d344881bdd8bf11e48fe): Total: 0.010 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.252500 ms
+Loaded scene 'Assets/Twinsanity/Scenes/TitleScreen.unity'
+	Deserialize:            1.140 ms
+	Integration:            181.800 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       3.287 ms
+	Total Operation Time:   186.228 ms
+Unloading 2406 unused Assets / (44.3 MB). Loaded Objects now: 3217.
+Memory consumption went from 0.50 GB to 468.1 MB.
+Total: 24.145800 ms (FindLiveObjects: 0.916800 ms CreateObjectMapping: 0.141800 ms MarkObjects: 14.271600 ms  DeleteObjects: 8.596900 ms)
+
+Unloading 38 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            13.547 ms
+	Integration:            424.511 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       0.038 ms
+	Total Operation Time:   438.105 ms
+Unloading 73 unused Assets / (21.1 MB). Loaded Objects now: 8145.
+Memory consumption went from 0.52 GB to 0.50 GB.
+Total: 14.239200 ms (FindLiveObjects: 1.737400 ms CreateObjectMapping: 0.106500 ms MarkObjects: 11.755900 ms  DeleteObjects: 0.373200 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+MonoPathRemapper: Attempts to remap: 8695; Successful remaps: 1170
+Serialized file version minimum: 23, current 23
+[LAYOUT] About to save layout C:\Users\eonvw\source\repos\Project-Twinsanity\UserSettings\Layouts\default-6000.dwlt
+[LAYOUT] About to save layout C:/Users/eonvw/AppData/Roaming/Unity/Editor-5.x/Preferences\Layouts\current\default-6000.dwlt
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-eonvw-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-eonvw channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+Shut down UDS service system complete
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+abort_threads: Failed aborting id: 00000000000051A8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000012398, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 00000000000051A8, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000012398, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 4960
+VBCSCompilerPreWarmer: requested VBCSCompiler shutdown
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1790756237786,"processId":74332,"allocatedMemory":16294037,"memoryLabels":[{"Default":278682},{"Permanent":15516},{"NewDelete":73993},{"Thread":4206112},{"Manager":32672},{"VertexData":8},{"Geometry":816},{"Texture":24},{"Shader":851183},{"Material":68},{"GfxDevice":62040},{"GfxThread":1536},{"Animation":952},{"FreeType":8},{"FontEngine":736},{"Physics":1970},{"Physics2D":16},{"Serialization":156712},{"Input":42840},{"JobScheduler":256},{"TextLib":19030},{"Mono":48},{"ScriptingNativeRuntime":1261032},{"BaseObject":58640},{"Resource":1252},{"Renderer":2376},{"Transform":4685},{"File":13335},{"WebCam":616},{"Culling":32},{"Terrain":11442},{"Wind":24},{"STL":40},{"String":812505},{"StaticString":3808},{"Utility":2674468},{"Curl":48},{"PoolAlloc":2168},{"AI":80},{"TypeTree":17165},{"ScriptManager":18984},{"CodeReload":448},{"RuntimeInitializeOnLoadManager":64},{"Sprites":102},{"SpriteAtlas":120},{"GI":7816},{"Director":8296},{"CloudService":7728},{"WebRequest":10530},{"VR":49650},{"SceneManager":608},{"Video":208},{"LazyScriptCache":32},{"Camera":1649},{"Secure":265},{"SerializationCache":9256},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":768},{"Hierarchy":1188},{"UIElements":40},{"CoreStats":14456},{"Identifiers":7152},{"Gui":267855},{"EditorUtility":175006},{"VersionControl":8},{"Undo":931},{"AssetDatabase":4698143},{"AssetImporter":40},{"EditorGi":328},{"UnityConnect":36873},{"Upm":1988},{"UpmDiagnostics":8},{"AssetCompliance":96},{"DrivenProperties":72},{"LocalIPC":260},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3600},{"Windowing":456},{"Licensing":12805},{"AssetReference":32},{"IPCStream":32}]}

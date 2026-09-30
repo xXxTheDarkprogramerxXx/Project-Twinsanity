@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|c:\\users\\eonvw\\downloads\\twinsanity-unity-title-screen (1)\\assets\\twinsanity\\scripts\\crashriganimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\crashriganimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\scripts\\twinsanitysceneryruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\twinsanitysceneryruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\scripts\\beachlevelruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\beachlevelruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44E1F5-F1F6-9C96-C1AF-F36C44A8AA73}|Assembly-CSharp-Editor.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\editor\\twinsanitylogobuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B44E1F5-F1F6-9C96-C1AF-F36C44A8AA73}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\twinsanity\\editor\\twinsanitylogobuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44E1F5-F1F6-9C96-C1AF-F36C44A8AA73}|Assembly-CSharp-Editor.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\editor\\twinsanitytitlebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B44E1F5-F1F6-9C96-C1AF-F36C44A8AA73}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\twinsanity\\editor\\twinsanitytitlebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B44E1F5-F1F6-9C96-C1AF-F36C44A8AA73}|Assembly-CSharp-Editor.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\editor\\configurebeachscenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B44E1F5-F1F6-9C96-C1AF-F36C44A8AA73}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\twinsanity\\editor\\configurebeachscenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\resources\\watersurface.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\resources\\watersurface.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\resources\\beachscenery\\sceneryopaque.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\resources\\beachscenery\\sceneryopaque.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\scripts\\beachplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\beachplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\scripts\\twinsanitylogoruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\twinsanitylogoruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\scripts\\twinsanitycharacterruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\twinsanitycharacterruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\resources\\logo\\gameopaquevertexcolor.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\resources\\logo\\gameopaquevertexcolor.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\assets\\twinsanity\\scripts\\twinsanitytitlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AC5424A-37ED-637B-29E4-A0216DFAED70}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\twinsanitytitlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{13b29bd0-3807-335c-9cad-ba55364c29cb}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrashRigAnimator.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
+              "ViewState": "AgIAAEMDAAAAAAAAAAAcwGUDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T19:11:17.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TwinsanitySceneryRuntime.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanitySceneryRuntime.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\TwinsanitySceneryRuntime.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanitySceneryRuntime.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\TwinsanitySceneryRuntime.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T20:17:22.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TwinsanityTitleBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Editor\\TwinsanityTitleBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Editor\\TwinsanityTitleBuilder.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Editor\\TwinsanityTitleBuilder.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Editor\\TwinsanityTitleBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T20:15:46.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConfigureBeachScenes.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Editor\\ConfigureBeachScenes.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Editor\\ConfigureBeachScenes.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Editor\\ConfigureBeachScenes.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Editor\\ConfigureBeachScenes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T20:15:30.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WaterSurface.shader",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Resources\\WaterSurface.shader",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Resources\\WaterSurface.shader",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Resources\\WaterSurface.shader",
+              "RelativeToolTip": "Assets\\Twinsanity\\Resources\\WaterSurface.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-09-28T20:15:20.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SceneryOpaque.shader",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Resources\\BeachScenery\\SceneryOpaque.shader",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Resources\\BeachScenery\\SceneryOpaque.shader",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Resources\\BeachScenery\\SceneryOpaque.shader",
+              "RelativeToolTip": "Assets\\Twinsanity\\Resources\\BeachScenery\\SceneryOpaque.shader",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-09-28T20:05:34.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TwinsanityLogoBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Editor\\TwinsanityLogoBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Editor\\TwinsanityLogoBuilder.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Editor\\TwinsanityLogoBuilder.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Editor\\TwinsanityLogoBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T16:10:29.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GameOpaqueVertexColor.shader",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Resources\\Logo\\GameOpaqueVertexColor.shader",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Resources\\Logo\\GameOpaqueVertexColor.shader",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Resources\\Logo\\GameOpaqueVertexColor.shader",
+              "RelativeToolTip": "Assets\\Twinsanity\\Resources\\Logo\\GameOpaqueVertexColor.shader",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-09-28T15:38:51.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BeachPlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\BeachPlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\BeachPlayerController.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\BeachPlayerController.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\BeachPlayerController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAiwNMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T15:12:38.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BeachLevelRuntime.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwGYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T13:34:47.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TwinsanityLogoRuntime.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanityLogoRuntime.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\TwinsanityLogoRuntime.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanityLogoRuntime.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\TwinsanityLogoRuntime.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T16:08:54.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TwinsanityCharacterRuntime.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanityCharacterRuntime.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\TwinsanityCharacterRuntime.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanityCharacterRuntime.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\TwinsanityCharacterRuntime.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAnwG4AAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T10:09:42.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TwinsanityTitleScreen.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanityTitleScreen.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\TwinsanityTitleScreen.cs",
+              "ToolTip": "C:\\Users\\eonvw\\Downloads\\Twinsanity-Unity-Title-Screen (1)\\Assets\\Twinsanity\\Scripts\\TwinsanityTitleScreen.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\TwinsanityTitleScreen.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T06:32:12.067Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

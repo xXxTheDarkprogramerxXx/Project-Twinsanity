@@ -1,0 +1,100 @@
+{
+  "ogi": 1033,
+  "joints": [
+    {
+      "index": 0,
+      "parent": 255,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    },
+    {
+      "index": 1,
+      "parent": 0,
+      "position": {
+        "x": 0.020158151164650917,
+        "y": 0.19064894318580627,
+        "z": 0.10399176925420761
+      },
+      "rotation": {
+        "x": -0.026491006836295128,
+        "y": -0.0015226806281134486,
+        "z": 0.009101487696170807,
+        "w": 0.9996064901351929
+      }
+    }
+  ],
+  "parts": [
+    {
+      "name": "Caustics",
+      "joint": 0,
+      "vertices": 137,
+      "triangles": 106,
+      "mesh": "E6A66D35"
+    },
+    {
+      "name": "Iceberg",
+      "joint": 1,
+      "vertices": 109,
+      "triangles": 64,
+      "mesh": "F16A4BED"
+    },
+    {
+      "name": "Uka",
+      "joint": 1,
+      "vertices": 1593,
+      "triangles": 924,
+      "mesh": "A7F48995"
+    },
+    {
+      "name": "CortexHead",
+      "joint": 1,
+      "vertices": 2432,
+      "triangles": 1230,
+      "mesh": "A62CF5CB"
+    },
+    {
+      "name": "CollarUpper",
+      "joint": 1,
+      "vertices": 26,
+      "triangles": 16,
+      "mesh": "290F3E85"
+    },
+    {
+      "name": "CollarLower",
+      "joint": 1,
+      "vertices": 27,
+      "triangles": 16,
+      "mesh": "4ECD3B05"
+    },
+    {
+      "name": "LegRight",
+      "joint": 1,
+      "vertices": 361,
+      "triangles": 180,
+      "mesh": "A8395645"
+    },
+    {
+      "name": "LegLeft",
+      "joint": 1,
+      "vertices": 338,
+      "triangles": 180,
+      "mesh": "8FBF5CD1"
+    },
+    {
+      "name": "Body",
+      "joint": 1,
+      "vertices": 2348,
+      "triangles": 1136,
+      "mesh": "CEE03D41"
+    }
+  ]
+}

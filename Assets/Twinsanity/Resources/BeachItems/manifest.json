@@ -1,0 +1,62 @@
+{
+  "Wumpa": {
+    "source": "beach.rm2",
+    "ogi": 1,
+    "vertices": 2046,
+    "triangles": 1307
+  },
+  "BasicCrate": {
+    "source": "highpath.rm2",
+    "ogi": 4,
+    "vertices": 231,
+    "triangles": 140
+  },
+  "NitroCrate": {
+    "source": "highpath.rm2",
+    "ogi": 6,
+    "vertices": 231,
+    "triangles": 140
+  },
+  "TntCrate": {
+    "source": "highpath.rm2",
+    "ogi": 8,
+    "vertices": 231,
+    "triangles": 140
+  },
+  "ExtraLifeCrate": {
+    "source": "hubb.rm2",
+    "ogi": 19,
+    "vertices": 127,
+    "triangles": 76
+  },
+  "CheckpointCrate": {
+    "source": "highpath.rm2",
+    "ogi": 29,
+    "vertices": 231,
+    "triangles": 140
+  },
+  "GemRed": {
+    "source": "beach.rm2",
+    "ogi": 876,
+    "vertices": 336,
+    "triangles": 212
+  },
+  "GemBlue": {
+    "source": "beach.rm2",
+    "ogi": 879,
+    "vertices": 336,
+    "triangles": 212
+  },
+  "GemClear": {
+    "source": "beach.rm2",
+    "ogi": 881,
+    "vertices": 336,
+    "triangles": 212
+  },
+  "Crystal": {
+    "source": "hubd.rm2",
+    "ogi": 749,
+    "vertices": 482,
+    "triangles": 334
+  }
+}

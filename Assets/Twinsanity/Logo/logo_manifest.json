@@ -1,0 +1,199 @@
+{
+  "ogi": 915,
+  "joints": [
+    {
+      "index": 0,
+      "parent": 255,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    },
+    {
+      "index": 1,
+      "parent": 0,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.0
+      },
+      "rotation": {
+        "x": 0.6693241596221924,
+        "y": -0.22804641723632812,
+        "z": 0.22804641723632812,
+        "w": 0.6693241596221924
+      }
+    },
+    {
+      "index": 2,
+      "parent": 1,
+      "position": {
+        "x": -0.4182841181755066,
+        "y": -0.5425821542739868,
+        "z": -1.2716329097747803
+      },
+      "rotation": {
+        "x": -0.0,
+        "y": -0.0,
+        "z": -0.82712721824646,
+        "w": 0.5620147585868835
+      }
+    },
+    {
+      "index": 3,
+      "parent": 1,
+      "position": {
+        "x": -0.6832934021949768,
+        "y": -0.8863419890403748,
+        "z": -0.13042613863945007
+      },
+      "rotation": {
+        "x": -0.0,
+        "y": -0.0,
+        "z": -0.82712721824646,
+        "w": 0.5620147585868835
+      }
+    },
+    {
+      "index": 4,
+      "parent": 1,
+      "position": {
+        "x": -0.512202262878418,
+        "y": -0.6644091606140137,
+        "z": 0.9694029688835144
+      },
+      "rotation": {
+        "x": -0.0,
+        "y": -0.0,
+        "z": -0.82712721824646,
+        "w": 0.5620147585868835
+      }
+    },
+    {
+      "index": 5,
+      "parent": 1,
+      "position": {
+        "x": 0.7462304830551147,
+        "y": -1.8613779544830322,
+        "z": -0.37538251280784607
+      },
+      "rotation": {
+        "x": -0.4922737777233124,
+        "y": 0.8704404234886169,
+        "z": -1.3944882081659858e-16,
+        "w": -2.46573937923687e-16
+      }
+    },
+    {
+      "index": 6,
+      "parent": 1,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.0
+      },
+      "rotation": {
+        "x": 0.3725702166557312,
+        "y": 0.9280040264129639,
+        "z": -6.749967969582485e-16,
+        "w": -2.709942419001633e-16
+      }
+    },
+    {
+      "index": 7,
+      "parent": 1,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": -0.0
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.9248772263526917,
+        "w": -0.38026586174964905
+      }
+    }
+  ],
+  "parts": [
+    {
+      "name": "GameLogo_TextC",
+      "rigid_id": "93C59D48",
+      "mesh_id": "17D56CB4",
+      "joint": 2,
+      "submeshes": 1,
+      "vertices": 1157,
+      "triangles": 844
+    },
+    {
+      "name": "GameLogo_TextT",
+      "rigid_id": "958D3112",
+      "mesh_id": "199D007E",
+      "joint": 4,
+      "submeshes": 1,
+      "vertices": 1676,
+      "triangles": 1236
+    },
+    {
+      "name": "GameLogo_Portal",
+      "rigid_id": "E159ADFC",
+      "mesh_id": "9B924500",
+      "joint": 6,
+      "submeshes": 4,
+      "vertices": 807,
+      "triangles": 656
+    },
+    {
+      "name": "GameLogo_PartsBig",
+      "rigid_id": "73D2C892",
+      "mesh_id": "42CEDB94",
+      "joint": 6,
+      "submeshes": 1,
+      "vertices": 292,
+      "triangles": 256
+    },
+    {
+      "name": "GameLogo_PartsSmall",
+      "rigid_id": "7D1E6348",
+      "mesh_id": "4C1A764A",
+      "joint": 6,
+      "submeshes": 1,
+      "vertices": 292,
+      "triangles": 256
+    },
+    {
+      "name": "GameLogo_FlashLines",
+      "rigid_id": "B11E472D",
+      "mesh_id": "A87D6394",
+      "joint": 7,
+      "submeshes": 1,
+      "vertices": 54,
+      "triangles": 18
+    },
+    {
+      "name": "GameLogo_FlashBG",
+      "rigid_id": "9255D10C",
+      "mesh_id": "BF4E47CA",
+      "joint": 7,
+      "submeshes": 1,
+      "vertices": 14,
+      "triangles": 8
+    }
+  ],
+  "textures": {
+    "3497615504": "D0796090.png",
+    "4139050451": "F6B4E5D3.png",
+    "2796303178": "A6AC334A.png",
+    "3191605418": "BE3C08AA.png",
+    "285911024": "110AA7F0.png",
+    "488291005": "1D1ABABD.png",
+    "1411246113": "541DE821.png"
+  }
+}

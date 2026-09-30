@@ -1,0 +1,1 @@
+{"status":"Valid","reason":"Signature is ok","isLegacy":false,"attestation":{"version":1,"format":"archive","integrity":"sha256-u0iLXnSI0GtQz2zDdYxaP7CLryID26ULw5ldhiGaPwA=","packageName":"com.unity.ide.visualstudio","packageVersion":"2.0.26","publishingChannel":"unity","entitlementKeys":[]}}
