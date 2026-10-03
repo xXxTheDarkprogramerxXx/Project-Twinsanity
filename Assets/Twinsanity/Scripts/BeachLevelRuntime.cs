@@ -1018,7 +1018,7 @@ public class AkuAkuFollower : MonoBehaviour
         hoverTime += Time.deltaTime;
 
         Vector3 desired =
-            target.position -
+            target.position +
             target.right * 0.95f -
             target.forward * 0.35f +
             Vector3.up * (1.55f + Mathf.Sin(hoverTime * 3.2f) * 0.11f);

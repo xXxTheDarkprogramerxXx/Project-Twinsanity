@@ -26,6 +26,13 @@ public class CrashRigAnimator : MonoBehaviour
     public bool showBindPose;
     public string playingClip;
 
+    [Header("Idle Variations")]
+    public bool playIdleVariations = true;
+    public float minimumIdleDelay = 4f;
+    public float maximumIdleDelay = 8f;
+    public int[] idleVariationClips = { 317, 326, 348, 349, 1247, 1501, 1561, 1562, 1563, 1625 };
+    [SerializeField, HideInInspector] private int idlePlaylistVersion;
+
     [Tooltip("Aligns the original TLRG skeleton to the centred TLGO mesh. Use zero only if your mesh export has already been realigned.")]
     public Vector3 skeletonOriginOffset = new Vector3(0f, -0.5f, 0f);
 
@@ -49,10 +56,20 @@ public class CrashRigAnimator : MonoBehaviour
     private Renderer[] normalRenderers;
     private bool[] normalVisibility;
     private bool spinVisible;
+    private float idleElapsed, idleDelay;
+    private int idleVariation = -1, previousIdleVariation = -1;
     private readonly List<Material> ownedMaterials = new List<Material>();
 
     private void Awake()
     {
+        // Existing prefabs may still serialize the old four-entry default playlist.
+        // Upgrade that exact default without changing a customized playlist.
+        if (idlePlaylistVersion == 0)
+        {
+            if (idleVariationClips != null && idleVariationClips.Length == 4 && idleVariationClips[0] == 317 && idleVariationClips[1] == 326 && idleVariationClips[2] == 348 && idleVariationClips[3] == 349)
+                idleVariationClips = new int[] { 317, 326, 348, 349, 1247, 1501, 1561, 1562, 1563, 1625 };
+            idlePlaylistVersion = 1;
+        }
         // Create() adds this component before it finishes creating the mesh parts.
         // Defer bind-pose rebuilding until LateUpdate, when those renderers exist.
         if (joints == null || joints.Length != 51) joints = FindOrderedJoints();
@@ -132,8 +149,20 @@ public class CrashRigAnimator : MonoBehaviour
 
     private void LoadAnimations()
     {
-        TextAsset source = Resources.Load<TextAsset>("Characters/CrashAnimations");
-        if (source == null) throw new FileNotFoundException("Missing Characters/CrashAnimations.bytes.");
+        LoadAnimationFile("Characters/CrashAnimations", true);
+        LoadAnimationFile("Characters/CrashExtraAnimations", false);
+        if (!clips.ContainsKey(0)) throw new InvalidDataException("Missing Crash idle clip 0.");
+    }
+
+    private void LoadAnimationFile(string resourceName, bool required)
+    {
+        TextAsset source = Resources.Load<TextAsset>(resourceName);
+        if (source == null)
+        {
+            if (required) throw new FileNotFoundException("Missing " + resourceName + ".bytes.");
+            Debug.LogWarning("Idle variation data missing: " + resourceName + ".bytes.", this);
+            return;
+        }
         using (BinaryReader reader = new BinaryReader(new MemoryStream(source.bytes)))
         {
             if (new string(reader.ReadChars(4)) != "TLAN" || reader.ReadInt32() != joints.Length)
@@ -156,14 +185,14 @@ public class CrashRigAnimator : MonoBehaviour
                         clip.scales[f, j] = ReadVector(reader);
                         if (parents[j] < 0) clip.positions[f, j] += skeletonOriginOffset;
                     }
-                clips.Add(clip.id, clip);
+                if (!clips.ContainsKey(clip.id)) clips.Add(clip.id, clip);
             }
         }
-        if (!clips.ContainsKey(0)) throw new InvalidDataException("Missing Crash idle clip 0.");
     }
 
     public void SetMovement(float amount, bool onGround, bool spin, float progress, bool crouch, bool slide, float vertical, float doubleJump)
     {
+        // Player input takes ownership; manual preview works when the controller is disabled.
         showBindPose = false;
         previewClip = -1;
         previewFrame = -1;
@@ -197,6 +226,8 @@ public class CrashRigAnimator : MonoBehaviour
 
         landingTime = Mathf.Max(0f, landingTime - Time.deltaTime);
         if (jumpElapsed >= 0f) jumpElapsed += Time.deltaTime;
+        if (previewClip < 0) UpdateIdleVariations(Time.deltaTime);
+        else ResetIdleVariations();
         int desired = previewClip >= 0 ? previewClip : SelectClip();
         if (desired == 3 && spinClip != null)
         {
@@ -252,7 +283,7 @@ public class CrashRigAnimator : MonoBehaviour
             joints[j].localRotation = Quaternion.Slerp(blendRotations[j], rotation, blend);
             joints[j].localScale = Vector3.Lerp(blendScales[j], scale, blend);
         }
-        playingClip = "Native clip " + desired + " / frame " + frame.ToString("F2");
+        playingClip = AnimationName(desired) + " / frame " + frame.ToString("F2");
     }
 
     private void ApplyBindPose()
@@ -305,7 +336,7 @@ public class CrashRigAnimator : MonoBehaviour
         if (!grounded) return jumpElapsed >= 0f && jumpElapsed < GetClipDuration(jumpStartClip, 0.44f) ? jumpStartClip : jumpFallClip;
         if (landingTime > 0f && (movement <= 0.05f || landingTime > GetClipDuration(landingClip, 0.2f) - 0.12f)) return landingClip;
         if (crouching) return 8;
-        return movement > 0.8f ? 2 : movement > 0.05f ? 1 : 0;
+        return movement > 0.8f ? 2 : movement > 0.05f ? 1 : idleVariation >= 0 ? idleVariation : 0;
     }
 
     public float GetClipDuration(int id, float fallback = 0.48f)
@@ -315,6 +346,7 @@ public class CrashRigAnimator : MonoBehaviour
 
     public void NotifyJump(bool secondJump)
     {
+        ResetIdleVariations();
         jumpElapsed = secondJump ? -1f : 0f;
         landingTime = 0f;
         grounded = false;
@@ -323,6 +355,7 @@ public class CrashRigAnimator : MonoBehaviour
 
     public void ResetActionState()
     {
+        ResetIdleVariations();
         jumpElapsed = -1f;
         doubleJumpProgress = -1f;
         landingTime = 0f;
@@ -393,6 +426,115 @@ public class CrashRigAnimator : MonoBehaviour
                 item.AddComponent<MeshRenderer>().sharedMaterial = material;
             }
             spinVisual.gameObject.SetActive(false);
+        }
+    }
+
+    private void ResetIdleVariations()
+    {
+        idleElapsed = 0f;
+        idleDelay = 0f;
+        idleVariation = -1;
+    }
+
+    private void UpdateIdleVariations(float deltaTime)
+    {
+        bool eligible = playIdleVariations && grounded && movement <= 0.05f && !spinning && !crouching && !sliding && doubleJumpProgress < 0f && landingTime <= 0f;
+        if (!eligible) { ResetIdleVariations(); return; }
+        if (idleVariation >= 0)
+        {
+            if (activeClip == idleVariation && clipTime >= GetClipDuration(idleVariation)) ResetIdleVariations();
+            return;
+        }
+        if (idleDelay <= 0f)
+        {
+            float minimum = Mathf.Max(0.1f, minimumIdleDelay);
+            idleDelay = UnityEngine.Random.Range(minimum, Mathf.Max(minimum, maximumIdleDelay));
+        }
+        idleElapsed += deltaTime;
+        if (idleElapsed < idleDelay || idleVariationClips == null) return;
+        List<int> candidates = new List<int>();
+        foreach (int id in idleVariationClips)
+            if (id != 0 && clips.ContainsKey(id) && !candidates.Contains(id)) candidates.Add(id);
+        if (candidates.Count > 1) candidates.Remove(previousIdleVariation);
+        if (candidates.Count == 0) { ResetIdleVariations(); return; }
+        idleVariation = candidates[UnityEngine.Random.Range(0, candidates.Count)];
+        previousIdleVariation = idleVariation;
+    }
+
+    private static string AnimationName(int id)
+    {
+        switch (id)
+        {
+            case 0: return "Crash_Idle";
+            case 1: return "Crash_Walk";
+            case 2: return "Crash_Run";
+            case 4: return "Crash_JumpStart";
+            case 5: return "Crash_JumpApex";
+            case 6: return "Crash_JumpLand";
+            case 7: return "Crash_JumpFall";
+            case 8: return "Crash_CrouchIdle";
+            case 14: return "Crash_DeathGeneric";
+            case 25: return "Crash_Crawl";
+            case 27: return "Crash_BodyslamHang";
+            case 54: return "Crash_CrouchToCrawl";
+            case 55: return "Crash_SlideToStand";
+            case 60: return "Crash_LandToRun";
+            case 203: return "Crash_JumpToBodyslam";
+            case 206: return "Crash_CrawlToIdle";
+            case 209: return "Crash_SpinRecover";
+            case 282: return "Crash_SlideJump";
+            case 283: return "Crash_FallDamage";
+            case 317: return "Crash_IdleYawn";
+            case 326: return "Crash_IdleScratch";
+            case 348: return "Crash_IdleLookBehindLeft";
+            case 349: return "Crash_IdleLookBehindRight";
+            case 363: return "Crash_OnEdge";
+            case 364: return "Crash_OnEdgeIdle";
+            case 499: return "Crash_ShuffleFeet";
+            case 502: return "Crash_SkatePose";
+            case 516: return "Crash_SkateBoostPose";
+            case 622: return "Crash_Brawl1";
+            case 625: return "Crash_BrawlGetSpanked";
+            case 633: return "Crash_BrawlStrangle";
+            case 635: return "Crash_Brawl2";
+            case 637: return "Crash_BrawlStretch";
+            case 653: return "Crash_BallPose";
+            case 654: return "Crash_BallUncurl";
+            case 693: return "Crash_BrawlHeadbutt";
+            case 773: return "Crash_SkateIdleFront";
+            case 774: return "Crash_SkateLeanLeftFront";
+            case 775: return "Crash_SkateLeanRightFront";
+            case 776: return "Crash_SkateIdleBack";
+            case 777: return "Crash_SkateLeanLeftBack";
+            case 778: return "Crash_SkateLeanRightBack";
+            case 784: return "Crash_SkateKickflip";
+            case 785: return "Crash_SkateBoostBack";
+            case 788: return "Crash_SkateJump";
+            case 789: return "Crash_RunRoll";
+            case 791: return "Crash_WalkRoll";
+            case 792: return "Crash_SkateBoostFront";
+            case 793: return "Crash_SkateBoostRight";
+            case 794: return "Crash_SkateBoostLeft";
+            case 838: return "Crash_SkateGrindFront";
+            case 999: return "Crash_GroundPullOut";
+            case 1016: return "Crash_SkateGrindBack";
+            case 1059: return "Crash_Punch";
+            case 1187: return "Crash_DeathDrown";
+            case 1206: return "Crash_DeathFalloff";
+            case 1207: return "Crash_Damaged";
+            case 1227: return "Crash_SpinThrow";
+            case 1228: return "Crash_TwinThrow";
+            case 1247: return "Crash_IdleLookAround";
+            case 1299: return "Crash_UnkFlap";
+            case 1501: return "Crash_IdleScratchHead";
+            case 1561: return "Crash_IdleEarPick";
+            case 1562: return "Crash_IdleButtScratch";
+            case 1563: return "Crash_IdleFingerGuns";
+            case 1565: return "Crash_SkateFall";
+            case 1566: return "Crash_SkateFallPose";
+            case 1568: return "Crash_SkateWobble";
+            case 1625: return "Crash_IdleBoxing";
+            default: return "Native clip " + id;
         }
     }
 
