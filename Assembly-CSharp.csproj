@@ -84,6 +84,7 @@
     <None Include="Assets\Twinsanity\Resources\Flyby\FlybyIce.shader" />
     <None Include="Assets\Twinsanity\Resources\Logo\GameOpaqueVertexColor.shader" />
     <None Include="Assets\Twinsanity\Logo\LogoVertexColor.shader" />
+    <None Include="Assets\Twinsanity\Resources\Characters\SpinTextures\CrashSpinTrail.shader" />
     <None Include="Assets\Twinsanity\Resources\IceSurface.shader" />
     <None Include="Assets\Twinsanity\Resources\WaterSurface.shader" />
     <None Include="Assets\Twinsanity\Resources\Logo\LogoVertexColor.shader" />

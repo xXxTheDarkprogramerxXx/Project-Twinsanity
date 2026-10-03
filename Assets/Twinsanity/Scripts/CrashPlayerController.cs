@@ -27,10 +27,16 @@ public class CrashPlayerController : MonoBehaviour
     private float invulnerable;
     private int jumpsUsed;
     private float doubleJumpTime = -1f;
+    private CrashRigAnimator rig;
+    private float doubleJumpDuration = 0.48f;
+    public float spinDuration = 0.32f;
 
     private void Start()
     {
+        BeachPlayerController beach = GetComponent<BeachPlayerController>();
+        if (beach != null && beach.enabled) { enabled = false; return; }
         controller = GetComponent<CharacterController>();
+        if (model != null) rig = model.GetComponentInChildren<CrashRigAnimator>();
         if (cameraTransform == null && Camera.main != null) cameraTransform = Camera.main.transform;
         cameraYaw = initialCameraYaw;
         transform.rotation = Quaternion.Euler(0, 90f, 0);
@@ -43,6 +49,7 @@ public class CrashPlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (controller == null) return;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
@@ -53,6 +60,7 @@ public class CrashPlayerController : MonoBehaviour
             return;
 
         invulnerable = Mathf.Max(0f, invulnerable - Time.deltaTime);
+        if (rig == null && model != null) rig = model.GetComponentInChildren<CrashRigAnimator>();
 
         if (cameraStartFrames++ > 2)
         {
@@ -62,7 +70,7 @@ public class CrashPlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.J))
         {
-            attackTimer = 0.52f;
+            attackTimer = Mathf.Max(0.05f, spinDuration);
             if (BeachLevelRuntime.Current != null) BeachLevelRuntime.Current.PlayEffect("spin", transform.position);
         }
 
@@ -106,9 +114,14 @@ public class CrashPlayerController : MonoBehaviour
 
         if (jumpPressed && jumpsUsed < 2)
         {
-            verticalSpeed = jumpsUsed == 0 ? jumpSpeed : doubleJumpSpeed;
-            if (jumpsUsed == 1)
+            bool secondJump = jumpsUsed == 1;
+            verticalSpeed = secondJump ? doubleJumpSpeed : jumpSpeed;
+            if (rig != null) rig.NotifyJump(secondJump);
+            if (secondJump)
+            {
                 doubleJumpTime = 0f;
+                doubleJumpDuration = rig != null ? rig.GetClipDuration(rig.doubleJumpClip) : 0.48f;
+            }
             jumpsUsed++;
             slamming = false;
         }
@@ -116,12 +129,15 @@ public class CrashPlayerController : MonoBehaviour
         if (doubleJumpTime >= 0f)
         {
             doubleJumpTime += Time.deltaTime;
-            if (doubleJumpTime >= 0.52f)
+            if (doubleJumpTime >= doubleJumpDuration)
                 doubleJumpTime = -1f;
         }
 
         verticalSpeed -= gravity * Time.deltaTime;
-        controller.Move((move + Vector3.up * verticalSpeed) * Time.deltaTime);
+        CollisionFlags collisions = controller.Move((move + Vector3.up * verticalSpeed) * Time.deltaTime);
+        if ((collisions & CollisionFlags.Above) != 0 && verticalSpeed > 0f) verticalSpeed = 0f;
+        bool animationGrounded = (controller.isGrounded || (collisions & CollisionFlags.Below) != 0) && verticalSpeed <= 0f;
+        if (animationGrounded) doubleJumpTime = -1f;
 
         if (input.sqrMagnitude > 0.02f && slideTimer <= 0f)
         {
@@ -147,11 +163,8 @@ public class CrashPlayerController : MonoBehaviour
         {
             stepTime += move.magnitude * Time.deltaTime;
 
-            CrashRigAnimator rig = model.GetComponent<CrashRigAnimator>();
-            bool stableGround = controller.isGrounded || Physics.Raycast(transform.position + Vector3.up * 0.25f, Vector3.down, 0.65f, ~0, QueryTriggerInteraction.Ignore);
-
             if (rig != null)
-                rig.SetMovement(move.magnitude / runSpeed, stableGround, attackTimer > 0f, 1f - attackTimer / 0.52f, crouch, slideTimer > 0f, verticalSpeed, doubleJumpTime < 0f ? -1f : doubleJumpTime / 0.52f);
+                rig.SetMovement(move.magnitude / Mathf.Max(0.01f, runSpeed), animationGrounded, attackTimer > 0f, 1f - attackTimer / Mathf.Max(0.05f, spinDuration), crouch, slideTimer > 0f, verticalSpeed, doubleJumpTime < 0f ? -1f : doubleJumpTime / Mathf.Max(0.01f, doubleJumpDuration));
 
             model.localPosition = new Vector3(0, 0.48f, 0);
             model.localScale = Vector3.one;
@@ -191,6 +204,7 @@ public class CrashPlayerController : MonoBehaviour
         controller.enabled = true;
 
         Physics.SyncTransforms();
+        if (rig != null) rig.ResetActionState();
         PositionCamera(true);
     }
 

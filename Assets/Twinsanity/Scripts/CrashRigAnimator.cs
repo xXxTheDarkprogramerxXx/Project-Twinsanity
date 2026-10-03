@@ -19,6 +19,10 @@ public class CrashRigAnimator : MonoBehaviour
     public float blendSeconds = 0.12f;
     public int previewClip = -1;
     public int previewFrame = -1;
+    public int jumpStartClip = 4;
+    public int doubleJumpClip = 5;
+    public int jumpFallClip = 7;
+    public int landingClip = 6;
     public bool showBindPose;
     public string playingClip;
 
@@ -39,6 +43,13 @@ public class CrashRigAnimator : MonoBehaviour
     private float clipTime, blendTime, movement, verticalSpeed, spinProgress, landingTime;
     private float doubleJumpProgress = -1f;
     private bool grounded = true, spinning, crouching, sliding;
+    private float jumpElapsed = -1f;
+    private Transform spinVisual;
+    private NativeClip spinClip;
+    private Renderer[] normalRenderers;
+    private bool[] normalVisibility;
+    private bool spinVisible;
+    private readonly List<Material> ownedMaterials = new List<Material>();
 
     private void Awake()
     {
@@ -112,6 +123,10 @@ public class CrashRigAnimator : MonoBehaviour
         }
 
         LoadAnimations();
+        normalRenderers = GetComponentsInChildren<SkinnedMeshRenderer>(true);
+        normalVisibility = new bool[normalRenderers.Length];
+        for (int i = 0; i < normalRenderers.Length; i++) normalVisibility[i] = normalRenderers[i].enabled;
+        LoadSpinVisual();
         initialized = true;
     }
 
@@ -149,7 +164,10 @@ public class CrashRigAnimator : MonoBehaviour
 
     public void SetMovement(float amount, bool onGround, bool spin, float progress, bool crouch, bool slide, float vertical, float doubleJump)
     {
-        if (!grounded && onGround) landingTime = 0.14f;
+        showBindPose = false;
+        previewClip = -1;
+        previewFrame = -1;
+        if (!grounded && onGround) landingTime = GetClipDuration(landingClip, 0.2f);
         movement = amount;
         grounded = onGround;
         spinning = spin;
@@ -162,7 +180,7 @@ public class CrashRigAnimator : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (failed) return;
+        if (failed || (BeachLevelRuntime.Current != null && BeachLevelRuntime.Current.IsPaused)) return;
         if (!initialized)
         {
             try { PrepareRig(); }
@@ -170,6 +188,7 @@ public class CrashRigAnimator : MonoBehaviour
         }
         if (showBindPose)
         {
+            SetSpinVisible(false);
             ApplyBindPose();
             activeClip = -1;
             playingClip = "Bind pose";
@@ -177,7 +196,25 @@ public class CrashRigAnimator : MonoBehaviour
         }
 
         landingTime = Mathf.Max(0f, landingTime - Time.deltaTime);
+        if (jumpElapsed >= 0f) jumpElapsed += Time.deltaTime;
         int desired = previewClip >= 0 ? previewClip : SelectClip();
+        if (desired == 3 && spinClip != null)
+        {
+            SetSpinVisible(true);
+            float spinFrame = previewClip >= 0 ? Mathf.Repeat(clipTime * spinClip.fps, spinClip.frameCount - 1) : Mathf.Clamp01(spinProgress) * (spinClip.frameCount - 1);
+            if (previewClip >= 0 && previewFrame >= 0) spinFrame = Mathf.Clamp(previewFrame, 0, spinClip.frameCount - 1);
+            int a = Mathf.FloorToInt(spinFrame), b = Mathf.Min(a + 1, spinClip.frameCount - 1);
+            float t = spinFrame - a;
+            spinVisual.localPosition = Vector3.Lerp(spinClip.positions[a, 0], spinClip.positions[b, 0], t) + skeletonOriginOffset;
+            spinVisual.localRotation = Quaternion.Slerp(spinClip.rotations[a, 0], spinClip.rotations[b, 0], t);
+            spinVisual.localScale = Vector3.Lerp(spinClip.scales[a, 0], spinClip.scales[b, 0], t);
+            clipTime += Time.deltaTime;
+            activeClip = -1; // Capture the body pose again when the normal graphic returns.
+            playingClip = "Original spin graphic / frame " + spinFrame.ToString("F2");
+            return;
+        }
+        if (desired == 3) desired = 0; // Never apply a one-joint spin clip to the body rig.
+        SetSpinVisible(false);
         if (!clips.TryGetValue(desired, out NativeClip clip)) { desired = 0; clip = clips[0]; }
         if (activeClip != desired)
         {
@@ -200,7 +237,7 @@ public class CrashRigAnimator : MonoBehaviour
         // The viewer uses the last frame as the endpoint of its looping interval.
         float frame = loop && last > 0 ? Mathf.Repeat(clipTime * clip.fps, last) : Mathf.Min(clipTime * clip.fps, last);
         if (previewClip < 0 && desired == 3 && spinning) frame = Mathf.Clamp01(spinProgress) * last;
-        if (previewClip < 0 && desired == 13 && doubleJumpProgress >= 0f) frame = Mathf.Clamp01(doubleJumpProgress) * last;
+        if (previewClip < 0 && desired == doubleJumpClip && doubleJumpProgress >= 0f) frame = Mathf.Clamp01(doubleJumpProgress) * last;
         bool scrub = previewClip >= 0 && previewFrame >= 0;
         if (scrub) frame = Mathf.Clamp(previewFrame, 0, last);
         int from = Mathf.FloorToInt(frame), to = Mathf.Min(from + 1, last);
@@ -263,16 +300,105 @@ public class CrashRigAnimator : MonoBehaviour
     private int SelectClip()
     {
         if (spinning) return 3;
-        if (doubleJumpProgress >= 0f) return 13;
+        if (doubleJumpProgress >= 0f) return doubleJumpClip;
         if (sliding) return 54;
-        if (!grounded) return verticalSpeed > 3f ? 4 : verticalSpeed > -1f ? 5 : 7;
-        if (landingTime > 0f) return 6;
+        if (!grounded) return jumpElapsed >= 0f && jumpElapsed < GetClipDuration(jumpStartClip, 0.44f) ? jumpStartClip : jumpFallClip;
+        if (landingTime > 0f && (movement <= 0.05f || landingTime > GetClipDuration(landingClip, 0.2f) - 0.12f)) return landingClip;
         if (crouching) return 8;
         return movement > 0.8f ? 2 : movement > 0.05f ? 1 : 0;
+    }
+
+    public float GetClipDuration(int id, float fallback = 0.48f)
+    {
+        return clips.TryGetValue(id, out NativeClip clip) ? Mathf.Max(1, clip.frameCount - 1) / clip.fps : fallback;
+    }
+
+    public void NotifyJump(bool secondJump)
+    {
+        jumpElapsed = secondJump ? -1f : 0f;
+        landingTime = 0f;
+        grounded = false;
+        activeClip = -1;
+    }
+
+    public void ResetActionState()
+    {
+        jumpElapsed = -1f;
+        doubleJumpProgress = -1f;
+        landingTime = 0f;
+        spinning = false;
+        grounded = true;
+        activeClip = -1;
+        if (initialized) SetSpinVisible(false);
+    }
+
+    private void SetSpinVisible(bool visible)
+    {
+        if (spinVisible == visible) return;
+        spinVisible = visible;
+        for (int i = 0; i < normalRenderers.Length; i++) normalRenderers[i].enabled = !visible && normalVisibility[i];
+        if (spinVisual != null) spinVisual.gameObject.SetActive(visible);
+        clipTime = 0f;
+    }
+
+    private void LoadSpinVisual()
+    {
+        TextAsset data = Resources.Load<TextAsset>("Characters/CrashSpin");
+        if (data == null) { Debug.LogWarning("Original spin graphic missing: install Characters/CrashSpin.bytes and SpinTextures.", this); return; }
+        using (BinaryReader reader = new BinaryReader(new MemoryStream(data.bytes)))
+        {
+            if (new string(reader.ReadChars(4)) != "TLSP") throw new InvalidDataException("Invalid CrashSpin.bytes.");
+            int frames = reader.ReadInt32();
+            float fps = reader.ReadSingle();
+            int parts = reader.ReadInt32();
+            spinClip = new NativeClip { id = 3, frameCount = frames, fps = fps, positions = new Vector3[frames, 1], rotations = new Quaternion[frames, 1], scales = new Vector3[frames, 1] };
+            for (int f = 0; f < frames; f++)
+            {
+                spinClip.positions[f, 0] = ReadVector(reader);
+                spinClip.rotations[f, 0] = ReadRotation(reader);
+                spinClip.scales[f, 0] = ReadVector(reader);
+            }
+            spinVisual = new GameObject("Original Crash spin graphic").transform;
+            spinVisual.SetParent(transform, false);
+            for (int part = 0; part < parts; part++)
+            {
+                uint texture = reader.ReadUInt32();
+                bool transparent = reader.ReadBoolean();
+                int count = reader.ReadInt32(), triangleCount = reader.ReadInt32();
+                Vector3[] vertices = new Vector3[count];
+                Vector2[] uv = new Vector2[count];
+                Color32[] colors = new Color32[count];
+                for (int v = 0; v < count; v++)
+                {
+                    vertices[v] = ReadVector(reader);
+                    uv[v] = new Vector2(reader.ReadSingle(), reader.ReadSingle());
+                    colors[v] = new Color32(reader.ReadByte(), reader.ReadByte(), reader.ReadByte(), reader.ReadByte());
+                }
+                int[] triangles = new int[triangleCount * 3];
+                for (int t = 0; t < triangles.Length; t++) triangles[t] = reader.ReadInt32();
+                Mesh mesh = new Mesh { name = "Original spin part " + part, vertices = vertices, uv = uv, colors32 = colors, triangles = triangles };
+                mesh.RecalculateBounds();
+                mesh.RecalculateNormals();
+                ownedMeshes.Add(mesh);
+                Shader shader = Resources.Load<Shader>(transparent ? "Characters/SpinTextures/CrashSpinTrail" : "Logo/GameOpaqueVertexColor");
+                if (shader == null) throw new FileNotFoundException("Missing original spin shader.");
+                Material material = new Material(shader) { name = "Crash spin " + texture.ToString("X8") };
+                material.mainTexture = Resources.Load<Texture2D>("Characters/SpinTextures/" + texture.ToString("X8"));
+                if (material.mainTexture == null) throw new FileNotFoundException("Missing spin texture " + texture.ToString("X8"));
+                material.SetFloat("_Brightness", 3f);
+                ownedMaterials.Add(material);
+                GameObject item = new GameObject("Original spin part " + part);
+                item.transform.SetParent(spinVisual, false);
+                item.AddComponent<MeshFilter>().sharedMesh = mesh;
+                item.AddComponent<MeshRenderer>().sharedMaterial = material;
+            }
+            spinVisual.gameObject.SetActive(false);
+        }
     }
 
     private void OnDestroy()
     {
         foreach (Mesh mesh in ownedMeshes) if (mesh != null) Destroy(mesh);
+        foreach (Material material in ownedMaterials) if (material != null) Destroy(material);
     }
 }
