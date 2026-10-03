@@ -1,22 +1,31 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.6/staging' branch; Version is '6000.6.3f1 (45d8eee7de74) revision 4577518'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) CoreSingleLanguage' Language: 'en' Physical Memory: 32506 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw" at "2026-10-03T22:18:09.7960097Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-10-03T22:18:09Z
+Date: 2026-10-03T22:39:54Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw" at "2026-10-03T22:39:54.2101789Z"
 [Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 758392, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.3+d7ffd15
-  Session Id:              b90ceab29e71408ea7051a43aa82167c
+  Session Id:              0f0a63f0e7c24fb1ab62ed643ac2f367
   Correlation Id:          a5ae695d69d203898fbcfacc6c3d1b03
-  External correlation Id: 5668930166763751886
+  External correlation Id: 4792720915956674645
   Machine Id:              HJKSOXajvVm0mGT1RtspIzejp2w=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eonvw" (connect: 0.00s, validation: 0.00s, handshake: 0.07s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw-notifications" at "2026-10-03T22:18:09.8719242Z"
-[Licensing::Module] Licensing Background thread has ended after 0.08s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eonvw" (connect: 0.00s, validation: 0.00s, handshake: 0.10s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw-notifications" at "2026-10-03T22:39:54.3139035Z"
+[Licensing::Module] Licensing Background thread has ended after 0.11s
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: c3461644d780cfe5a7dec9d3fcd3aebe
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: true
+  - Service working directory: Library/DataStore/
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Unity.exe
@@ -30,9 +39,9 @@ C:/Users/eonvw/source/repos/Project-Twinsanity
 -logFile
 Logs/AssetImportWorkerHW1.log
 -srvPort
-56089
+60838
 -parentPid
-762764
+774676
 -analyticsCloudUserId
 5646382
 -analyticsLocalProjectId
@@ -94,28 +103,19 @@ C:/Users/eonvw/source/repos/Project-Twinsanity
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [773216]  Target information:
+Player connection [774032]  Target information:
 
-Player connection [773216]  * "[IP] 192.168.3.7 [Port] 0 [Flags] 2 [Guid] 1065596960 [EditorId] 1065596960 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [774032]  * "[IP] 192.168.3.7 [Port] 0 [Flags] 2 [Guid] 2764290652 [EditorId] 2764290652 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [773216]  * "[IP] 10.185.89.24 [Port] 0 [Flags] 2 [Guid] 1065596960 [EditorId] 1065596960 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [774032]  * "[IP] 10.185.89.24 [Port] 0 [Flags] 2 [Guid] 2764290652 [EditorId] 2764290652 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [773216] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [773216] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [774032] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [774032] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
-Initialising UDS system complete:
-  - System type: Client
-  - Resource namespace: c3461644d780cfe5a7dec9d3fcd3aebe
-  - Shared memory size: 1073741824
-  - Command buffer id: 1052576
-  - Command buffer size: 8192
-  - Hashmap size: 4194304
-  - Service connected: true
-  - Service working directory: Library/DataStore/
 [Physics::Module] Selected backend (deferred post-plugins).
 [Physics::Module] Name: PhysX
 [Physics::Module] Id: 0xf2b8ea05
@@ -141,13 +141,13 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003402 seconds.
+Registered in 0.002729 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -156,24 +156,23 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.760 seconds
-Domain Reload Profiling: 1876ms
-	BeginReloadAssembly (348ms)
-	RebuildCommonClasses (8ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (137ms)
-	LoadAllAssembliesAndSetupDomain (590ms)
-		LoadAssemblies (342ms)
-		TypeCache.Refresh (412ms)
-			TypeCache.ScanAssembly (389ms)
+- Finished resetting the current domain, in  0.569 seconds
+Domain Reload Profiling: 1252ms
+	BeginReloadAssembly (165ms)
+	RebuildCommonClasses (6ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (80ms)
+	LoadAllAssembliesAndSetupDomain (407ms)
+		LoadAssemblies (160ms)
+		TypeCache.Refresh (280ms)
+			TypeCache.ScanAssembly (258ms)
 		AnalyzeDomain (1ms)
-	FinalizeReload (761ms)
+	FinalizeReload (571ms)
 		SetupLoadedEditorAssemblies (0ms)
-			LogAssemblyErrors (3ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (168ms)
-			ProcessInitializeOnLoadAttributes (163ms)
-			ProcessInitializeOnLoadMethodAttributes (313ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (216ms)
 Initializing Unity extensions:
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -192,35 +191,43 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.601 seconds
-Domain Reload Profiling: 1350ms
-	BeginReloadAssembly (319ms)
-		DisableScriptedObjects (14ms)
-		CreateAndSetChildDomain (48ms)
-	RebuildCommonClasses (16ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (325ms)
-		LoadAssemblies (302ms)
-		TypeCache.Refresh (26ms)
-			TypeCache.ScanAssembly (14ms)
-		AnalyzeDomain (11ms)
-			BuildScriptInfoCaches (8ms)
-	FinalizeReload (603ms)
+- Finished resetting the current domain, in  0.449 seconds
+Domain Reload Profiling: 1077ms
+	BeginReloadAssembly (265ms)
+		DisableScriptedObjects (11ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (11ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (276ms)
+		LoadAssemblies (242ms)
+		TypeCache.Refresh (24ms)
+			TypeCache.ScanAssembly (12ms)
+		AnalyzeDomain (9ms)
+			BuildScriptInfoCaches (7ms)
+	FinalizeReload (451ms)
 		SetupLoadedEditorAssemblies (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (153ms)
-			ProcessInitializeOnLoadAttributes (119ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
-			AfterProcessingInitializeOnLoad (12ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (8ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 AcceleratorClientConnectionCallback - disconnected - :0
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 508 unused Assets / (161.9 KB). Loaded Objects now: 1212.
-Memory consumption went from 191.0 MB to 190.9 MB.
-Total: 6.515100 ms (FindLiveObjects: 0.297700 ms CreateObjectMapping: 0.043300 ms MarkObjects: 5.797800 ms  DeleteObjects: 0.206000 ms)
+Unloading 508 unused Assets / (235.7 KB). Loaded Objects now: 1212.
+Memory consumption went from 190.5 MB to 190.2 MB.
+Total: 6.054100 ms (FindLiveObjects: 0.291700 ms CreateObjectMapping: 0.084200 ms MarkObjects: 5.251400 ms  DeleteObjects: 0.260500 ms)
 
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (136.7 KB). Loaded Objects now: 1212.
+Memory consumption went from 189.9 MB to 189.8 MB.
+Total: 8.489300 ms (FindLiveObjects: 0.324400 ms CreateObjectMapping: 0.030400 ms MarkObjects: 7.799900 ms  DeleteObjects: 0.154300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
@@ -233,70 +240,417 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.679 seconds
-Domain Reload Profiling: 1554ms
-	BeginReloadAssembly (378ms)
+- Finished resetting the current domain, in  0.611 seconds
+Domain Reload Profiling: 1360ms
+	BeginReloadAssembly (320ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (324ms)
+		LoadAssemblies (304ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (18ms)
+			BuildScriptInfoCaches (16ms)
+	FinalizeReload (613ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (18ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (127.1 KB). Loaded Objects now: 1212.
+Memory consumption went from 190.0 MB to 189.9 MB.
+Total: 6.073100 ms (FindLiveObjects: 0.393200 ms CreateObjectMapping: 0.085100 ms MarkObjects: 5.303000 ms  DeleteObjects: 0.125900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.551 seconds
+Domain Reload Profiling: 1257ms
+	BeginReloadAssembly (296ms)
 		DisableScriptedObjects (14ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (37ms)
-	initialDomainReloadingComplete (91ms)
-	LoadAllAssembliesAndSetupDomain (344ms)
-		LoadAssemblies (350ms)
-		TypeCache.Refresh (8ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (311ms)
+		LoadAssemblies (302ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (2ms)
+	FinalizeReload (552ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (153ms)
+			ProcessInitializeOnLoadAttributes (103ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (128.1 KB). Loaded Objects now: 1212.
+Memory consumption went from 190.2 MB to 190.1 MB.
+Total: 5.689500 ms (FindLiveObjects: 0.288400 ms CreateObjectMapping: 0.027500 ms MarkObjects: 5.073200 ms  DeleteObjects: 0.137700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.679 seconds
+Domain Reload Profiling: 1437ms
+	BeginReloadAssembly (358ms)
+		DisableScriptedObjects (19ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (292ms)
+		LoadAssemblies (308ms)
+		TypeCache.Refresh (7ms)
 		AnalyzeDomain (3ms)
 	FinalizeReload (681ms)
 		SetupLoadedEditorAssemblies (0ms)
 			LogAssemblyErrors (3ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (182ms)
-			ProcessInitializeOnLoadAttributes (125ms)
+			BeforeProcessingInitializeOnLoad (203ms)
+			ProcessInitializeOnLoadAttributes (131ms)
 			ProcessInitializeOnLoadMethodAttributes (57ms)
-			AfterProcessingInitializeOnLoad (16ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 506 unused Assets / (82.1 KB). Loaded Objects now: 1212.
-Memory consumption went from 190.2 MB to 190.1 MB.
-Total: 5.353200 ms (FindLiveObjects: 0.262100 ms CreateObjectMapping: 0.023600 ms MarkObjects: 4.777400 ms  DeleteObjects: 0.134800 ms)
+Unloading 506 unused Assets / (89.6 KB). Loaded Objects now: 1212.
+Memory consumption went from 190.4 MB to 190.3 MB.
+Total: 6.482800 ms (FindLiveObjects: 0.303800 ms CreateObjectMapping: 0.029400 ms MarkObjects: 5.760300 ms  DeleteObjects: 0.198800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-10-03T22:20:49.3742473Z
-  Time since last request: 353775.33699709997745 seconds.
-  importAddress: GUID: 4452e828993d4a4418e1710690b99e13 - Path: Assets/Twinsanity/Resources/BeachAudio/AkuAkuPickup.wav - Importer: PreviewImporter
-Importing 'GUID: 4452e828993d4a4418e1710690b99e13 - Path: Assets/Twinsanity/Resources/BeachAudio/AkuAkuPickup.wav - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: 4452e828993d4a4418e1710690b99e13' -> (Import Result ID: '66cc5f8495dded025d3aaae609af74bd') in 0.199 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9a0944d26c7614b64325fe520ac021fd DependenciesID=7b5d725797b0b4fef9f819d1f7131216 StaticDependenciesID=c5516f81fdb67e0bac801245fd422f9c 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (79.2 KB). Loaded Objects now: 1212.
+Memory consumption went from 190.8 MB to 190.7 MB.
+Total: 10.017200 ms (FindLiveObjects: 0.355200 ms CreateObjectMapping: 0.046500 ms MarkObjects: 9.251500 ms  DeleteObjects: 0.143300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-10-03T22:20:49.5779193Z
-  Time since last request: 0.0000641 seconds.
-  importAddress: GUID: 96c21fc261ef8bd4cb220610bf8877e8 - Path: Assets/Twinsanity/Resources/BeachAudio/Pickup.wav - Importer: PreviewImporter
-Importing 'GUID: 96c21fc261ef8bd4cb220610bf8877e8 - Path: Assets/Twinsanity/Resources/BeachAudio/Pickup.wav - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: 96c21fc261ef8bd4cb220610bf8877e8' -> (Import Result ID: '5f729aa1f07b6450fd2248260114f82b') in 0.022 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9d48ec6e3728e6e7c499da2b618cdc73 DependenciesID=efbd2179df699e6fd264d67181b40827 StaticDependenciesID=8594e5368c37cf09bf66c98e5df423ff 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.706 seconds
+Domain Reload Profiling: 1522ms
+	BeginReloadAssembly (347ms)
+		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (78ms)
+	LoadAllAssembliesAndSetupDomain (341ms)
+		LoadAssemblies (332ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (25ms)
+			BuildScriptInfoCaches (21ms)
+	FinalizeReload (708ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (204ms)
+			ProcessInitializeOnLoadAttributes (116ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (11ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (48.1 KB). Loaded Objects now: 1212.
+Memory consumption went from 190.8 MB to 190.8 MB.
+Total: 5.251000 ms (FindLiveObjects: 0.270700 ms CreateObjectMapping: 0.031400 ms MarkObjects: 4.650800 ms  DeleteObjects: 0.143200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-10-03T22:20:49.6027329Z
-  Time since last request: 0.0016497 seconds.
-  importAddress: GUID: 9966b51cd03836c4ab1dcc1a77202a55 - Path: Assets/Twinsanity/Resources/BeachAudio/Crash_Punch.wav - Importer: PreviewImporter
-Importing 'GUID: 9966b51cd03836c4ab1dcc1a77202a55 - Path: Assets/Twinsanity/Resources/BeachAudio/Crash_Punch.wav - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: 9966b51cd03836c4ab1dcc1a77202a55' -> (Import Result ID: '305a398e4c827ba76925dd16a8dd4ea0') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b434e0e928f5e87e73be1f03a48309e3 DependenciesID=982a2e694cdd35f674e55c346e6f8293 StaticDependenciesID=434663e8a16faf469c81f112aee1b716 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.552 seconds
+Domain Reload Profiling: 1253ms
+	BeginReloadAssembly (305ms)
+		DisableScriptedObjects (13ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (275ms)
+		LoadAssemblies (275ms)
+		TypeCache.Refresh (6ms)
+		AnalyzeDomain (2ms)
+	FinalizeReload (553ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (145ms)
+			ProcessInitializeOnLoadAttributes (115ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (141.8 KB). Loaded Objects now: 1212.
+Memory consumption went from 191.0 MB to 190.9 MB.
+Total: 5.111400 ms (FindLiveObjects: 0.328400 ms CreateObjectMapping: 0.037300 ms MarkObjects: 4.450300 ms  DeleteObjects: 0.137500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time of request: 2026-10-03T22:20:49.6165916Z
-  Time since last request: 0.0009596 seconds.
-  importAddress: GUID: cc429d48996b57d4ab0c3a1eec89359b - Path: Assets/Twinsanity/Resources/BeachAudio/Crash_Spin.wav - Importer: PreviewImporter
-Importing 'GUID: cc429d48996b57d4ab0c3a1eec89359b - Path: Assets/Twinsanity/Resources/BeachAudio/Crash_Spin.wav - Importer: PreviewImporter' with importer (PreviewImporter)
-Imported 'GUID: cc429d48996b57d4ab0c3a1eec89359b' -> (Import Result ID: '7a2567007407a970fdbd8555640cb41f') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=90ab219c96c0a35453605a3d243a7de8 DependenciesID=2091b77d37fa664028228e6361dfbdbb StaticDependenciesID=8bb252bbbcdde7435f393c9eedabc765 
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (127.1 KB). Loaded Objects now: 1212.
+Memory consumption went from 191.4 MB to 191.3 MB.
+Total: 9.255300 ms (FindLiveObjects: 0.468900 ms CreateObjectMapping: 0.098700 ms MarkObjects: 8.250100 ms  DeleteObjects: 0.233500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.792 seconds
+Domain Reload Profiling: 1666ms
+	BeginReloadAssembly (326ms)
+		DisableScriptedObjects (20ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (109ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (324ms)
+		TypeCache.Refresh (13ms)
+		AnalyzeDomain (30ms)
+			BuildScriptInfoCaches (27ms)
+	FinalizeReload (796ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			BeforeProcessingInitializeOnLoad (251ms)
+			ProcessInitializeOnLoadAttributes (150ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (13ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (129.1 KB). Loaded Objects now: 1212.
+Memory consumption went from 191.4 MB to 191.3 MB.
+Total: 6.390700 ms (FindLiveObjects: 0.349000 ms CreateObjectMapping: 0.045900 ms MarkObjects: 5.576200 ms  DeleteObjects: 0.212000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (111.4 KB). Loaded Objects now: 1212.
+Memory consumption went from 191.8 MB to 191.7 MB.
+Total: 5.088800 ms (FindLiveObjects: 0.328200 ms CreateObjectMapping: 0.034500 ms MarkObjects: 4.425900 ms  DeleteObjects: 0.143500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.684 seconds
+Domain Reload Profiling: 1540ms
+	BeginReloadAssembly (319ms)
+		DisableScriptedObjects (14ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (416ms)
+		LoadAssemblies (328ms)
+		TypeCache.Refresh (12ms)
+		AnalyzeDomain (32ms)
+			BuildScriptInfoCaches (29ms)
+	FinalizeReload (686ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (184ms)
+			ProcessInitializeOnLoadAttributes (139ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (11ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (107.5 KB). Loaded Objects now: 1212.
+Memory consumption went from 191.8 MB to 191.7 MB.
+Total: 6.574800 ms (FindLiveObjects: 0.296200 ms CreateObjectMapping: 0.028500 ms MarkObjects: 5.923800 ms  DeleteObjects: 0.143000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.607 seconds
+Domain Reload Profiling: 1334ms
+	BeginReloadAssembly (325ms)
+		DisableScriptedObjects (15ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (291ms)
+		LoadAssemblies (300ms)
+		TypeCache.Refresh (8ms)
+		AnalyzeDomain (3ms)
+	FinalizeReload (609ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (166ms)
+			ProcessInitializeOnLoadAttributes (118ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (11ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (115.3 KB). Loaded Objects now: 1212.
+Memory consumption went from 192.0 MB to 191.9 MB.
+Total: 5.168200 ms (FindLiveObjects: 0.345900 ms CreateObjectMapping: 0.102900 ms MarkObjects: 4.450000 ms  DeleteObjects: 0.118300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+[Licensing::Client] Successfully resolved entitlement details
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.849 seconds
+Domain Reload Profiling: 1673ms
+	BeginReloadAssembly (344ms)
+		DisableScriptedObjects (22ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (23ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (364ms)
+		LoadAssemblies (301ms)
+		TypeCache.Refresh (9ms)
+		AnalyzeDomain (26ms)
+			BuildScriptInfoCaches (23ms)
+	FinalizeReload (851ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (4ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (227ms)
+			ProcessInitializeOnLoadAttributes (146ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (17ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (87.0 KB). Loaded Objects now: 1212.
+Memory consumption went from 192.6 MB to 192.5 MB.
+Total: 8.604100 ms (FindLiveObjects: 0.373900 ms CreateObjectMapping: 0.060800 ms MarkObjects: 7.741100 ms  DeleteObjects: 0.212600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.650 seconds
+Domain Reload Profiling: 1484ms
+	BeginReloadAssembly (355ms)
+		DisableScriptedObjects (16ms)
+		CreateAndSetChildDomain (49ms)
+	RebuildCommonClasses (15ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (87ms)
+	LoadAllAssembliesAndSetupDomain (341ms)
+		LoadAssemblies (367ms)
+		TypeCache.Refresh (8ms)
+		AnalyzeDomain (2ms)
+	FinalizeReload (652ms)
+		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (178ms)
+			ProcessInitializeOnLoadAttributes (134ms)
+			ProcessInitializeOnLoadMethodAttributes (57ms)
+			AfterProcessingInitializeOnLoad (12ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (99.6 KB). Loaded Objects now: 1212.
+Memory consumption went from 193.5 MB to 193.4 MB.
+Total: 6.975400 ms (FindLiveObjects: 0.337100 ms CreateObjectMapping: 0.033300 ms MarkObjects: 6.284700 ms  DeleteObjects: 0.152000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1212.
+Memory consumption went from 193.6 MB to 193.6 MB.
+Total: 9.443000 ms (FindLiveObjects: 0.299200 ms CreateObjectMapping: 0.028600 ms MarkObjects: 8.868600 ms  DeleteObjects: 0.006900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Editor is closing down
 AcceleratorClientConnectionCallback - disconnected - :0
 AssetImportWorker is now disconnected from the server
 Process exiting

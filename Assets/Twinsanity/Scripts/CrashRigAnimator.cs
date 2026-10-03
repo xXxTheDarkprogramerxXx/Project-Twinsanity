@@ -25,6 +25,13 @@ public class CrashRigAnimator : MonoBehaviour
     public int landingClip = 6;
     public bool showBindPose;
     public string playingClip;
+    [Header("Facial Animation")]
+    public bool playFacialAnimations = true;
+    [SerializeField] private int facialRendererCount;
+    private readonly Dictionary<int, float[,]> facialClips = new Dictionary<int, float[,]>();
+    private readonly List<SkinnedMeshRenderer> facialRenderers = new List<SkinnedMeshRenderer>();
+    private int facialShapeCount;
+    private float[] faceWeights, faceBlendWeights;
 
     [Header("Idle Variations")]
     public bool playIdleVariations = true;
@@ -140,6 +147,7 @@ public class CrashRigAnimator : MonoBehaviour
         }
 
         LoadAnimations();
+        LoadFacialData();
         normalRenderers = GetComponentsInChildren<SkinnedMeshRenderer>(true);
         normalVisibility = new bool[normalRenderers.Length];
         for (int i = 0; i < normalRenderers.Length; i++) normalVisibility[i] = normalRenderers[i].enabled;
@@ -219,6 +227,7 @@ public class CrashRigAnimator : MonoBehaviour
         {
             SetSpinVisible(false);
             ApplyBindPose();
+            ClearFace();
             activeClip = -1;
             playingClip = "Bind pose";
             return;
@@ -232,6 +241,7 @@ public class CrashRigAnimator : MonoBehaviour
         if (desired == 3 && spinClip != null)
         {
             SetSpinVisible(true);
+            ClearFace();
             float spinFrame = previewClip >= 0 ? Mathf.Repeat(clipTime * spinClip.fps, spinClip.frameCount - 1) : Mathf.Clamp01(spinProgress) * (spinClip.frameCount - 1);
             if (previewClip >= 0 && previewFrame >= 0) spinFrame = Mathf.Clamp(previewFrame, 0, spinClip.frameCount - 1);
             int a = Mathf.FloorToInt(spinFrame), b = Mathf.Min(a + 1, spinClip.frameCount - 1);
@@ -255,6 +265,7 @@ public class CrashRigAnimator : MonoBehaviour
                 blendRotations[j] = joints[j].localRotation;
                 blendScales[j] = joints[j].localScale;
             }
+            if (faceWeights != null) Array.Copy(faceWeights, faceBlendWeights, faceWeights.Length);
             activeClip = desired;
             clipTime = 0f;
             blendTime = 0f;
@@ -283,6 +294,7 @@ public class CrashRigAnimator : MonoBehaviour
             joints[j].localRotation = Quaternion.Slerp(blendRotations[j], rotation, blend);
             joints[j].localScale = Vector3.Lerp(blendScales[j], scale, blend);
         }
+        ApplyFace(desired, frame, blend);
         playingClip = AnimationName(desired) + " / frame " + frame.ToString("F2");
     }
 
@@ -536,6 +548,134 @@ public class CrashRigAnimator : MonoBehaviour
             case 1625: return "Crash_IdleBoxing";
             default: return "Native clip " + id;
         }
+    }
+
+    private void LoadFacialData()
+    {
+        TextAsset shapes = Resources.Load<TextAsset>("Characters/CrashFaceShapes");
+        TextAsset timelines = Resources.Load<TextAsset>("Characters/CrashFacialAnimations");
+        if (shapes == null || timelines == null)
+        {
+            Debug.LogWarning("Facial resources missing: install CrashFaceShapes.bytes and CrashFacialAnimations.bytes.", this);
+            return;
+        }
+        // Facial failures must not stop the already working body animation.
+        try
+        {
+            SkinnedMeshRenderer[] candidates = GetComponentsInChildren<SkinnedMeshRenderer>(true);
+            HashSet<SkinnedMeshRenderer> used = new HashSet<SkinnedMeshRenderer>();
+            using (BinaryReader reader = new BinaryReader(new MemoryStream(shapes.bytes)))
+            {
+                if (new string(reader.ReadChars(4)) != "TLFS" || reader.ReadInt32() != 1) throw new InvalidDataException("Invalid facial shape resource.");
+                facialShapeCount = reader.ReadInt32();
+                int partCount = reader.ReadInt32();
+                if (facialShapeCount != 15 || partCount != 46) throw new InvalidDataException("Unexpected original Crash facial layout.");
+                for (int part = 0; part < partCount; part++)
+                {
+                    int partIndex = reader.ReadInt32(), vertexCount = reader.ReadInt32();
+                    if (vertexCount < 1 || vertexCount > 100000) throw new InvalidDataException("Invalid facial vertex count.");
+                    Vector3[] expected = new Vector3[vertexCount];
+                    for (int v = 0; v < vertexCount; v++) expected[v] = ReadVector(reader);
+                    SkinnedMeshRenderer renderer = null;
+                    foreach (SkinnedMeshRenderer candidate in candidates)
+                        if (!used.Contains(candidate) && candidate.name == "Game mesh " + partIndex && MatchesFaceMesh(candidate.sharedMesh, expected)) { renderer = candidate; break; }
+                    if (renderer == null)
+                        foreach (SkinnedMeshRenderer candidate in candidates)
+                            if (!used.Contains(candidate) && MatchesFaceMesh(candidate.sharedMesh, expected)) { renderer = candidate; break; }
+                    if (renderer != null)
+                    {
+                        // PrepareRig already made an owned copy of each native mesh.
+                        // Copy other meshes before adding morphs to avoid modifying assets.
+                        if (!ownedMeshes.Contains(renderer.sharedMesh))
+                        {
+                            renderer.sharedMesh = Instantiate(renderer.sharedMesh);
+                            ownedMeshes.Add(renderer.sharedMesh);
+                        }
+                        renderer.sharedMesh.ClearBlendShapes();
+                        used.Add(renderer);
+                        facialRenderers.Add(renderer);
+                    }
+                    for (int shape = 0; shape < facialShapeCount; shape++)
+                    {
+                        Vector3[] deltas = new Vector3[vertexCount];
+                        for (int v = 0; v < vertexCount; v++) deltas[v] = ReadVector(reader);
+                        if (renderer != null) renderer.sharedMesh.AddBlendShapeFrame("OriginalFace_" + shape.ToString("D2"), 100f, deltas, null, null);
+                    }
+                    if (renderer == null) Debug.LogWarning("Facial mesh part " + partIndex + " does not match the original vertex order; morphs skipped for that part.", this);
+                }
+                if (reader.BaseStream.Position != reader.BaseStream.Length) throw new InvalidDataException("Trailing facial shape bytes.");
+            }
+            using (BinaryReader reader = new BinaryReader(new MemoryStream(timelines.bytes)))
+            {
+                if (new string(reader.ReadChars(4)) != "TLFA" || reader.ReadInt32() != 1 || reader.ReadInt32() != facialShapeCount) throw new InvalidDataException("Invalid facial animation resource.");
+                int count = reader.ReadInt32();
+                if (count < 1 || count > 1000) throw new InvalidDataException("Invalid facial clip count.");
+                for (int c = 0; c < count; c++)
+                {
+                    int id = reader.ReadInt32(), frames = reader.ReadInt32();
+                    if (frames < 1 || frames > 10000) throw new InvalidDataException("Invalid facial frame count.");
+                    float[,] weights = new float[frames, facialShapeCount];
+                    for (int f = 0; f < frames; f++)
+                        for (int shape = 0; shape < facialShapeCount; shape++)
+                        {
+                            float value = reader.ReadSingle();
+                            if (!Finite(value)) throw new InvalidDataException("Invalid facial weight.");
+                            weights[f, shape] = value;
+                        }
+                    facialClips.Add(id, weights);
+                }
+                if (reader.BaseStream.Position != reader.BaseStream.Length) throw new InvalidDataException("Trailing facial animation bytes.");
+            }
+            faceWeights = new float[facialShapeCount];
+            faceBlendWeights = new float[facialShapeCount];
+            facialRendererCount = facialRenderers.Count;
+            Debug.Log("Crash facial animation loaded: " + facialShapeCount + " shapes, " + facialRendererCount + "/46 mesh parts, " + facialClips.Count + " facial clips.", this);
+        }
+        catch (Exception exception)
+        {
+            foreach (SkinnedMeshRenderer renderer in facialRenderers)
+                for (int shape = 0; shape < renderer.sharedMesh.blendShapeCount; shape++) renderer.SetBlendShapeWeight(shape, 0f);
+            facialClips.Clear();
+            facialRenderers.Clear();
+            facialRendererCount = 0;
+            faceWeights = null;
+            faceBlendWeights = null;
+            Debug.LogWarning("Facial animation could not load; body playback continues. " + exception.Message, this);
+        }
+    }
+
+    private static bool MatchesFaceMesh(Mesh mesh, Vector3[] expected)
+    {
+        if (mesh == null || !mesh.isReadable || mesh.vertexCount != expected.Length) return false;
+        Vector3[] actual = mesh.vertices;
+        for (int v = 0; v < actual.Length; v++)
+            if ((actual[v] - expected[v]).sqrMagnitude > 0.00000001f) return false;
+        return true;
+    }
+
+    private void ApplyFace(int clipId, float frame, float blend)
+    {
+        if (faceWeights == null) return;
+        if (!playFacialAnimations) { ClearFace(); return; }
+        facialClips.TryGetValue(clipId, out float[,] timeline);
+        float facialFrame = timeline == null ? 0f : Mathf.Clamp(frame, 0f, timeline.GetLength(0) - 1);
+        int from = Mathf.FloorToInt(facialFrame), to = timeline == null ? 0 : Mathf.Min(from + 1, timeline.GetLength(0) - 1);
+        for (int shape = 0; shape < facialShapeCount; shape++)
+        {
+            float value = timeline == null ? 0f : Mathf.Lerp(timeline[from, shape], timeline[to, shape], facialFrame - from);
+            // Original values can be negative or greater than one: preserve them.
+            faceWeights[shape] = Mathf.Lerp(faceBlendWeights[shape], value, blend);
+            foreach (SkinnedMeshRenderer renderer in facialRenderers) renderer.SetBlendShapeWeight(shape, faceWeights[shape] * 100f);
+        }
+    }
+
+    private void ClearFace()
+    {
+        if (faceWeights == null) return;
+        Array.Clear(faceWeights, 0, faceWeights.Length);
+        Array.Clear(faceBlendWeights, 0, faceBlendWeights.Length);
+        foreach (SkinnedMeshRenderer renderer in facialRenderers)
+            for (int shape = 0; shape < facialShapeCount; shape++) renderer.SetBlendShapeWeight(shape, 0f);
     }
 
     private void OnDestroy()

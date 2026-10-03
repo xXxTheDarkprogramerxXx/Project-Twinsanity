@@ -414,6 +414,9 @@ public class BeachLevelRuntime : MonoBehaviour
                     GameObject model = BuildItemModel(modelName, item.transform);
                     model.transform.localScale = Vector3.one * (crate ? 1.25f : kind == "Wumpa" ? 0.7f : 1f);
 
+
+
+
                     SphereCollider trigger = item.AddComponent<SphereCollider>();
                     trigger.isTrigger = true;
                     trigger.radius = crate ? 0.85f : 0.7f;
@@ -504,7 +507,7 @@ public class BeachLevelRuntime : MonoBehaviour
                 for (int v = 0; v < vertexCount; v++)
                 {
                     vertices[v] = new Vector3(reader.ReadSingle(), reader.ReadSingle(), reader.ReadSingle());
-                    uv[v] = new Vector2(reader.ReadSingle(), reader.ReadSingle());
+                    uv[v] = new Vector2(1f - reader.ReadSingle(), reader.ReadSingle());
                     colors[v] = new Color32(reader.ReadByte(), reader.ReadByte(), reader.ReadByte(), reader.ReadByte());
                 }
 
