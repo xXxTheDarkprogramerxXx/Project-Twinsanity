@@ -1,24 +1,23 @@
 
 Server arguments:
   --memory-size 1073741824
-  --shared-postfix b7bfd5c2baba467c437398379e56abe1
+  --shared-postfix c3461644d780cfe5a7dec9d3fcd3aebe
   --working-directory Library/DataStore
   --silent-console
   --shutdown-grace 0
   --client-process-check 0
-  --uds-log-file C:/Users/eonvw/Downloads/Twinsanity-Unity-Title-Screen (1)/Logs/UDS-Service.log
+  --uds-log-file C:/Users/eonvw/source/repos/Project-Twinsanity/Logs/UDS-Service.log
   --debug-log 2
   -name
   Unity.DataStore
 
 Initialising UDS system complete:
   - System type: Service
-  - Resource namespace: b7bfd5c2baba467c437398379e56abe1
+  - Resource namespace: c3461644d780cfe5a7dec9d3fcd3aebe
   - Shared memory size: 1073741824
   - Command buffer id: 1052576
   - Command buffer size: 8192
   - Hashmap size: 4194304
 Starting Unity Data Store Application
 Unity Data Store Application Complete
-[Warning] Shutting down service while there are still connected clients, client count = 3
 Shut down UDS service system complete

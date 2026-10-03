@@ -68,8 +68,11 @@
     <Compile Include="Assets\Twinsanity\Editor\TwinsanityLogoBuilder.cs" />
     <Compile Include="Assets\Twinsanity\Editor\ConfigureBeachScenes.cs" />
     <Compile Include="Assets\Twinsanity\Editor\BuildCrashModelPrefab.cs" />
+    <Compile Include="Assets\TwinsanityCharacter\Editor\CrashPoseTools.cs" />
+    <Compile Include="Assets\TwinsanityCharacter\Editor\RepairCrashMaterials.cs" />
     <Compile Include="Assets\Twinsanity\Editor\BakeEditableBeachScene.cs" />
     <Compile Include="Assets\Twinsanity\Editor\BuildCrashPlayerPrefab.cs" />
+    <Compile Include="Assets\TwinsanityCharacter\Editor\BuildEditableCrash.cs" />
     <Compile Include="Assets\Twinsanity\Editor\TwinsanityTitleBuilder.cs" />
   </ItemGroup>
   <ItemGroup>

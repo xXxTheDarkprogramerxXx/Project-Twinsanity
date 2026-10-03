@@ -462,6 +462,9 @@
 "Assets/Twinsanity/Editor/ConfigureBeachScenes.cs"
 "Assets/Twinsanity/Editor/TwinsanityLogoBuilder.cs"
 "Assets/Twinsanity/Editor/TwinsanityTitleBuilder.cs"
+"Assets/TwinsanityCharacter/Editor/BuildEditableCrash.cs"
+"Assets/TwinsanityCharacter/Editor/CrashPoseTools.cs"
+"Assets/TwinsanityCharacter/Editor/RepairCrashMaterials.cs"
 -langversion:9.0
 /deterministic
 /optimize-

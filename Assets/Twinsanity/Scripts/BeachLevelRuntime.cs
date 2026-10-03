@@ -137,7 +137,7 @@ public class BeachLevelRuntime : MonoBehaviour
         crateSound = Resources.Load<AudioClip>("BeachAudio/CrateBreak");
         pickupSound = Resources.Load<AudioClip>("BeachAudio/Pickup");
         explosionSound = Resources.Load<AudioClip>("BeachAudio/Explosion");
-        spinSound = Resources.Load<AudioClip>("BeachAudio/Spin");
+        spinSound = Resources.Load<AudioClip>("BeachAudio/Crash_Spin");
         akuPickupSound = Resources.Load<AudioClip>("BeachAudio/AkuAkuPickup");
         checkpointSound = Resources.Load<AudioClip>("BeachAudio/Checkpoint");
 

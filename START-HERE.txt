@@ -1,0 +1,77 @@
+FIXING MISSING POLYGONS IN YOUR EXISTING GENERATED CRASH
+Copy this updated Assets folder over the previous package files.
+Wait for Unity to compile, then click Tools > Project Twinsanity > Repair Crash Materials.
+You do not need to rebuild the character. This updates only the generated character materials.
+
+CRASH EDITABLE CHARACTER PACKAGE
+
+INSTALL IN YOUR UNITY PROJECT
+1. Extract this ZIP using Windows Explorer > Extract All.
+2. Copy its Assets/TwinsanityCharacter folder into your project's Assets folder.
+3. Wait for Unity to finish importing/compiling.
+4. Click Tools > Project Twinsanity > Create Editable Crash Package.
+5. In the new Generated folder, open CrashCharacterTest.unity and press Play.
+
+THE SETUP CREATES SAVED, EDITABLE UNITY ASSETS
+CrashPlayer.prefab; 47 Mesh assets; three Materials; 11 AnimationClips;
+Crash.controller with idle/walk/run blending and action transitions;
+CrashCharacterTest.unity with the player, camera, ground, ramp and light.
+The scene contains real saved objects. The mesh/skeleton is not rebuilt at runtime.
+Each setup run creates a new Generated folder, preserving previous manually edited assets.
+Your open scene is not replaced during setup.
+
+CONTROLS
+WASD / arrows: move and run
+Hold Left Alt: walk
+Space: jump; press again in the air: double jump
+J or left click: spin
+C / Left Ctrl: crouch
+Left Shift: slide
+Hold right mouse and move: orbit the camera
+
+EDIT THROUGH THE UI
+Double-click CrashPlayer.prefab to open Prefab Mode.
+Expand Visual > Root > Hips to find the named bones.
+Use the Rotate tool to pose a selected bone.
+Open Window > Animation > Animation to inspect or modify the saved clips.
+Open Window > Animation > Animator to change blending and transitions.
+Open Tools > Project Twinsanity > Crash Pose Tools, assign Visual's Animator,
+choose an arm or leg, and drag the Scene-view target to pose with two-bone IK.
+Use Animation-window recording to turn your pose edits into animation keys.
+The IK tool is for editing poses; it does not implement runtime foot IK.
+
+BLENDER
+File > Import > glTF 2.0 > Blender/Crash_Animated.glb.
+The file contains an editable deform armature, textures and 11 animation tracks.
+Use Pose Mode and the Animation workspace to edit it; export FBX through Blender
+if you prefer Blender-authored assets. No Blender Python script needs to be run.
+There is no Rigify control rig or pre-generated .blend in this package.
+
+ADDING TO THE BEACH
+Use the new CrashPlayer.prefab in your editable level after testing.
+Set the player above the floor; the level needs collision meshes/colliders.
+Use one active player controller and one gameplay camera.
+This package is a standalone character replacement. The existing beach crate,
+checkpoint and Aku Aku systems are not wired to it automatically: they reference
+previous player/runtime types. UnityEvents on the player expose spin, jump,
+double jump and landing, and the IsAttacking property supports integration.
+Optional sound fields are editable in the Inspector. Only Spin has a supplied
+sound assigned; jump and landing clips were not identified reliably.
+
+WHAT WAS CHANGED
+The source mesh vertices were about half a unit below their saved joint locations.
+The skeleton was translated down 0.5 Y to align the limbs to the mesh; then both
+were raised together so the rest mesh stands at Y=0. Original vertex weights
+were normalized and retained. New bind matrices and named bone axes were built.
+11 NEW animations were authored: Idle, Walk, Run, Spin, Jump, Apex, Fall, Land,
+DoubleJump, Crouch and Slide. These are not the original game's recovered clips,
+and are not claimed to match Twinsanity's exact timing/style.
+
+VERIFICATION
+Every authored pose was skinned offline. Loop endpoints, unit quaternions,
+finite values, hierarchy paths and grounded mesh heights were checked.
+The GLB container and animation references were checked. ZIP CRC was checked.
+Unity and Blender editors are unavailable here: editor compilation, scene
+execution and interactive import remain unverified. The preview is an offline
+pose render, not a Unity screenshot. An opaque double-sided unlit texture shader is used;
+PS2 shader appearance and exact colors can need adjustment in your project.

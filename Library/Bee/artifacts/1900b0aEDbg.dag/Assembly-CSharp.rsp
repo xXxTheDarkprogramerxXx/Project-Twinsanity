@@ -457,6 +457,8 @@
 "Assets/Twinsanity/Scripts/TwinsanityNativeIntro.cs"
 "Assets/Twinsanity/Scripts/TwinsanitySceneryRuntime.cs"
 "Assets/Twinsanity/Scripts/TwinsanityTitleScreen.cs"
+"Assets/TwinsanityCharacter/Scripts/EditableCrashCamera.cs"
+"Assets/TwinsanityCharacter/Scripts/EditableCrashPlayer.cs"
 -langversion:9.0
 /deterministic
 /optimize-

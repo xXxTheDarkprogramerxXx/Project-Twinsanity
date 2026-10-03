@@ -1,21 +1,21 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw" at "2026-10-03T21:14:16.2494487Z"
 Built from '6000.6/staging' branch; Version is '6000.6.3f1 (45d8eee7de74) revision 4577518'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw" at "2026-09-30T08:12:35.7305991Z"
 OS: 'Windows 11  (10.0.26100) CoreSingleLanguage' Language: 'en' Physical Memory: 32506 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-09-30T08:12:35Z
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 46504, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+Date: 2026-10-03T21:14:16Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 758392, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.3+d7ffd15
-  Session Id:              1ecf74bd78e94f1cafa2660223e0ed26
-  Correlation Id:          ed68eea77a6dacde98dffb721a3ca9b1
-  External correlation Id: 8754422522854323445
+  Session Id:              af723a6f142449fcb7573db75978f5c4
+  Correlation Id:          a5ae695d69d203898fbcfacc6c3d1b03
+  External correlation Id: 610913957394990272
   Machine Id:              HJKSOXajvVm0mGT1RtspIzejp2w=
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eonvw" (connect: 0.00s, validation: 0.00s, handshake: 0.07s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw-notifications" at "2026-09-30T08:12:35.7994999Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eonvw-notifications" at "2026-10-03T21:14:16.3202927Z"
 [Licensing::Module] Licensing Background thread has ended after 0.07s
 
 COMMAND LINE ARGUMENTS:
@@ -30,9 +30,9 @@ C:/Users/eonvw/source/repos/Project-Twinsanity
 -logFile
 Logs/AssetImportWorkerHW0.log
 -srvPort
-61700
+61639
 -parentPid
-74332
+759148
 -analyticsCloudUserId
 anonymous
 -analyticsLocalProjectId
@@ -94,14 +94,12 @@ C:/Users/eonvw/source/repos/Project-Twinsanity
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-Player connection [59916]  Target information:
+Player connection [755736]  Target information:
 
-Player connection [59916]  * "[IP] 192.168.3.7 [Port] 0 [Flags] 2 [Guid] 4150139327 [EditorId] 4150139327 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [755736]  * "[IP] 192.168.3.7 [Port] 0 [Flags] 2 [Guid] 1944750174 [EditorId] 1944750174 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [59916]  * "[IP] 10.185.89.24 [Port] 0 [Flags] 2 [Guid] 4150139327 [EditorId] 4150139327 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-1I15P7FG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [59916] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [59916] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [755736] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [755736] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -141,13 +139,13 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/Managed
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
 Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
 CodeReloadManager initialized
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003202 seconds.
+Registered in 0.003469 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -156,23 +154,24 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.565 seconds
-Domain Reload Profiling: 1236ms
-	BeginReloadAssembly (166ms)
+- Finished resetting the current domain, in  0.685 seconds
+Domain Reload Profiling: 1519ms
+	BeginReloadAssembly (204ms)
 	RebuildCommonClasses (6ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (83ms)
-	LoadAllAssembliesAndSetupDomain (395ms)
-		LoadAssemblies (162ms)
-		TypeCache.Refresh (274ms)
-			TypeCache.ScanAssembly (255ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (502ms)
+		LoadAssemblies (198ms)
+		TypeCache.Refresh (350ms)
+			TypeCache.ScanAssembly (324ms)
 		AnalyzeDomain (1ms)
-	FinalizeReload (566ms)
+	FinalizeReload (686ms)
 		SetupLoadedEditorAssemblies (0ms)
+			LogAssemblyErrors (3ms)
 			InitializePlatformSupportModulesInManaged (4ms)
-			BeforeProcessingInitializeOnLoad (127ms)
-			ProcessInitializeOnLoadAttributes (125ms)
-			ProcessInitializeOnLoadMethodAttributes (218ms)
+			BeforeProcessingInitializeOnLoad (160ms)
+			ProcessInitializeOnLoadAttributes (146ms)
+			ProcessInitializeOnLoadMethodAttributes (264ms)
 Initializing Unity extensions:
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -191,94 +190,917 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.543 seconds
-Domain Reload Profiling: 1148ms
-	BeginReloadAssembly (247ms)
-		DisableScriptedObjects (10ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (10ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (271ms)
-		LoadAssemblies (229ms)
-		TypeCache.Refresh (21ms)
-			TypeCache.ScanAssembly (11ms)
-		AnalyzeDomain (10ms)
-			BuildScriptInfoCaches (8ms)
-	FinalizeReload (544ms)
+- Finished resetting the current domain, in  0.484 seconds
+Domain Reload Profiling: 1206ms
+	BeginReloadAssembly (319ms)
+		DisableScriptedObjects (12ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (13ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (293ms)
+		TypeCache.Refresh (24ms)
+			TypeCache.ScanAssembly (13ms)
+		AnalyzeDomain (9ms)
+			BuildScriptInfoCaches (7ms)
+	FinalizeReload (485ms)
 		SetupLoadedEditorAssemblies (0ms)
-			LogAssemblyErrors (3ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (134ms)
-			ProcessInitializeOnLoadAttributes (113ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (12ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+			BeforeProcessingInitializeOnLoad (128ms)
+			ProcessInitializeOnLoadAttributes (91ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
+			AfterProcessingInitializeOnLoad (9ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 AcceleratorClientConnectionCallback - disconnected - :0
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 503 unused Assets / (152.7 KB). Loaded Objects now: 1205.
-Memory consumption went from 190.4 MB to 190.3 MB.
-Total: 4.991600 ms (FindLiveObjects: 0.295400 ms CreateObjectMapping: 0.047100 ms MarkObjects: 4.261700 ms  DeleteObjects: 0.233300 ms)
+Unloading 508 unused Assets / (184.8 KB). Loaded Objects now: 1211.
+Memory consumption went from 190.4 MB to 190.2 MB.
+Total: 4.899900 ms (FindLiveObjects: 0.230500 ms CreateObjectMapping: 0.026900 ms MarkObjects: 4.197700 ms  DeleteObjects: 0.261700 ms)
 
 ========================================================================
 Received Prepare
 AcceleratorClientConnectionCallback - disconnected - :0
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 0 unused Assets / (Unknown). Loaded Objects now: 1205.
+Unloading 0 unused Assets / (0 B). Loaded Objects now: 1211.
 Memory consumption went from 189.5 MB to 189.5 MB.
-Total: 6.963400 ms (FindLiveObjects: 0.239300 ms CreateObjectMapping: 0.011900 ms MarkObjects: 6.538700 ms  DeleteObjects: 0.005900 ms)
+Total: 5.227500 ms (FindLiveObjects: 0.216800 ms CreateObjectMapping: 0.017700 ms MarkObjects: 4.832500 ms  DeleteObjects: 0.005600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time of request: 2026-09-30T08:16:15.963938Z
-  Time since last request: 43855.09493649999786 seconds.
-  importAddress: GUID: bef55a9e49cc47459a9d099ebf0ca2a3 - Path: Assets/Twinsanity/Scripts/CrashRigAnimator.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
-Importing 'GUID: bef55a9e49cc47459a9d099ebf0ca2a3 - Path: Assets/Twinsanity/Scripts/CrashRigAnimator.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
-Imported 'GUID: bef55a9e49cc47459a9d099ebf0ca2a3' -> (Import Result ID: '223166d8c49c197c73fbb625ed81101f') in 0.131 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c32c76201cd1da54f2117a3d6138ed6c DependenciesID=95c90d029574080982f6a5ff9f770223 StaticDependenciesID=cdc951be70745e4ed85f372aae98db96 
+  Time of request: 2026-10-03T21:14:35.7870621Z
+  Time since last request: 349801.74981180002214 seconds.
+  importAddress: GUID: 4043e23093b7cd24389ba3c2c1593e90 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_23.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 4043e23093b7cd24389ba3c2c1593e90 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_23.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 4043e23093b7cd24389ba3c2c1593e90' -> (Import Result ID: '2f3df01b6bcc7035bcde1291846f6255') in 0.120 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=b532ae2a6cdff5f77aceff24bdfbd17a DependenciesID=2c83a86608af1ef0fa13df186e565e35 StaticDependenciesID=aad5261c03179581dc6032e933884072 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:35.9226735Z
+  Time since last request: 0.01267 seconds.
+  importAddress: GUID: cd98d150d0e4577aab13d6174b584156 - Path: Assets/TwinsanityCharacter/Scripts/EditableCrashCamera.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: cd98d150d0e4577aab13d6174b584156 - Path: Assets/TwinsanityCharacter/Scripts/EditableCrashCamera.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: cd98d150d0e4577aab13d6174b584156' -> (Import Result ID: '48635145f8ae6a49c3b7fa481e9dae7a') in 0.025 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1ddd5107008ab1404e480f79dbf5c18c DependenciesID=da853cec48b24995e7ec0dcc68cc2fb0 StaticDependenciesID=2a5bdf92067c2b2c2334796dcad5c8c5 
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-AcceleratorClientConnectionCallback - disconnected - :0
-[Licensing::Client] Successfully resolved entitlement details
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Scripting: successfully reloaded assembly
-- Finished resetting the current domain, in  0.631 seconds
-Domain Reload Profiling: 1385ms
-	BeginReloadAssembly (326ms)
-		DisableScriptedObjects (14ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (13ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (314ms)
-		LoadAssemblies (264ms)
-		TypeCache.Refresh (5ms)
-		AnalyzeDomain (5ms)
-	FinalizeReload (632ms)
-		SetupLoadedEditorAssemblies (0ms)
-			LogAssemblyErrors (4ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			BeforeProcessingInitializeOnLoad (155ms)
-			ProcessInitializeOnLoadAttributes (97ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
-			AfterProcessingInitializeOnLoad (10ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 501 unused Assets / (55.8 KB). Loaded Objects now: 1207.
-Memory consumption went from 190.5 MB to 190.4 MB.
-Total: 4.452600 ms (FindLiveObjects: 0.236600 ms CreateObjectMapping: 0.026000 ms MarkObjects: 3.919300 ms  DeleteObjects: 0.119100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-Editor requested this worker to shutdown with reason: Editor is closing down
+Received Import Request.
+  Time of request: 2026-10-03T21:14:35.9490563Z
+  Time since last request: 0.0008072 seconds.
+  importAddress: GUID: a7b0cbc1f373e1243ab40704455ed2db - Path: Assets/TwinsanityCharacter/Generated/Materials/0B75575C.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: a7b0cbc1f373e1243ab40704455ed2db - Path: Assets/TwinsanityCharacter/Generated/Materials/0B75575C.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: a7b0cbc1f373e1243ab40704455ed2db' -> (Import Result ID: '6d1e9b2a5c94d1edf4f47174e5a3aceb') in 0.031 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=35f262067bc1fb3ce25650c09b5867b5 DependenciesID=b57f410beea90e51164bb233f717d382 StaticDependenciesID=e26e1ede87374c99aa8a0fafa0e09d2c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:35.9817268Z
+  Time since last request: 0.0006943 seconds.
+  importAddress: GUID: 21fd617c92cce5a40b344f496faf9dba - Path: Assets/TwinsanityCharacter/Editor - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 21fd617c92cce5a40b344f496faf9dba - Path: Assets/TwinsanityCharacter/Editor - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 21fd617c92cce5a40b344f496faf9dba' -> (Import Result ID: '540562304ade1ac6fa6cb95db98748bf') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=44244a3f6ac22bf153757f44d9b90dcf DependenciesID=70060b46309995334b942ccb2df84d3a StaticDependenciesID=565b49f3c3f6ac2ab1238708069759b0 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:35.9889488Z
+  Time since last request: 0.0005493 seconds.
+  importAddress: GUID: 98dd7f2eb98182743b779781b901d5c8 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_27.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 98dd7f2eb98182743b779781b901d5c8 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_27.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 98dd7f2eb98182743b779781b901d5c8' -> (Import Result ID: '2a968caa2ea24dec11a5ec800734da8a') in 0.012 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1269800416a143b2690a332b383dafe3 DependenciesID=a55d1fb70431821c586fb6a5d488c4cb StaticDependenciesID=44f764f90d92306e972ae42a94596e00 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0024098Z
+  Time since last request: 0.0005998 seconds.
+  importAddress: GUID: f5e69c33261419b49b48e115b3cb08fd - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_18.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f5e69c33261419b49b48e115b3cb08fd - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_18.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f5e69c33261419b49b48e115b3cb08fd' -> (Import Result ID: '851fabb9545259204347768d338de125') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f7f7688c009d2fe66d17c6739106e70a DependenciesID=d4b3a1c0a02345eed07f0cf82acac85d StaticDependenciesID=6bf528ac0a06e4f9a3eb1cf24f45f8f5 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0096051Z
+  Time since last request: 0.0006671 seconds.
+  importAddress: GUID: 0ee835d53d5e6974a9b16f7e3497f097 - Path: Assets/Twinsanity/Scripts/TwinsanityLogoRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 0ee835d53d5e6974a9b16f7e3497f097 - Path: Assets/Twinsanity/Scripts/TwinsanityLogoRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 0ee835d53d5e6974a9b16f7e3497f097' -> (Import Result ID: '7ece5d3154ebee21669391fd0c004143') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=792ba4436370bb7509170f9e25d82bd1 DependenciesID=25ca96096f2cedbbd544f04e6e1626ee StaticDependenciesID=4a57c4058d07d57968b1123090db1391 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0149929Z
+  Time since last request: 0.0005756 seconds.
+  importAddress: GUID: aa65965da42f9c84ebb1ff6b41c82fe6 - Path: Assets/TwinsanityCharacter/Generated/Meshes - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: aa65965da42f9c84ebb1ff6b41c82fe6 - Path: Assets/TwinsanityCharacter/Generated/Meshes - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: aa65965da42f9c84ebb1ff6b41c82fe6' -> (Import Result ID: '0dcfc1ed1e39de00e820266e570788fc') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd97993843a05b9df54a36c557f42f8e DependenciesID=bd8148fa7f1a07e914d7c02fb07f485f StaticDependenciesID=ed6c277c829b0791f8c60c567bbc8775 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0194596Z
+  Time since last request: 0.0006827 seconds.
+  importAddress: GUID: a08971a261c82fef3d07db909e6d000f - Path: Assets/TwinsanityCharacter/Editor/BuildEditableCrash.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: a08971a261c82fef3d07db909e6d000f - Path: Assets/TwinsanityCharacter/Editor/BuildEditableCrash.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: a08971a261c82fef3d07db909e6d000f' -> (Import Result ID: 'ea9f77320a45a733aca74eba6e6b3a5b') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd34dbd2f188d7443b6368c37b75b8ac DependenciesID=59f9dba5c6ac205bad8526eacb7df301 StaticDependenciesID=2a5b25f9a7eb8e4776b755c1043c0d51 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.024523Z
+  Time since last request: 0.0007562 seconds.
+  importAddress: GUID: 1fb280c188021d348aa1f39dbf375a43 - Path: Assets/TwinsanityCharacter/Source - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1fb280c188021d348aa1f39dbf375a43 - Path: Assets/TwinsanityCharacter/Source - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1fb280c188021d348aa1f39dbf375a43' -> (Import Result ID: 'e89e7397fff06b9fc009384517329f4c') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5eb00a9ee8992f20b48b3f0bb182c596 DependenciesID=8dd97ae3a025ffb3fa011bd1a9d838e4 StaticDependenciesID=c48e5ff8b49f2c9fd24d309c0a8c9165 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0284109Z
+  Time since last request: 0.0004809 seconds.
+  importAddress: GUID: 1d40e601dac60c84d8f1283b584837b0 - Path: Assets/TwinsanityCharacter/Source/RigDefinition.json - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1d40e601dac60c84d8f1283b584837b0 - Path: Assets/TwinsanityCharacter/Source/RigDefinition.json - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1d40e601dac60c84d8f1283b584837b0' -> (Import Result ID: 'c8955070ccf39c8efa393d723ab00295') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2434ae3d84325b97d27e4b9eb7ea0f64 DependenciesID=55dc3fda7856bb3d6093a2143717e87b StaticDependenciesID=02c9427e39091c96b23bff732ea3332f 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0327898Z
+  Time since last request: 0.0005641 seconds.
+  importAddress: GUID: 9220276eb5f339d41bd28522b08896f1 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_19.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 9220276eb5f339d41bd28522b08896f1 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_19.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 9220276eb5f339d41bd28522b08896f1' -> (Import Result ID: '49e2093868c26d6ae02c85a7a1ce074c') in 0.010 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=43fbf9d2569782490e75dff0b2d99fde DependenciesID=bc8e4a7dde1f92201c4d8ad482ab2270 StaticDependenciesID=7355113c3f5b196db0d1bf0486d2599a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0432458Z
+  Time since last request: 0.0005366 seconds.
+  importAddress: GUID: c37d3050023c777419caf6bc5de4b6be - Path: Assets/TwinsanityCharacter/Scripts - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: c37d3050023c777419caf6bc5de4b6be - Path: Assets/TwinsanityCharacter/Scripts - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: c37d3050023c777419caf6bc5de4b6be' -> (Import Result ID: 'abdee4cb9a33a9180e7eda430b64bd53') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8608279095174f05ba9feccdca816d59 DependenciesID=21a9830d4e21a10e92622dd48ec409d6 StaticDependenciesID=ca9fc7fee69f5566708d4d00b7ce9a1d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0478141Z
+  Time since last request: 0.0004654 seconds.
+  importAddress: GUID: a665c5a38c63bd24c8b9eb3883a2ac0e - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_1.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: a665c5a38c63bd24c8b9eb3883a2ac0e - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_1.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: a665c5a38c63bd24c8b9eb3883a2ac0e' -> (Import Result ID: 'c168fe7f5b342f8cb4fa54a2515eb173') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=718b1f1e061821e71400f9643f4e98c0 DependenciesID=855a40d827ce94147b6ddabced56b4f2 StaticDependenciesID=4300734b9d3ba86bdaa3ab8af0a1de0e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0540239Z
+  Time since last request: 0.0006182 seconds.
+  importAddress: GUID: d82f5b23d8565e944bb92ed2c6b03061 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_8.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: d82f5b23d8565e944bb92ed2c6b03061 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_8.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: d82f5b23d8565e944bb92ed2c6b03061' -> (Import Result ID: '365cb5590153624fa44dd472a111614e') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8ae579ae532fae2fa3a20f5a79859a91 DependenciesID=5edf863cf6572b840146bcbc03324060 StaticDependenciesID=73f4b5bfe9f509f3b7dd49f835ed5655 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0604276Z
+  Time since last request: 0.0007193 seconds.
+  importAddress: GUID: 3a59050bb0f3d0b478299013eae5c316 - Path: Assets/TwinsanityCharacter/Generated/Materials - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3a59050bb0f3d0b478299013eae5c316 - Path: Assets/TwinsanityCharacter/Generated/Materials - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3a59050bb0f3d0b478299013eae5c316' -> (Import Result ID: 'a40eb5af71fb3209903c85ee3fd3afec') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fe2b43706645f0a31bb8e596196470fa DependenciesID=dc674d81c5e3a6cf16a1103a58503117 StaticDependenciesID=ffd2b635bcbcabcf37178ff8bb38b2c8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0643229Z
+  Time since last request: 0.0006645 seconds.
+  importAddress: GUID: 20289e0648230a4409840da9a13e5008 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_14.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 20289e0648230a4409840da9a13e5008 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_14.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 20289e0648230a4409840da9a13e5008' -> (Import Result ID: '40cd3c9eed3c4c5f1aad084fe2a316e9') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a149a0bc6c56697cab3ace847cc560a2 DependenciesID=0aba69dc498f5a7ce067b4e5ca9c7813 StaticDependenciesID=3b29c8e754d4ac7ce76923950850e077 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0711173Z
+  Time since last request: 0.0007639 seconds.
+  importAddress: GUID: b0992f0dc5168434e932e3dce6013e76 - Path: Assets/TwinsanityCharacter/Generated/Materials/F5B122D7.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b0992f0dc5168434e932e3dce6013e76 - Path: Assets/TwinsanityCharacter/Generated/Materials/F5B122D7.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b0992f0dc5168434e932e3dce6013e76' -> (Import Result ID: '1f602e633735a0a22306ec33b8f24c9e') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2fa8a29db6c3b104b1f23e138abca19 DependenciesID=bd89e0fea87402c51a55ee8889202603 StaticDependenciesID=5076d627dec50626286df400d4bb5703 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0793248Z
+  Time since last request: 0.0005675 seconds.
+  importAddress: GUID: 7441d1d7a9550c04cb997ac7a720e7f2 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_22.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 7441d1d7a9550c04cb997ac7a720e7f2 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_22.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 7441d1d7a9550c04cb997ac7a720e7f2' -> (Import Result ID: 'd65205f30e58f3b31a5ac9f4f2685046') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d4d82b1375cf72407a49db01d613d35a DependenciesID=abf4c5602ffd92f4eaa0e8b471c55930 StaticDependenciesID=c3a8b7cf9deeedca87a945859f95568d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0859387Z
+  Time since last request: 0.000673 seconds.
+  importAddress: GUID: a5cce5cefd3b18842a17d5373a19a0cb - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_30.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: a5cce5cefd3b18842a17d5373a19a0cb - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_30.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: a5cce5cefd3b18842a17d5373a19a0cb' -> (Import Result ID: '00fc3cc29d9048ce0d95fb4a05669f3a') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d36f13255175e4919309d1c3d87a9821 DependenciesID=747eda35b3c4df4060f6807513ce10c0 StaticDependenciesID=24f667a9be000406a563ceab4d38a52d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0933313Z
+  Time since last request: 0.0005763 seconds.
+  importAddress: GUID: f766d2c6a98b117c66ef71b9e9014722 - Path: Assets/TwinsanityCharacter/Editor/CrashPoseTools.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f766d2c6a98b117c66ef71b9e9014722 - Path: Assets/TwinsanityCharacter/Editor/CrashPoseTools.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f766d2c6a98b117c66ef71b9e9014722' -> (Import Result ID: 'f6cbfa57820e9b3efb622d2efa3296d8') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0ed388a8295b8157a45c555ee0e3abd0 DependenciesID=e612d8011321a968130d5ee1c254498e StaticDependenciesID=484d587ebc44ce78b35a189ba3ef372e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.0980774Z
+  Time since last request: 0.000629 seconds.
+  importAddress: GUID: 9fff07654c97a9f4100a7eb4722fcca2 - Path: Assets/TwinsanityCharacter/Scripts/EditableCrashPlayer.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 9fff07654c97a9f4100a7eb4722fcca2 - Path: Assets/TwinsanityCharacter/Scripts/EditableCrashPlayer.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 9fff07654c97a9f4100a7eb4722fcca2' -> (Import Result ID: 'e89690f9db91ee1e5764ee84442effd6') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0be6723f8045b595ce945109926e460c DependenciesID=97b343707c879fb9b53a46f2d4c54046 StaticDependenciesID=c56625d1e96702052828630f1d7773fd 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1031964Z
+  Time since last request: 0.0005073 seconds.
+  importAddress: GUID: f2a101644fcba654a8239f935c9bf576 - Path: Assets/TwinsanityCharacter - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f2a101644fcba654a8239f935c9bf576 - Path: Assets/TwinsanityCharacter - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f2a101644fcba654a8239f935c9bf576' -> (Import Result ID: '7da2ce174f37f38c0db7a9767025de37') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c708109af5bc7fade4d6e1c6afee6163 DependenciesID=40c3c788932fcff8c8a124dc0225a56a StaticDependenciesID=b083390bde0ad185d2ecb84ae6a4baa4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1077839Z
+  Time since last request: 0.0005935 seconds.
+  importAddress: GUID: 877a73eb4016c2d4ca950cddfcfae1fb - Path: Assets/Twinsanity/Scripts/TwinsanityCharacterRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 877a73eb4016c2d4ca950cddfcfae1fb - Path: Assets/Twinsanity/Scripts/TwinsanityCharacterRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 877a73eb4016c2d4ca950cddfcfae1fb' -> (Import Result ID: '55a23d6ccb4c7da9022a9ef4bbb84158') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f79c63cb04c1bec84e96831e38e9f0f DependenciesID=03e225fff4b2f466c54edadd91f40455 StaticDependenciesID=de16a0f9bfd015cb3aa9ac9af3a9b958 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1131437Z
+  Time since last request: 0.0005735 seconds.
+  importAddress: GUID: 1c9383cec8ea2b047b3cf6c272e72065 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_13.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1c9383cec8ea2b047b3cf6c272e72065 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_13.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1c9383cec8ea2b047b3cf6c272e72065' -> (Import Result ID: 'e9995b9ad3daad25b7ec3f19149678f7') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=294fd54a54c76b42b1980edefe11e74d DependenciesID=ddd3be4b3b5ab623c893d1d24f7728ba StaticDependenciesID=63e413cf9852774344ed3151c003e5a6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1197218Z
+  Time since last request: 0.0004939 seconds.
+  importAddress: GUID: 384b6212e86b8db479f33e1f383fb295 - Path: Assets/TwinsanityCharacter/Audio/Crash_Spin.wav - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 384b6212e86b8db479f33e1f383fb295 - Path: Assets/TwinsanityCharacter/Audio/Crash_Spin.wav - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 384b6212e86b8db479f33e1f383fb295' -> (Import Result ID: '49d88acbbf39bffed18df810db460fcf') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a4d5b746eda2e21a867d88fd7d3b55e3 DependenciesID=d07cfd131efb5a4ea94e7d402ccacfad StaticDependenciesID=b1515214f1a29563eb925695808762cd 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1350248Z
+  Time since last request: 0.0007256 seconds.
+  importAddress: GUID: c8baa83ccc9be2c4f82daec71f66777f - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_15.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: c8baa83ccc9be2c4f82daec71f66777f - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_15.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: c8baa83ccc9be2c4f82daec71f66777f' -> (Import Result ID: '963e72238b3f83aca6a4eaa7906c910b') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1b0c93d1c22b0dd81692e14742bfecdd DependenciesID=0f3e220bb6ed0f32580e3d58ade1c331 StaticDependenciesID=08ed1a5bf93d35905868f88341b1a4d2 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1416552Z
+  Time since last request: 0.000603 seconds.
+  importAddress: GUID: f70174106d90541419b10ad708bc83d2 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_3.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f70174106d90541419b10ad708bc83d2 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_3.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f70174106d90541419b10ad708bc83d2' -> (Import Result ID: 'd0514a017af30065c5a54d6e37037752') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2f43294ab0c21ae4e4f5b5c9548f17cd DependenciesID=044bb66d2fc23719fdd2844aade3afbb StaticDependenciesID=56d8aa234360bc1d41fa04a1c7fc4c43 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1486158Z
+  Time since last request: 0.0006584 seconds.
+  importAddress: GUID: 081de2a032168cf44a924141e60e4bcc - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_21.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 081de2a032168cf44a924141e60e4bcc - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_21.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 081de2a032168cf44a924141e60e4bcc' -> (Import Result ID: '57870389cc3b44f85508809b6e1d44d6') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4f424b6548f09a87558b587988b1350b DependenciesID=25ca10e49e939864a185550c2bafd356 StaticDependenciesID=15d6b5081c7a50e12c30d5f89fee4d4e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.1563629Z
+  Time since last request: 0.0007577 seconds.
+  importAddress: GUID: f9ab7b4a2d3c49688021e15dbc4c24b4 - Path: Assets/Twinsanity/Scenes/BeachLevel.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f9ab7b4a2d3c49688021e15dbc4c24b4 - Path: Assets/Twinsanity/Scenes/BeachLevel.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f9ab7b4a2d3c49688021e15dbc4c24b4' -> (Import Result ID: 'db5bdf8fa4891a6587e15caa2b0d2a50') in 0.073 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c84616728597d960f63ea88852d433e1 DependenciesID=e8a3bbbcf8bf271bb1c7a693014dae8f StaticDependenciesID=956dbc72bd83a098753f3662bd8e6fa8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.230046Z
+  Time since last request: 0.000566 seconds.
+  importAddress: GUID: 7671783450a385348a0729d821087b05 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_20.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 7671783450a385348a0729d821087b05 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_20.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 7671783450a385348a0729d821087b05' -> (Import Result ID: 'b2ac75c98c35a7bb9284480da591b1c7') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0603747e822d456a9409f6907c609db9 DependenciesID=b37786979f802d3902c4eb2d5ba85912 StaticDependenciesID=e8cc286da8601a40c03b13579dda0533 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.2350647Z
+  Time since last request: 0.0005322 seconds.
+  importAddress: GUID: 785959940a9bfa24bb196c1e69a8a289 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_9.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 785959940a9bfa24bb196c1e69a8a289 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_9.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 785959940a9bfa24bb196c1e69a8a289' -> (Import Result ID: '8fbc286004e0ec10e1f73858776f4e1c') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=33da3cfd23d5b9fe3474b1a49ed6688e DependenciesID=f9ebafcad4b3c625269933d544574eb5 StaticDependenciesID=4c676c96da0f9f02e7c6e5a37e752a04 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.2399246Z
+  Time since last request: 0.0005059 seconds.
+  importAddress: GUID: 0bd51577b3c04d74c93a18937b73d6e6 - Path: Assets/Twinsanity/Resources/Characters/CrashPlayerModel.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 0bd51577b3c04d74c93a18937b73d6e6 - Path: Assets/Twinsanity/Resources/Characters/CrashPlayerModel.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 0bd51577b3c04d74c93a18937b73d6e6' -> (Import Result ID: 'b3b5e222fbdd9fb0f622ead04013ceae') in 0.080 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e3f1639a2eda96bd76468ec7d0bec0c3 DependenciesID=a73f48d95f517355223191f54e9a1402 StaticDependenciesID=ef2759b07e68057ce0ba217eaa43c424 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 50
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.3212609Z
+  Time since last request: 0.0003373 seconds.
+  importAddress: GUID: 096b65212f6e58d4f88ba2dfe59d4992 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_7.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 096b65212f6e58d4f88ba2dfe59d4992 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_7.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 096b65212f6e58d4f88ba2dfe59d4992' -> (Import Result ID: 'e670668dae1dfbeb194f587a6ca74bb5') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e1e4729d0b24184f98005a64e2222ec9 DependenciesID=b7242a24d4c8141c2556b049f744ce97 StaticDependenciesID=2c276305c2fa2f10b3bf1c246f22b91c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.3266431Z
+  Time since last request: 0.0004546 seconds.
+  importAddress: GUID: ca99978450c7e7e40854ed2f0aa2ffad - Path: Assets/TwinsanityCharacter/Audio - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: ca99978450c7e7e40854ed2f0aa2ffad - Path: Assets/TwinsanityCharacter/Audio - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: ca99978450c7e7e40854ed2f0aa2ffad' -> (Import Result ID: 'd0660780c6f35c22fcb081a4c76839eb') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9251befe66819ca53b42c3c72486247b DependenciesID=1f17161154739dc3c388836e3a487080 StaticDependenciesID=6b26e422b3d996f1d1f50c742f5f3a6a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.3303621Z
+  Time since last request: 0.0005322 seconds.
+  importAddress: GUID: 6095d70b8bcc9014a9db57cb07ba3dd3 - Path: Assets/Twinsanity/Scripts/TwinsanitySceneryRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6095d70b8bcc9014a9db57cb07ba3dd3 - Path: Assets/Twinsanity/Scripts/TwinsanitySceneryRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6095d70b8bcc9014a9db57cb07ba3dd3' -> (Import Result ID: '68c8859fa1e2dd7f9fbf6d98cd67f084') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a41c8517d0cdeedca02accdde5c72d2b DependenciesID=f2fa206a6eef131e8504fe3971598d9b StaticDependenciesID=9f86643a9bb1973eff9f4ad460057d60 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.3344783Z
+  Time since last request: 0.0004931 seconds.
+  importAddress: GUID: 1055f46bb8047b14c8040289832ac3ac - Path: Assets/TwinsanityCharacter/Source/Textures/F5B122D7.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1055f46bb8047b14c8040289832ac3ac - Path: Assets/TwinsanityCharacter/Source/Textures/F5B122D7.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1055f46bb8047b14c8040289832ac3ac' -> (Import Result ID: '2b0d9bb5335b58328b082de938d1a936') in 0.063 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=03a54d31dff92a5255e74d8bc1b3b9ce DependenciesID=4440609bf9988be108e6241797294e9e StaticDependenciesID=dbf719158f0427a73b851888fbc98027 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.3980032Z
+  Time since last request: 0.000433 seconds.
+  importAddress: GUID: 309d0a38a27cc3247ae8c9cf8427e74a - Path: Assets/TwinsanityCharacter/Source/Textures/0B75575C.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 309d0a38a27cc3247ae8c9cf8427e74a - Path: Assets/TwinsanityCharacter/Source/Textures/0B75575C.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 309d0a38a27cc3247ae8c9cf8427e74a' -> (Import Result ID: '4cca3a5f2fcc52d47722bcf7d59d726e') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0243ebeafa8951788a31b856683d510e DependenciesID=f09852cf91677d8a96e0d064aeaad15f StaticDependenciesID=8bf9e461e03ffd4e5c8e2c12653f5799 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4097264Z
+  Time since last request: 0.0005695 seconds.
+  importAddress: GUID: 2a1051cbe8edd3c448732d23105b787a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_6.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 2a1051cbe8edd3c448732d23105b787a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_6.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 2a1051cbe8edd3c448732d23105b787a' -> (Import Result ID: '0fca08f2128fb13d8703048c9e4fdcce') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=647189e3cbe5e000d322b6dd7274a6bb DependenciesID=5cd86f86388f6119892ffb59161ea0be StaticDependenciesID=736dca883b6d47c71a5811484f8a5b5c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4177952Z
+  Time since last request: 0.000643 seconds.
+  importAddress: GUID: f37c93525af8d0c4eb90d87272324889 - Path: Assets/Twinsanity/Scripts/TwinsanityFlybyRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f37c93525af8d0c4eb90d87272324889 - Path: Assets/Twinsanity/Scripts/TwinsanityFlybyRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f37c93525af8d0c4eb90d87272324889' -> (Import Result ID: '817a9cfa56a9b233d560c23a6f7d5773') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c38f0d68e03a90ff8edb00543d16432 DependenciesID=f51cdf95e4d5a135aa8d492f7337ce27 StaticDependenciesID=2b0166ef3fc47295fbb95fc6bca5bc4d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4221894Z
+  Time since last request: 0.000474 seconds.
+  importAddress: GUID: 21decebf741332f44baf13aea96b0c5d - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_25.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 21decebf741332f44baf13aea96b0c5d - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_25.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 21decebf741332f44baf13aea96b0c5d' -> (Import Result ID: '6b74aa405732280f8d46a06036265745') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d02e65de39255a3f1d5609774c5c55b2 DependenciesID=728178618a014562c507cf3ec3cfe370 StaticDependenciesID=cccb46178d99a0199c1d3937147d5a49 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4269331Z
+  Time since last request: 0.0005679 seconds.
+  importAddress: GUID: d02f2c9f0a85cff47ac8b92871121a41 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_32.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: d02f2c9f0a85cff47ac8b92871121a41 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_32.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: d02f2c9f0a85cff47ac8b92871121a41' -> (Import Result ID: 'a7caccb1240383f985a00d660c8112cb') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1901c22aa35909b434467aa218b121e3 DependenciesID=ba85ab9f313469071e7a6ce813bc7508 StaticDependenciesID=d5ab2c0645b2e873298b4159d94fe0b4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4324626Z
+  Time since last request: 0.0004645 seconds.
+  importAddress: GUID: 3fddf9db4a6a4f448b4971980c124153 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_29.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3fddf9db4a6a4f448b4971980c124153 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_29.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3fddf9db4a6a4f448b4971980c124153' -> (Import Result ID: '6da734bafcfd7466584d1ec401c3b6f2') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e8c74b73b0f672866e8c4a55ef3bbd85 DependenciesID=54877d2c87258bd4c7d9270fcd2af8b2 StaticDependenciesID=6aafde5554f847e372690e82443d9b12 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.437462Z
+  Time since last request: 0.0004384 seconds.
+  importAddress: GUID: d838e211371b3d94ab46a74bedcebe9a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_11.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: d838e211371b3d94ab46a74bedcebe9a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_11.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: d838e211371b3d94ab46a74bedcebe9a' -> (Import Result ID: '119e15d196abc2b4f63d9f7bd483217b') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a2204aa19d01e45f2fce64ee356cac8f DependenciesID=95909c2593b39af55d5b0ee7deaccb18 StaticDependenciesID=3ea06d99e2a0152ebaef9208df09346a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4423944Z
+  Time since last request: 0.0007855 seconds.
+  importAddress: GUID: e4ecf194d5f63504caf16307c69d8a01 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_10.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e4ecf194d5f63504caf16307c69d8a01 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_10.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e4ecf194d5f63504caf16307c69d8a01' -> (Import Result ID: 'ac24c58fd90a3b1f761bfac4e3b858c0') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dd70767487b5963f08afcaf802e91647 DependenciesID=4f3bf0390d43c2852076f612710f1f38 StaticDependenciesID=73f2563a2f9b5c96583a85f3d120c2a9 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.447704Z
+  Time since last request: 0.0005986 seconds.
+  importAddress: GUID: 22c14ceb6550de3429fb4cbe92f2cdd7 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_2.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 22c14ceb6550de3429fb4cbe92f2cdd7 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_2.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 22c14ceb6550de3429fb4cbe92f2cdd7' -> (Import Result ID: 'e1d60fbd13a899ce1453e7a6052bce46') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5aab212d92975fe6c18bb694c3b6fa7c DependenciesID=ffbe53e316e7d29a80430d4bde039d83 StaticDependenciesID=9ae6b861cdd015c8c17ee30910b528d1 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4535344Z
+  Time since last request: 0.0006618 seconds.
+  importAddress: GUID: 6dd3a1a0238cb4b489cad4beac6ef5bf - Path: Assets/TwinsanityCharacter/Source/Textures/F5FD7696.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6dd3a1a0238cb4b489cad4beac6ef5bf - Path: Assets/TwinsanityCharacter/Source/Textures/F5FD7696.png - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6dd3a1a0238cb4b489cad4beac6ef5bf' -> (Import Result ID: '087e11356c87e9782c3ada8186f8c436') in 0.016 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=016f9782353d42ae30b28d48f33ffee7 DependenciesID=f71d5bbee5b335672ab42790c4a47896 StaticDependenciesID=a78842a20f322262fc5e9ec3921f2f7c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4709726Z
+  Time since last request: 0.0004802 seconds.
+  importAddress: GUID: 08e01f60377582e408278b045f77a3f3 - Path: Assets/TwinsanityCharacter/Source/Textures - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 08e01f60377582e408278b045f77a3f3 - Path: Assets/TwinsanityCharacter/Source/Textures - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 08e01f60377582e408278b045f77a3f3' -> (Import Result ID: 'bc7cb983c0649b8076493f6eb90c6762') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=48626b59d56f4102c74f87df16a213ec DependenciesID=269501ceaf03b712eaaef52f815c308d StaticDependenciesID=dad7829478b8656ba39303f149d056de 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4755589Z
+  Time since last request: 0.0007551 seconds.
+  importAddress: GUID: 3120ded3bbbc2f64fb916dd1af0c468e - Path: Assets/TwinsanityCharacter/Generated/Animations - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3120ded3bbbc2f64fb916dd1af0c468e - Path: Assets/TwinsanityCharacter/Generated/Animations - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3120ded3bbbc2f64fb916dd1af0c468e' -> (Import Result ID: 'ba565654427cead51ee3fc3e374a13ee') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7830995608dd1dca3ef6f976da425a62 DependenciesID=8fe5e2feb9a8c3709c6d478f2c96ed94 StaticDependenciesID=0a79baa150b505d4009e707dce1cd5b7 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4808606Z
+  Time since last request: 0.0004784 seconds.
+  importAddress: GUID: c4afab60a6e945e59c11d0679548d9f7 - Path: Assets/Twinsanity/Scripts/BeachLevelRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: c4afab60a6e945e59c11d0679548d9f7 - Path: Assets/Twinsanity/Scripts/BeachLevelRuntime.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: c4afab60a6e945e59c11d0679548d9f7' -> (Import Result ID: '16d59bb34b7e82d881414ca965998df4') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ddde9833ecb80fe1bcfadd1c996ebe30 DependenciesID=35fb4235926ef3d93b3ca799f3070721 StaticDependenciesID=f2b09d1fbfc25cca02f2ec1ce810e880 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4859929Z
+  Time since last request: 0.000519 seconds.
+  importAddress: GUID: 849655a87aa62f6459aae1169f6941ec - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_17.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 849655a87aa62f6459aae1169f6941ec - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_17.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 849655a87aa62f6459aae1169f6941ec' -> (Import Result ID: '5501641371f5dee74e2b2b80e3d6618f') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=177014fbf2c6d131563740711076aedf DependenciesID=a33fe48c3fa431aadd77fc35873b16a7 StaticDependenciesID=2bae40c23b1a65ced99103d10d620877 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.4934837Z
+  Time since last request: 0.0005771 seconds.
+  importAddress: GUID: 9f1927808aae6504fa192a3888ca870b - Path: Assets/TwinsanityCharacter/Source/CrashMeshes.json - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 9f1927808aae6504fa192a3888ca870b - Path: Assets/TwinsanityCharacter/Source/CrashMeshes.json - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 9f1927808aae6504fa192a3888ca870b' -> (Import Result ID: 'd365e811ac39632d7861820df0ad633f') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=074f65bf694e6c37e2f3700ff3c0aca0 DependenciesID=99f650923c83a4892ab5f5a03811db5b StaticDependenciesID=1c5a2693b2cb2f764deb3087e32638f8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.5006086Z
+  Time since last request: 0.0005648 seconds.
+  importAddress: GUID: 68d42f10d8fa386459d56e3bcc332f8e - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_31.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 68d42f10d8fa386459d56e3bcc332f8e - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_31.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 68d42f10d8fa386459d56e3bcc332f8e' -> (Import Result ID: 'e27798e9824b3f97282a1506b07c55e9') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7dc2af3e3b113eff3268e86f88a36427 DependenciesID=6a9c05a76cbff51b7c3dfb3278074e94 StaticDependenciesID=acaf580090c8b0e8c412979fed59bc4c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.5065661Z
+  Time since last request: 0.0005648 seconds.
+  importAddress: GUID: 219be24a59058f941bcab020d3b4e550 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_5.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 219be24a59058f941bcab020d3b4e550 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_5.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 219be24a59058f941bcab020d3b4e550' -> (Import Result ID: 'c75aa6330ee33ff4867a2757e115cd8e') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=84fc2b7b25c866ca9b2b5031377a1a2a DependenciesID=a85125df40b723bffa920e8a302d8b0f StaticDependenciesID=67f8237102cd320b6eed657a17d74139 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.5131035Z
+  Time since last request: 0.0005613 seconds.
+  importAddress: GUID: f3c235ce525666b4eb781c52a66e20a9 - Path: Assets/Twinsanity/Resources/Characters/CrashPlayer.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f3c235ce525666b4eb781c52a66e20a9 - Path: Assets/Twinsanity/Resources/Characters/CrashPlayer.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f3c235ce525666b4eb781c52a66e20a9' -> (Import Result ID: 'dd9799624dd91f9c58145380dcc7c567') in 0.084 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9c9bbc3eac2d8517a71bc915a4f74ab6 DependenciesID=6cb4cf6a119acba94f322b2ab74ac180 StaticDependenciesID=c8726d3e14aeb2687f0f992422ca1c1b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 300
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.5979689Z
+  Time since last request: 0.0000241 seconds.
+  importAddress: GUID: 35c90f2572814034ebd9ccc7b8633eee - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_28.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 35c90f2572814034ebd9ccc7b8633eee - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_28.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 35c90f2572814034ebd9ccc7b8633eee' -> (Import Result ID: 'dfb41eed6c9e4df80e169fefc3ca2e5a') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=87fee4992032753997e6785ac8a7cdba DependenciesID=6a80c406ca6a9fdf3e248eb740e6e5f7 StaticDependenciesID=a96e67eb029ea91543310ee8e48fc624 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6043776Z
+  Time since last request: 0.000368 seconds.
+  importAddress: GUID: 8f866e30ba853804ab60a8b8ce179f70 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_26.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8f866e30ba853804ab60a8b8ce179f70 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_26.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8f866e30ba853804ab60a8b8ce179f70' -> (Import Result ID: 'e6ec15f5fbb36d2a6135b7d06700443d') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a401a14877c7c6d9df3b055cb2dd5b87 DependenciesID=0595f60481132a099f9ef0c7c0f12e6a StaticDependenciesID=18f6068109118aed9ee382ef7458df08 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6115412Z
+  Time since last request: 0.0007389 seconds.
+  importAddress: GUID: d03bb7d69157888468347c5a17a21d14 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_4.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: d03bb7d69157888468347c5a17a21d14 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_4.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: d03bb7d69157888468347c5a17a21d14' -> (Import Result ID: 'f53b9a49e0ce23b2ba5406dad8db78a8') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8cfc3d2a59913e61548e31bb1f278738 DependenciesID=f571ae2c8b357047479ac7e097c2d513 StaticDependenciesID=ec6561fc5373698e5c3ad02a5989c8f4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6190279Z
+  Time since last request: 0.00041 seconds.
+  importAddress: GUID: 567f43b65e80e6746895f9b8e09a6b58 - Path: Assets/TwinsanityCharacter/Generated - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 567f43b65e80e6746895f9b8e09a6b58 - Path: Assets/TwinsanityCharacter/Generated - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 567f43b65e80e6746895f9b8e09a6b58' -> (Import Result ID: '014252bfeff29046f96c10c5b03c0a51') in 0.003 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=34b6ccfebef0a4a7c3949e6f451f8f96 DependenciesID=5b6c7a9e4ef0c9eac19d548be88184fa StaticDependenciesID=5bc8c210ac7da83f214a5c7e2a65469f 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6227601Z
+  Time since last request: 0.0006201 seconds.
+  importAddress: GUID: ce6120c647cc50d4aa99f4b004c0b734 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_24.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: ce6120c647cc50d4aa99f4b004c0b734 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_24.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: ce6120c647cc50d4aa99f4b004c0b734' -> (Import Result ID: 'b899eaccaa317ee1973b69df3591cb92') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=09d4f593f60946593787cea551928c69 DependenciesID=52fefab67eba15287926f024cd5ac68a StaticDependenciesID=eace6517d22a3a4191b9cdff560c67b2 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6291435Z
+  Time since last request: 0.0006994 seconds.
+  importAddress: GUID: ccb9173ee8c99fb44a83093068fd6b60 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_16.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: ccb9173ee8c99fb44a83093068fd6b60 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_16.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: ccb9173ee8c99fb44a83093068fd6b60' -> (Import Result ID: 'a4026a30a6b9b25c87415da3d863296d') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=81f751240395a1d479af699090d680c6 DependenciesID=480e37494d780b3579252b139ac64e4a StaticDependenciesID=b12505f76df6c72c79c545e252c84159 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6360182Z
+  Time since last request: 0.0005648 seconds.
+  importAddress: GUID: f767cc163ef02ab4cb5982cd497950af - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_12.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f767cc163ef02ab4cb5982cd497950af - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_12.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f767cc163ef02ab4cb5982cd497950af' -> (Import Result ID: '0f5831cb6afb194c1239b6089cca8f5a') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74d1a1b1e964f16ad5ffd1be55459039 DependenciesID=0009e92d80ca13a4bb48c9075d76e703 StaticDependenciesID=19d62de562052030774fa5964f195e20 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6439539Z
+  Time since last request: 0.0007288 seconds.
+  importAddress: GUID: 06c921d46f7b8f04dbd0c290e3998ad4 - Path: Assets/TwinsanityCharacter/Source/CrashClips.json - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 06c921d46f7b8f04dbd0c290e3998ad4 - Path: Assets/TwinsanityCharacter/Source/CrashClips.json - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 06c921d46f7b8f04dbd0c290e3998ad4' -> (Import Result ID: 'e80baed7d5632289ed2e902ca3c31638') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=74315968b3e9c7faf969f1d86d8f74a4 DependenciesID=7828a9d4159202482e938e7d88c7cfa7 StaticDependenciesID=be7cd61d58312dae970659f9278f60f5 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6507251Z
+  Time since last request: 0.000654 seconds.
+  importAddress: GUID: b6c98d42d970a4a46820f4cea53a8447 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_0.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b6c98d42d970a4a46820f4cea53a8447 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_0.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b6c98d42d970a4a46820f4cea53a8447' -> (Import Result ID: 'f314f33f9cfaa4745a9a79d9c0339635') in 0.011 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=01caab844f1b561b163cf6c02610083f DependenciesID=08ac6dd296e8ed322b7922295d47e222 StaticDependenciesID=dd19f9a78f447093fc94d56b3c980e9d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.6775302Z
+  Time since last request: 0.0155889 seconds.
+  importAddress: GUID: 763f4eb5bb21d5d44acb25605f6fd523 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_DoubleJump.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 763f4eb5bb21d5d44acb25605f6fd523 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_DoubleJump.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 763f4eb5bb21d5d44acb25605f6fd523' -> (Import Result ID: '07662ab1ca460c6450e319e7d91d17fd') in 0.055 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=05f38424961eca3791f9ecd0eea4e829 DependenciesID=d19d78ea2288084176854931be253cf3 StaticDependenciesID=f021fa1b054bd3130729dc5eb0c680c1 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.7341019Z
+  Time since last request: 0.0007767 seconds.
+  importAddress: GUID: 3e98503f7315b01408b0e3fc8e32d0a9 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_39.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3e98503f7315b01408b0e3fc8e32d0a9 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_39.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3e98503f7315b01408b0e3fc8e32d0a9' -> (Import Result ID: 'e05ceef6250d4d0d7211a248920dd87e') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0f41ec937d96dabe53d7bc872d33f0ee DependenciesID=c4d0a2f8a8f4743f56f4d8b0b4390b92 StaticDependenciesID=27564fb456966ff8e512cf50b456f740 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.7405875Z
+  Time since last request: 0.0008278 seconds.
+  importAddress: GUID: 2f8f154a425dad648bfccb5bda6c911b - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Crouch.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 2f8f154a425dad648bfccb5bda6c911b - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Crouch.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 2f8f154a425dad648bfccb5bda6c911b' -> (Import Result ID: '32076b3773c19ab348c13594bf666a34') in 0.079 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ff60873e00dd0b8de9d539ebc30aa8c DependenciesID=e90fa929d27f5a2a1305c00abddb439e StaticDependenciesID=da3254c4dccacf3e8945e29de47b8978 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.8213271Z
+  Time since last request: 0.0005429 seconds.
+  importAddress: GUID: d1cdc544aff2b3641a49d2473b8a4135 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_37.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: d1cdc544aff2b3641a49d2473b8a4135 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_37.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: d1cdc544aff2b3641a49d2473b8a4135' -> (Import Result ID: '1c718b7a03b8dd17ccc5e0f89fb0d7ac') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1f084bb44fd183be48dfaa45e117093c DependenciesID=545e30ee46680de78207343da69517e4 StaticDependenciesID=38d5f8e27b49338e127b5e55f83e5bea 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.8285572Z
+  Time since last request: 0.0005528 seconds.
+  importAddress: GUID: 3678fce7df0bc1f44aacb131f7b855be - Path: Assets/TwinsanityCharacter/Shaders - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3678fce7df0bc1f44aacb131f7b855be - Path: Assets/TwinsanityCharacter/Shaders - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3678fce7df0bc1f44aacb131f7b855be' -> (Import Result ID: 'f534215112f751f4068bbdd34e944fb0') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ae3971f6954e0eee37acdc065cb333a3 DependenciesID=ebe8afca736977d56ac55b3e5778e367 StaticDependenciesID=e5f5dec6c521aa09f031270110d63494 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.8331025Z
+  Time since last request: 0.0004571 seconds.
+  importAddress: GUID: 389612fefce33fa40afde2f423e9ef0a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_44.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 389612fefce33fa40afde2f423e9ef0a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_44.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 389612fefce33fa40afde2f423e9ef0a' -> (Import Result ID: 'd1a263c5ee159960080c0c571337440c') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1016b6cd18390888ebe4a2e9fc10c0d8 DependenciesID=e434bbc06efab494bfa85de244cdd470 StaticDependenciesID=6251c3ba59c7cb0e6762e4ff8a02f9e5 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.8401455Z
+  Time since last request: 0.0007149 seconds.
+  importAddress: GUID: e172798bc6923e74ea2265fdd79062e5 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Idle.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: e172798bc6923e74ea2265fdd79062e5 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Idle.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: e172798bc6923e74ea2265fdd79062e5' -> (Import Result ID: '5118718229250da322a1b2d5fcb4a480') in 0.141 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=9b31fac787a9a0955b2f2a4b34092f64 DependenciesID=e11b0595a1656d7528b04caf56d51edf StaticDependenciesID=8359697289f16ca8d1d8ef44b46ea366 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:36.9825935Z
+  Time since last request: 0.0006223 seconds.
+  importAddress: GUID: b3094968e9caeee43a88f40c5fdd277d - Path: Assets/TwinsanityCharacter/Generated/CrashPlayer.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b3094968e9caeee43a88f40c5fdd277d - Path: Assets/TwinsanityCharacter/Generated/CrashPlayer.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b3094968e9caeee43a88f40c5fdd277d' -> (Import Result ID: 'ab79f73e3694c9a0ed012d488812c9bd') in 0.065 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=0458c865e07c8d4b96b955e8e09aafa2 DependenciesID=b4e2c052345602db2cc23a4c96a20455 StaticDependenciesID=6958ff93a55f8bec735afaa95b9a4b2e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 301
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.0494779Z
+  Time since last request: 0.0000253 seconds.
+  importAddress: GUID: 2f2bdddc2c4d78645b5dfad235d7a3e8 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_43.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 2f2bdddc2c4d78645b5dfad235d7a3e8 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_43.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 2f2bdddc2c4d78645b5dfad235d7a3e8' -> (Import Result ID: '351b9a5d851b746b8500a4e7f211c0c1') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=86128e684ce020fdd4e4ae1a9da18048 DependenciesID=ee2fb2e7a18e94f735c63d300eeb20b4 StaticDependenciesID=2677aa429397f39830e263f046a14546 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.055956Z
+  Time since last request: 0.0005091 seconds.
+  importAddress: GUID: b0278d4c07f204445a886d34dda1ac48 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_42.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b0278d4c07f204445a886d34dda1ac48 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_42.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b0278d4c07f204445a886d34dda1ac48' -> (Import Result ID: 'c15569d2f76e89ff4b9b3ddee446659d') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=57767c230fbe2540538f86b6c1ba0c4f DependenciesID=1191d1ae92f45654203900a14f08d71d StaticDependenciesID=b913058ae3c11fd669bade01227f34b7 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.0621925Z
+  Time since last request: 0.0005293 seconds.
+  importAddress: GUID: 3a8aa509fb49a41478ab6ce5f63caf1b - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Run.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 3a8aa509fb49a41478ab6ce5f63caf1b - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Run.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 3a8aa509fb49a41478ab6ce5f63caf1b' -> (Import Result ID: 'ca07b33270f0fca3c35ecf0d7bb0346b') in 0.052 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=7511a29058f159a1da4344fd3c500217 DependenciesID=638e656c55e1b83bc2bbec7f9029ccd1 StaticDependenciesID=db501f3243c0ca71e3c2b8a92564454a 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.1148613Z
+  Time since last request: 0.0005099 seconds.
+  importAddress: GUID: 8ec91554614808c597c915c39ba2a2cf - Path: Assets/TwinsanityCharacter/Shaders/CrashOpaqueDoubleSided.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8ec91554614808c597c915c39ba2a2cf - Path: Assets/TwinsanityCharacter/Shaders/CrashOpaqueDoubleSided.shader - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8ec91554614808c597c915c39ba2a2cf' -> (Import Result ID: '47106bd15cf70a3a15697c9d0f6b8abc') in 0.008 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=fffe2fcfe081a04ab976ab2ed8a4f86a DependenciesID=e9db2097338485076998c60a2208b47a StaticDependenciesID=3c4f29c6111d8f5cdbabd37246fa5052 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.1236414Z
+  Time since last request: 0.0006881 seconds.
+  importAddress: GUID: 5dd684c170c93b643a81b3f299935b13 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Land.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 5dd684c170c93b643a81b3f299935b13 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Land.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 5dd684c170c93b643a81b3f299935b13' -> (Import Result ID: '6a96a5482922cd312774762543797756') in 0.026 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=a454c426c1b3c51ca4435133ae83c9c3 DependenciesID=d7eebe9aba452f0a517aea2bc0009529 StaticDependenciesID=90316340cdb9d792759411b9777829e8 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.1511802Z
+  Time since last request: 0.0003453 seconds.
+  importAddress: GUID: 595fd6d4d0f1c734cb52df7032100184 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_40.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 595fd6d4d0f1c734cb52df7032100184 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_40.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 595fd6d4d0f1c734cb52df7032100184' -> (Import Result ID: 'b0c631a2be2c48e08421c26f8563c094') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=f70ab0215efe548a0b651a1528e265bf DependenciesID=a593fd0f683d3c99e46745a07a449d69 StaticDependenciesID=8f43fcfe6eac4be6bded6983a7dc772c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.1579789Z
+  Time since last request: 0.0005078 seconds.
+  importAddress: GUID: cee0fe5a5e1838a4b8a7b86b3d8daa5c - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_34.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: cee0fe5a5e1838a4b8a7b86b3d8daa5c - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_34.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: cee0fe5a5e1838a4b8a7b86b3d8daa5c' -> (Import Result ID: '8ab596c85582f47dad0a7eb97f34c8d8') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=61ee221ec4001158d3133b6f88da9c5e DependenciesID=a1e3f57d47d20a44bfe6881607294d5c StaticDependenciesID=3903bdf74aad5731e6fb6ebb8992e0f3 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.1647455Z
+  Time since last request: 0.0010911 seconds.
+  importAddress: GUID: 611ce481ce74fb04e8cdbfb8914e3d96 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Spin.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 611ce481ce74fb04e8cdbfb8914e3d96 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Spin.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 611ce481ce74fb04e8cdbfb8914e3d96' -> (Import Result ID: 'a926061f48d6a3e8a6b0d0b755a07db5') in 0.045 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d54b63027680f7a93881f3b5a4c11798 DependenciesID=5da1f456e8442c64c458c406329f7f4a StaticDependenciesID=d443617f1693043a7701cf349fe057dc 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.2118488Z
+  Time since last request: 0.0009087 seconds.
+  importAddress: GUID: 9c77ebe10ca20384ab41db3969eab4ca - Path: Assets/TwinsanityCharacter/Generated/Crash.controller - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 9c77ebe10ca20384ab41db3969eab4ca - Path: Assets/TwinsanityCharacter/Generated/Crash.controller - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 9c77ebe10ca20384ab41db3969eab4ca' -> (Import Result ID: 'aa0fb6650eb01cf9270c0110f69240d0') in 0.378 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5366c99a4e69387eb26207f747b78be8 DependenciesID=a3bf3ac55955b20b69028283c82480e2 StaticDependenciesID=40ed898d92aed112c00a5b8fbab97406 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.5934097Z
+  Time since last request: 0.0000433 seconds.
+  importAddress: GUID: 8c17663745a4e554d8ba7372e20c4f84 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_46.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8c17663745a4e554d8ba7372e20c4f84 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_46.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8c17663745a4e554d8ba7372e20c4f84' -> (Import Result ID: '14300c77e5a4bb2cc8a1c1932071f224') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ae9628c3a95dc3d987409a551cd4ef3e DependenciesID=b546a0c63d83c71a73d8c183111daca0 StaticDependenciesID=45ac34dc38a65d3557e2c4489d3016cf 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.6002855Z
+  Time since last request: 0.0008374 seconds.
+  importAddress: GUID: 8eeba53941441f145907cefa98701bd4 - Path: Assets/TwinsanityCharacter/Generated/CrashCharacterTest.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 8eeba53941441f145907cefa98701bd4 - Path: Assets/TwinsanityCharacter/Generated/CrashCharacterTest.unity - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 8eeba53941441f145907cefa98701bd4' -> (Import Result ID: 'd3a7d1dd1525aff88f94e7c72c449725') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e0f2c499281ce356d06e94214be335d2 DependenciesID=321c03f7c8c019b73a3999501675c023 StaticDependenciesID=31780c38498ccf9a6be665ea96933dc0 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.6061393Z
+  Time since last request: 0.0007805 seconds.
+  importAddress: GUID: a193b74e6026c8741833fc8e94b8d7ad - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_33.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: a193b74e6026c8741833fc8e94b8d7ad - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_33.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: a193b74e6026c8741833fc8e94b8d7ad' -> (Import Result ID: '94bb46e4ddcbb757ffd0b6b130a232b9') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5dcfa1fb1871d3ed5b03732922e4d2b3 DependenciesID=693d34451fbd5f318fbe5f357ca339be StaticDependenciesID=fba4fa43116797476c6a7cd69cdb603d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.6120391Z
+  Time since last request: 0.0006906 seconds.
+  importAddress: GUID: 042262d6ba415db4fa2fcd29ba3db51a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_35.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 042262d6ba415db4fa2fcd29ba3db51a - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_35.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 042262d6ba415db4fa2fcd29ba3db51a' -> (Import Result ID: 'd6f34bc300d47b1f705a66592375e070') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=d001d7a3b308c7c77a4432b653d00a08 DependenciesID=f0eab6e548628d2b9b41c21973be2924 StaticDependenciesID=4b93c0846c618ee343f2fc1aaccfe501 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.6195058Z
+  Time since last request: 0.000574 seconds.
+  importAddress: GUID: 6777b1a439f905f4384d8450a61a9d34 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_45.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6777b1a439f905f4384d8450a61a9d34 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_45.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6777b1a439f905f4384d8450a61a9d34' -> (Import Result ID: '57908d69621cf161e285c767d7981228') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=4c9bd93dee99983823211f2bb26e43ef DependenciesID=5ac0fadd9e80624e81a994f34fd4e43f StaticDependenciesID=03f6b18b85c328d7dfe2c220d54eec0d 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.6248902Z
+  Time since last request: 0.0005522 seconds.
+  importAddress: GUID: 1e15819dfe895344e8530859a5b3200e - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Walk.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 1e15819dfe895344e8530859a5b3200e - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Walk.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 1e15819dfe895344e8530859a5b3200e' -> (Import Result ID: '6883dcea2015a7ad0060f9ea08130046') in 0.068 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=5ab090d0bed0fbe6869d50bba07bdbfc DependenciesID=605125d03073d01218c315e79892bcaa StaticDependenciesID=5284fbb5ff0770fd98704a04f84a4f61 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.6942402Z
+  Time since last request: 0.0002637 seconds.
+  importAddress: GUID: f8fbf7cdd5973bb4bb86cd97af59e375 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_38.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f8fbf7cdd5973bb4bb86cd97af59e375 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_38.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f8fbf7cdd5973bb4bb86cd97af59e375' -> (Import Result ID: '63dd07d3f91f37f8c2d266e1a9b0db38') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=c0aa3cf3c90b8564b6587bfa21433f5d DependenciesID=ac6b5ac3ca930614b8f4663bb1723cca StaticDependenciesID=cadc40908e1549e12325c485aa8042e6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.7005416Z
+  Time since last request: 0.0000315 seconds.
+  importAddress: GUID: 6b76ff235bfc97943b11914b3b2bbc2b - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_41.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 6b76ff235bfc97943b11914b3b2bbc2b - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_41.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 6b76ff235bfc97943b11914b3b2bbc2b' -> (Import Result ID: 'c722607e5531f76b4d677320b6896b40') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=88b73d483f5883de51f53fbc988948cf DependenciesID=6f733a188a35d76a97df6e8fda769d39 StaticDependenciesID=ce75775007138c34c1543fbcd9353a94 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.7070742Z
+  Time since last request: 0.0005396 seconds.
+  importAddress: GUID: 0569c785ded985b4ca3206a30956bb84 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Apex.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 0569c785ded985b4ca3206a30956bb84 - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Apex.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 0569c785ded985b4ca3206a30956bb84' -> (Import Result ID: '21ffd54304b2fc75866399b2951cbe86') in 0.031 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=625b34afbb7034f8b28119f4207ddb08 DependenciesID=059d2fff9d8724b9ba8c7b26d0a00de7 StaticDependenciesID=5662c91746c9de87f74c0c6e50edc07e 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.7394806Z
+  Time since last request: 0.0006194 seconds.
+  importAddress: GUID: 650b386a84aca6b47a32854ca8c7aacf - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Slide.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 650b386a84aca6b47a32854ca8c7aacf - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Slide.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 650b386a84aca6b47a32854ca8c7aacf' -> (Import Result ID: 'bca131f05dc4f43d4df71482aefba1f3') in 0.051 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e04caea3a78504c356c9736560d7c8cf DependenciesID=de609c63039c6f4f7836f76e55588fcb StaticDependenciesID=bdb1893235a448a03617f2d1d941f53b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.7916055Z
+  Time since last request: 0.0008172 seconds.
+  importAddress: GUID: 25758d39870844e4ab28bbdfde503321 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_36.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 25758d39870844e4ab28bbdfde503321 - Path: Assets/TwinsanityCharacter/Generated/Meshes/Crash_Part_36.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 25758d39870844e4ab28bbdfde503321' -> (Import Result ID: '156aa0dab81975164a643aade0140cf0') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8242c8aac0654786ded96693ff49caf7 DependenciesID=0c74b97e3ca2faf41e4a27ba0b95e172 StaticDependenciesID=847927265f05f6315c2519996c65a3a6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.7992528Z
+  Time since last request: 0.0006266 seconds.
+  importAddress: GUID: 133c9d5b501752d44b5cfaec6286f18d - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Jump.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 133c9d5b501752d44b5cfaec6286f18d - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Jump.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 133c9d5b501752d44b5cfaec6286f18d' -> (Import Result ID: '5411abe38c79ff0b45fdadb5ca624ef6') in 0.035 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=2b7e82c6d18a40971d6537d708fa40e8 DependenciesID=650fcd57e2484df40b9c98ce7a94ed7e StaticDependenciesID=eca3a8b979bcd524e537be7817172ecc 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.8353624Z
+  Time since last request: 0.0005689 seconds.
+  importAddress: GUID: 296f2a611c561244cabdd1f93809479e - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Fall.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 296f2a611c561244cabdd1f93809479e - Path: Assets/TwinsanityCharacter/Generated/Animations/Crash_Fall.anim - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 296f2a611c561244cabdd1f93809479e' -> (Import Result ID: '53efff2fac5c52fa800d4df0feabb402') in 0.037 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=60c922f58fb0cf42c9551f8740b9683c DependenciesID=6420476a61f74599df9de4e22d169e83 StaticDependenciesID=5ff104a5d6ee0d15b6e0c6f3ccf18ec7 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.8738972Z
+  Time since last request: 0.0006325 seconds.
+  importAddress: GUID: 04f75a2b23c5c484b97f28b4fdafbb9a - Path: Assets/TwinsanityCharacter/Generated/Materials/F5FD7696.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 04f75a2b23c5c484b97f28b4fdafbb9a - Path: Assets/TwinsanityCharacter/Generated/Materials/F5FD7696.mat - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 04f75a2b23c5c484b97f28b4fdafbb9a' -> (Import Result ID: 'b71c03c5673dcf6d04d96d9f2f194d7f') in 0.007 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6fbeea4354a6f6101e211944c318c868 DependenciesID=ced57b95ba36445fb10fa00b85477ecb StaticDependenciesID=3c29766ab1d7350eb1d6af52cf2b8d8b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:37.8818513Z
+  Time since last request: 0.0007642 seconds.
+  importAddress: GUID: 94bf86bb0260f34e8b5f19e358cf091f - Path: Assets/TwinsanityCharacter/Editor/RepairCrashMaterials.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 94bf86bb0260f34e8b5f19e358cf091f - Path: Assets/TwinsanityCharacter/Editor/RepairCrashMaterials.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 94bf86bb0260f34e8b5f19e358cf091f' -> (Import Result ID: '08c5d536bee6e9469b7967a7c6022115') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=64dd646965ceda8e8c0ae80317ed7e2c DependenciesID=85d4287dad9c3e8672de3bff3ef0ab2e StaticDependenciesID=5a371dc03d64051438c82f955dd61c70 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-03T21:14:41.5863859Z
+  Time since last request: 3.699478 seconds.
+  importAddress: GUID: f2a101644fcba654a8239f935c9bf576 - Path: Assets/TwinsanityCharacter - Importer: PreviewImporter
+Importing 'GUID: f2a101644fcba654a8239f935c9bf576 - Path: Assets/TwinsanityCharacter - Importer: PreviewImporter' with importer (PreviewImporter)
+Imported 'GUID: f2a101644fcba654a8239f935c9bf576' -> (Import Result ID: '0c48af6979e00b0c02d50fc7c3b05aa1') in 0.001 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=94a9a91b7b85969c9793a245096688ee DependenciesID=af3117d6f93555a368f73992ccc173ac StaticDependenciesID=18655e3498571883ff9c14b45083b473 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AcceleratorClientConnectionCallback - disconnected - :0
 AssetImportWorker is now disconnected from the server
 Process exiting

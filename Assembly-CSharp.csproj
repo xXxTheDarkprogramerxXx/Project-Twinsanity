@@ -70,10 +70,12 @@
     <Compile Include="Assets\Twinsanity\Scripts\TwinsanityNativeIntro.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\BeachLevelRuntime.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\CrashRigAnimator.cs" />
+    <Compile Include="Assets\TwinsanityCharacter\Scripts\EditableCrashCamera.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\TwinsanityCharacterRuntime.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\TwinsanityTitleScreen.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\CrashPlayableCharacter.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\BeachPlayerController.cs" />
+    <Compile Include="Assets\TwinsanityCharacter\Scripts\EditableCrashPlayer.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\TwinsanityLogoRuntime.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\BeachSourceInstance.cs" />
     <Compile Include="Assets\Twinsanity\Scripts\TwinsanitySceneryRuntime.cs" />
@@ -87,6 +89,7 @@
     <None Include="Assets\Twinsanity\Resources\Logo\LogoVertexColor.shader" />
     <None Include="Assets\Twinsanity\Resources\BeachScenery\SceneryOpaque.shader" />
     <None Include="Assets\Twinsanity\Resources\Logo\TitleLogoText.shader" />
+    <None Include="Assets\TwinsanityCharacter\Shaders\CrashOpaqueDoubleSided.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
