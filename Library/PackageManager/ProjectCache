@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639261403845478459
-    m_Hash: 3890884727
+      ticks: 639267090073013747
+    m_Hash: 1645798737
   m_LockFileStatus:
     m_FilePath: C:/Users/eonvw/source/repos/Project-Twinsanity/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639261404302754187
-    m_Hash: 925968916
+      ticks: 639267090073069217
+    m_Hash: 303464414
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -294,6 +294,136 @@ m_ResolvedPackages:
     compatibilityLevel: 0
     minimumPackageVersion: 2.0.26
     minimumUnityVersion: 2021.3
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.render-pipelines.universal@17.6.0
+  testable: 0
+  isDirectDependency: 1
+  isInstalled: 1
+  version: 17.6.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.render-pipelines.universal@327d93d1cbc8
+  assetPath: Packages/com.unity.render-pipelines.universal
+  name: com.unity.render-pipelines.universal
+  displayName: Universal Render Pipeline
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The Universal Render Pipeline (URP) is a prebuilt Scriptable Render Pipeline, made by Unity. URP provides artist-friendly workflows that let you quickly and easily create optimized graphics across a range of platforms, from mobile to high-end consoles and PCs.
+  errors: []
+  versions:
+    all:
+    - 17.6.0
+    compatible:
+    - 17.6.0
+    recommended: 17.6.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.6.0
+  - name: com.unity.shadergraph
+    version: 17.6.0
+  - name: com.unity.render-pipelines.universal-config
+    version: 17.6.0
+  resolvedDependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.6.0
+  - name: com.unity.burst
+    version: 2.0.0
+  - name: com.unity.collections
+    version: 6.6.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework
+    version: 1.8.0
+  - name: com.unity.ext.nunit
+    version: 2.1.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 6.6.0
+  - name: com.unity.profiling.core
+    version: 1.0.3
+  - name: com.unity.shadergraph
+    version: 17.6.0
+  - name: com.unity.searcher
+    version: 4.9.5
+  - name: com.unity.graph-authoring
+    version: 1.0.0
+  - name: com.unity.render-pipelines.universal-config
+    version: 17.6.0
+  keywords:
+  - graphics
+  - performance
+  - rendering
+  - mobile
+  - render
+  - pipeline
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 17.6.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 327d93d1cbc8d7adc3890050093d8c3ced103c5d
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 17.6.0
+    minimumUnityVersion: 
   compliance:
     status: 0
     violation:
@@ -3902,6 +4032,354 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
+- packageId: com.unity.render-pipelines.core@17.6.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 17.6.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.render-pipelines.core@02d75770e4b3
+  assetPath: Packages/com.unity.render-pipelines.core
+  name: com.unity.render-pipelines.core
+  displayName: Scriptable Render Pipeline Core
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: SRP Core makes it easier to create or customize a Scriptable Render Pipeline (SRP). SRP Core contains reusable code, including boilerplate code for working with platform-specific graphics APIs, utility functions for common rendering operations, and  shader libraries. The code in SRP Core is use by the High Definition Render Pipeline (HDRP) and Universal Render Pipeline (URP). If you are creating a custom SRP from scratch or customizing a prebuilt SRP, using SRP Core will save you time.
+  errors: []
+  versions:
+    all:
+    - 17.6.0
+    compatible:
+    - 17.6.0
+    recommended: 17.6.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.14
+  - name: com.unity.collections
+    version: 2.4.3
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.profiling.core
+    version: 1.0.3
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 2.0.0
+  - name: com.unity.collections
+    version: 6.6.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework
+    version: 1.8.0
+  - name: com.unity.ext.nunit
+    version: 2.1.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 6.6.0
+  - name: com.unity.profiling.core
+    version: 1.0.3
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 17.6.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 02d75770e4b3ada4f020a106bcc58499ecece1fe
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 17.6.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.shadergraph@17.6.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 17.6.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.shadergraph@1dd0fd24b57e
+  assetPath: Packages/com.unity.shadergraph
+  name: com.unity.shadergraph
+  displayName: Shader Graph
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The Shader Graph package adds a visual Shader editing tool to Unity. You can use this tool to create Shaders in a visual way instead of writing code. Specific render pipelines can implement specific graph features. Currently, both the High Definition Rendering Pipeline and the Universal Rendering Pipeline support Shader Graph.
+  errors: []
+  versions:
+    all:
+    - 17.6.0
+    compatible:
+    - 17.6.0
+    recommended: 17.6.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.6.0
+  - name: com.unity.searcher
+    version: 4.9.5
+  - name: com.unity.graph-authoring
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.6.0
+  - name: com.unity.burst
+    version: 2.0.0
+  - name: com.unity.collections
+    version: 6.6.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework
+    version: 1.8.0
+  - name: com.unity.ext.nunit
+    version: 2.1.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 6.6.0
+  - name: com.unity.profiling.core
+    version: 1.0.3
+  - name: com.unity.searcher
+    version: 4.9.5
+  - name: com.unity.graph-authoring
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 17.6.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 1dd0fd24b57e1d676da169fe483cc31a10d8b54c
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 17.6.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.render-pipelines.universal-config@17.6.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 17.6.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.render-pipelines.universal-config@561422b74439
+  assetPath: Packages/com.unity.render-pipelines.universal-config
+  name: com.unity.render-pipelines.universal-config
+  displayName: Universal Render Pipeline Config
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Configuration files for the Universal Render Pipeline.
+  errors: []
+  versions:
+    all:
+    - 17.6.0
+    compatible:
+    - 17.6.0
+    recommended: 17.6.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.6.0
+  resolvedDependencies:
+  - name: com.unity.render-pipelines.core
+    version: 17.6.0
+  - name: com.unity.burst
+    version: 2.0.0
+  - name: com.unity.collections
+    version: 6.6.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework
+    version: 1.8.0
+  - name: com.unity.ext.nunit
+    version: 2.1.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 6.6.0
+  - name: com.unity.profiling.core
+    version: 1.0.3
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 17.6.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 561422b74439f8598f45a82c4935ca6f1d86f212
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 17.6.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
 - packageId: com.unity.test-framework@1.8.0
   testable: 0
   isDirectDependency: 0
@@ -4092,6 +4570,717 @@ m_ResolvedPackages:
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 2.1.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.searcher@4.9.5
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 4.9.5
+  source: 1
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.searcher@a463122f2c00
+  assetPath: Packages/com.unity.searcher
+  name: com.unity.searcher
+  displayName: Searcher
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: General search window for use in the Editor. First target use is for GraphView node search.
+  errors: []
+  versions:
+    all:
+    - 4.0.0-preview
+    - 4.0.0
+    - 4.0.7-preview
+    - 4.0.7
+    - 4.0.8-preview
+    - 4.0.9
+    - 4.1.0-preview
+    - 4.1.0
+    - 4.2.0
+    - 4.3.0
+    - 4.3.1
+    - 4.3.2
+    - 4.6.0-preview
+    - 4.7.0-preview
+    - 4.9.1
+    - 4.9.2
+    - 4.9.3
+    - 4.9.4
+    - 4.9.5
+    compatible:
+    - 4.9.5
+    recommended: 4.9.5
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - search
+  - searcher
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 639204946223360000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.searcher@4.9/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.searcher.git
+    revision: e72cb042d767a07688d186a1e80f7d2d7e5de87f
+    path: 
+  unityLifecycle:
+    version: 4.9.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"- Update minimum Editor version to 6000.0\n- Fixed spaces disappearing between highlighted matches in search results (UUM-146469)."}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: a463122f2c00f83398f41790942a0793431e70ea
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 4.9.5
+    minimumUnityVersion: 6000.0
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.graph-authoring@1.0.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.graph-authoring@cfd2588851ee
+  assetPath: Packages/com.unity.graph-authoring
+  name: com.unity.graph-authoring
+  displayName: Graph Authoring
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Shared graph tooling for Shader Graph and Visual Effect Graph.
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    recommended: 1.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: cfd2588851ee248c7989396b0917e843c54c1c6d
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.burst@2.0.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 2.0.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.burst@626e66ab421b
+  assetPath: Packages/com.unity.burst
+  name: com.unity.burst
+  displayName: Burst
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: shim
+  description: Burst is a compiler that translates from IL/.NET bytecode to highly optimized native code using LLVM.
+  errors: []
+  versions:
+    all:
+    - 2.0.0
+    compatible:
+    - 2.0.0
+    recommended: 2.0.0
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 2.0.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 626e66ab421bf31cfa602bb20675290e2a514b01
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 2.0.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.collections@6.6.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 6.6.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.collections@10fff0607388
+  assetPath: Packages/com.unity.collections
+  name: com.unity.collections
+  displayName: Collections
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: A C# collections library providing data structures that can be used in jobs, and optimized by Burst compiler.
+  errors: []
+  versions:
+    all:
+    - 6.6.0
+    compatible:
+    - 6.6.0
+    recommended: 6.6.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.burst
+    version: 1.8.25
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework
+    version: 1.4.6
+  - name: com.unity.test-framework.performance
+    version: 3.2.0
+  resolvedDependencies:
+  - name: com.unity.burst
+    version: 2.0.0
+  - name: com.unity.nuget.mono-cecil
+    version: 1.11.6
+  - name: com.unity.test-framework
+    version: 1.8.0
+  - name: com.unity.ext.nunit
+    version: 2.1.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  - name: com.unity.test-framework.performance
+    version: 6.6.0
+  keywords:
+  - dots
+  - collections
+  - unity
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 6.6.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 10fff0607388aeb98b314cf1183d493c1e67b9ef
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 6.6.0
+    minimumUnityVersion: 
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.profiling.core@1.0.3
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 1.0.3
+  source: 1
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.profiling.core@8a49f7027d06
+  assetPath: Packages/com.unity.profiling.core
+  name: com.unity.profiling.core
+  displayName: Unity Profiling Core API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: The Unity Profiling Core package provides an API for code instrumentation markup, and for profiling statistic collection.
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.1
+    - 0.2.0-preview.1
+    - 0.2.1-preview.1
+    - 1.0.0-pre.1
+    - 1.0.0
+    - 1.0.2
+    - 1.0.3
+    compatible:
+    - 1.0.3
+    recommended: 1.0.3
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - profiler
+  - profiling
+  - api
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638950052561800000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/profiler.git
+    revision: 2189ba14439d76a4083f59fae87163b4bdfd49c2
+    path: 
+  unityLifecycle:
+    version: 1.0.3
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: 8a49f7027d0618e2cb86aa9e4ed5fb4392e8121a
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.0.3
+    minimumUnityVersion: 2020.1
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.nuget.mono-cecil@1.11.6
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 1.11.6
+  source: 1
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff
+  assetPath: Packages/com.unity.nuget.mono-cecil
+  name: com.unity.nuget.mono-cecil
+  displayName: Mono Cecil
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'The mono cecil library from https://www.nuget.org/packages/Mono.Cecil/
+
+
+    This package is intended for internal Unity use only. Most Unity users will be better suited using the existing community tooling.
+
+    To avoid assembly clashes, please use this package if you intend to use Mono.Cecil.'
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
+    - 1.11.4
+    - 1.11.5
+    - 1.11.6
+    compatible:
+    - 1.11.6
+    recommended: 1.11.6
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638950052256350000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.nuget.mono-cecil@1.11/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.mono-cecil.git
+    revision: ab40507b5d82f57a4f34b6d0eacca1d6b170341d
+    path: 
+  unityLifecycle:
+    version: 1.11.6
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 0
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: '{"changelog":"* This is a verified release of the com.unity.nuget.mono-cecil with embedded dlls of mono-cecil\n* Updated Cecil to 0.11.5 with a grafted patch from this bug fix PR (https://github.com/jbevain/cecil/pull/914)"}'
+  signature:
+    status: 1
+    reason: Signature is ok
+    attestation:
+      format: archive
+      publishingChannel: unity
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: ecb9724e46fff855c46a4f37f0a3377a3cfffc06
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 1.11.6
+    minimumUnityVersion: 2019.4
+  compliance:
+    status: 0
+    violation:
+      scopePatternExpression: 
+      message: 
+      readMoreLink: 
+- packageId: com.unity.test-framework.performance@6.6.0
+  testable: 0
+  isDirectDependency: 0
+  isInstalled: 1
+  version: 6.6.0
+  source: 2
+  resolvedPath: C:\Users\eonvw\source\repos\Project-Twinsanity\Library\PackageCache\com.unity.test-framework.performance@b6023decb532
+  assetPath: Packages/com.unity.test-framework.performance
+  name: com.unity.test-framework.performance
+  displayName: Performance testing API
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Package that extends Unity Test Framework package. Adds performance testing capabilities and collects configuration metadata.
+  errors: []
+  versions:
+    all:
+    - 6.6.0
+    compatible:
+    - 6.6.0
+    recommended: 6.6.0
+    deprecated: []
+  dependencies:
+  - name: com.unity.test-framework
+    version: 1.1.33
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.test-framework
+    version: 1.8.0
+  - name: com.unity.ext.nunit
+    version: 2.1.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.modules.jsonserialize
+    version: 1.0.0
+  keywords:
+  - performance
+  - test
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    isUnityRegistry: 1
+    capabilities: 7
+    configSource: 0
+    compliance:
+      status: 0
+      violations: []
+  hideInEditor: 1
+  entitlements:
+    licensingModel: 0
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 6.6.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+    isDiscoverable: 1
+  isDeprecated: 0
+  deprecationMessage: 
+  git:
+    hash: 
+    revision: 
+  upmReserved: 
+  signature:
+    status: 0
+    reason: 
+    attestation:
+      format: 
+      publishingChannel: 
+      entitlementKeys: []
+      ownerOrgName: 
+      ownerOrgId: 
+      publisherName: 
+      artifactType: 0
+    errorCode: 
+  assetStore:
+    productId: 
+  fingerprint: b6023decb532a570b0df99e618cb20b0ba6198ba
+  editorCompatibility:
+    compatibilityLevel: 0
+    minimumPackageVersion: 6.6.0
     minimumUnityVersion: 
   compliance:
     status: 0

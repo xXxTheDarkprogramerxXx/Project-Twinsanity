@@ -29,6 +29,15 @@
       "source": "registry",
       "testable": false
     },
+    "com.unity.render-pipelines.universal@17.6.0": {
+      "name": "com.unity.render-pipelines.universal",
+      "displayName": "Universal Render Pipeline",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.render-pipelines.universal@327d93d1cbc8",
+      "fingerprint": "327d93d1cbc8d7adc3890050093d8c3ced103c5d",
+      "version": "17.6.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.modules.accessibility@1.0.0": {
       "name": "com.unity.modules.accessibility",
       "displayName": "Accessibility",
@@ -333,6 +342,33 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.render-pipelines.core@17.6.0": {
+      "name": "com.unity.render-pipelines.core",
+      "displayName": "Scriptable Render Pipeline Core",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.render-pipelines.core@02d75770e4b3",
+      "fingerprint": "02d75770e4b3ada4f020a106bcc58499ecece1fe",
+      "version": "17.6.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.shadergraph@17.6.0": {
+      "name": "com.unity.shadergraph",
+      "displayName": "Shader Graph",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.shadergraph@1dd0fd24b57e",
+      "fingerprint": "1dd0fd24b57e1d676da169fe483cc31a10d8b54c",
+      "version": "17.6.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.render-pipelines.universal-config@17.6.0": {
+      "name": "com.unity.render-pipelines.universal-config",
+      "displayName": "Universal Render Pipeline Config",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.render-pipelines.universal-config@561422b74439",
+      "fingerprint": "561422b74439f8598f45a82c4935ca6f1d86f212",
+      "version": "17.6.0",
+      "source": "builtin",
+      "testable": false
+    },
     "com.unity.test-framework@1.8.0": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
@@ -348,6 +384,72 @@
       "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.ext.nunit@0198eae3b53e",
       "fingerprint": "0198eae3b53e4b243332e89e4af7bd396715ad55",
       "version": "2.1.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.searcher@4.9.5": {
+      "name": "com.unity.searcher",
+      "displayName": "Searcher",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.searcher@a463122f2c00",
+      "fingerprint": "a463122f2c00f83398f41790942a0793431e70ea",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "4.9.5",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.graph-authoring@1.0.0": {
+      "name": "com.unity.graph-authoring",
+      "displayName": "Graph Authoring",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.graph-authoring@cfd2588851ee",
+      "fingerprint": "cfd2588851ee248c7989396b0917e843c54c1c6d",
+      "version": "1.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.burst@2.0.0": {
+      "name": "com.unity.burst",
+      "displayName": "Burst",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.burst@626e66ab421b",
+      "fingerprint": "626e66ab421bf31cfa602bb20675290e2a514b01",
+      "version": "2.0.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.collections@6.6.0": {
+      "name": "com.unity.collections",
+      "displayName": "Collections",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.collections@10fff0607388",
+      "fingerprint": "10fff0607388aeb98b314cf1183d493c1e67b9ef",
+      "version": "6.6.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.profiling.core@1.0.3": {
+      "name": "com.unity.profiling.core",
+      "displayName": "Unity Profiling Core API",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.profiling.core@8a49f7027d06",
+      "fingerprint": "8a49f7027d0618e2cb86aa9e4ed5fb4392e8121a",
+      "editorCompatibility": "2020.1.0a1",
+      "version": "1.0.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.nuget.mono-cecil@1.11.6": {
+      "name": "com.unity.nuget.mono-cecil",
+      "displayName": "Mono Cecil",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.nuget.mono-cecil@ecb9724e46ff",
+      "fingerprint": "ecb9724e46fff855c46a4f37f0a3377a3cfffc06",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.11.6",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.test-framework.performance@6.6.0": {
+      "name": "com.unity.test-framework.performance",
+      "displayName": "Performance testing API",
+      "resolvedPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Library\\PackageCache\\com.unity.test-framework.performance@b6023decb532",
+      "fingerprint": "b6023decb532a570b0df99e618cb20b0ba6198ba",
+      "version": "6.6.0",
       "source": "builtin",
       "testable": false
     }

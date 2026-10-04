@@ -65,15 +65,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\BCLExtensions\TargetingPacks\netstandard2.1\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Twinsanity\Editor\TwinsanityLogoBuilder.cs" />
-    <Compile Include="Assets\Twinsanity\Editor\ConfigureBeachScenes.cs" />
-    <Compile Include="Assets\Twinsanity\Editor\BuildCrashModelPrefab.cs" />
-    <Compile Include="Assets\TwinsanityCharacter\Editor\CrashPoseTools.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\PopulateHubActors.cs" />
     <Compile Include="Assets\TwinsanityCharacter\Editor\RepairCrashMaterials.cs" />
-    <Compile Include="Assets\Twinsanity\Editor\BakeEditableBeachScene.cs" />
+    <Compile Include="Assets\TwinsanityCharacter\Editor\CrashPoseTools.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\EnableSeagullFlight.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\TwinsanityTitleBuilder.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\ConfigureBeachScenes.cs" />
     <Compile Include="Assets\Twinsanity\Editor\BuildCrashPlayerPrefab.cs" />
     <Compile Include="Assets\TwinsanityCharacter\Editor\BuildEditableCrash.cs" />
-    <Compile Include="Assets\Twinsanity\Editor\TwinsanityTitleBuilder.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\BuildCrashModelPrefab.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\BakeEditableBeachScene.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\CreatePopulatedHubScene.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\AddEditableWumpa.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\HubActorInspector.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\FixSavedSeagullUVs.cs" />
+    <Compile Include="Assets\Twinsanity\Editor\TwinsanityLogoBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -720,6 +726,14 @@
       <HintPath>Library\PackageCache\com.unity.ext.nunit@0198eae3b53e\net472\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@10fff0607388\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
       <Private>False</Private>
@@ -1260,20 +1274,156 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\BCLExtensions\TargetingPacks\netstandard2.1\ref\System.Text.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.GraphAuthoring.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.GraphAuthoring.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Rendering.LightTransport.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rendering.LightTransport.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Tests.CoreCLR.ProtectedJobNested">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Tests.CoreCLR.ProtectedJobNested.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Profiling.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.Profiling.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.SurfaceCache.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.SurfaceCache.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.ObjectDispatcher.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.ObjectDispatcher.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Editor.Overrides">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Editor.Overrides.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Tests.CoreCLR.PrivateJobNested">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Tests.CoreCLR.PrivateJobNested.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PathTracing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.PathTracing.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PathTracing.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PathTracing.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.RenderPipelines.Core.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Tests.CoreCLR.InternalJobNestedPrivate">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Tests.CoreCLR.InternalJobNestedPrivate.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.UnifiedRayTracing.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.Tests.CoreCLR.PublicJobPrivateGeneric">
+      <HintPath>Library\ScriptAssemblies\Unity.Collections.Tests.CoreCLR.PublicJobPrivateGeneric.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.ShaderGraph.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

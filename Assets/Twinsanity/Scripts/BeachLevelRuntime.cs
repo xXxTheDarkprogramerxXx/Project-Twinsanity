@@ -408,7 +408,20 @@ public class BeachLevelRuntime : MonoBehaviour
                     string kind = ItemKind(objectId);
 
                     if (kind == null)
+                    {
+                        HubActorDefinition actorDefinition = HubActorCatalog.Find(chunk, objectId);
+                        if (actorDefinition != null)
+                        {
+                            GameObject nativeActor = new GameObject(chunk + " instance " + instanceId + " " + actorDefinition.sourceName);
+                            nativeActor.transform.SetParent(chunkRoots[chunk].transform, false);
+                            nativeActor.transform.position = ChunkRotation(chunk) * position + ChunkOffset(chunk);
+                            nativeActor.transform.rotation = Quaternion.Euler(0, yaw, 0);
+                            BeachSourceInstance marker = nativeActor.AddComponent<BeachSourceInstance>();
+                            marker.chunk = chunk; marker.instanceId = (int)instanceId; marker.objectId = objectId;
+                            HubActorCatalog.Attach(nativeActor, actorDefinition);
+                        }
                         continue;
+                    }
 
                     bool crate = kind.Contains("Crate");
 

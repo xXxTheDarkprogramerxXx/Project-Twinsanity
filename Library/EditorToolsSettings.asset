@@ -51,6 +51,12 @@ MonoBehaviour:
       collapsed: 0
     - groupType: UnityEngine.TrailRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       collapsed: 0
+    - groupType: UnityEngine.Rendering.Universal.DecalProjector, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      collapsed: 0
+    - groupType: UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      collapsed: 0
+    - groupType: UnityEngine.LightAnchor, Unity.RenderPipelines.Core.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      collapsed: 0
     m_LastPivotModeTypeString: UnityEditor.CenterPivotMode, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_LastPivotRotationTypeString: UnityEditor.LocalPivotRotation, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_CustomStates: []

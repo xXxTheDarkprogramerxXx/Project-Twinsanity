@@ -149,6 +149,8 @@ public class BeachPlayerController : MonoBehaviour
             {
                 BeachItem item = hit.GetComponentInParent<BeachItem>();
                 if (item != null) item.Hit();
+                HubActor actor = hit.GetComponentInParent<HubActor>();
+                if (actor != null) actor.Hit();
             }
         }
 

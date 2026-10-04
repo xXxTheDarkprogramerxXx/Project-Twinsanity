@@ -1,0 +1,2617 @@
+{
+  "actors": [
+    {
+      "chunk": "beach",
+      "objectId": 187,
+      "resource": "beach_506",
+      "sourceName": "act_TRAINING_FALLING_LOG4",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        831
+      ],
+      "clipNames": [
+        "Training_FallingLog_Fall"
+      ],
+      "soundIds": [
+        151,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 313,
+      "resource": "beach_300",
+      "sourceName": "act_BIRDCLUMP6",
+      "kind": "Ambient",
+      "idleClip": 325,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        325
+      ],
+      "clipNames": [
+        "BirdClump_Flap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "beach",
+      "objectId": 299,
+      "resource": "beach_279",
+      "sourceName": "act_WUMPA_TREE",
+      "kind": "WumpaTree",
+      "idleClip": 697,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": 294,
+      "clipIds": [
+        697,
+        284,
+        294,
+        963,
+        964
+      ],
+      "clipNames": [
+        "WumpaTree_Sway",
+        "WumpaTree_GrowTall",
+        "WumpaTree_Shake",
+        "WumpaTree_GrowSmall",
+        "WumpaTree_GrowMedium"
+      ],
+      "soundIds": [
+        235,
+        65535,
+        65535,
+        65535,
+        41
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 567,
+      "resource": "beach_685",
+      "sourceName": "act_GLOBAL_SEAGULL12",
+      "kind": "Ambient",
+      "idleClip": 884,
+      "walkClip": 889,
+      "runClip": 889,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        884,
+        889,
+        885,
+        886,
+        896,
+        895,
+        883,
+        882,
+        898
+      ],
+      "clipNames": [
+        "Seagull_SitIdleFlap",
+        "Seagull_Walk",
+        "Seagull_SitIdleLookAround",
+        "Seagull_SitIdleScratch",
+        "Seagull_Land",
+        "Seagull_TakeOff",
+        "Seagull_Glide",
+        "Seagull_Fly",
+        "Seagull_TakeOffHigh"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        93,
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 611,
+      "resource": "beach_654",
+      "sourceName": "act_GLOBAL_CHICKEN17",
+      "kind": "Chicken",
+      "idleClip": 906,
+      "walkClip": 910,
+      "runClip": 908,
+      "hitClip": 909,
+      "actionClip": 907,
+      "clipIds": [
+        906,
+        910,
+        907,
+        908,
+        909,
+        840,
+        841
+      ],
+      "clipNames": [
+        "Chicken_Idle",
+        "Chicken_Walk",
+        "Chicken_GroundPeck",
+        "Chicken_Run",
+        "Chicken_Spun",
+        "Chicken_Cluck",
+        "Chicken_Flap"
+      ],
+      "soundIds": [
+        82,
+        83,
+        84,
+        82,
+        86,
+        87,
+        88,
+        40
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 41,
+      "resource": "beach_272",
+      "sourceName": "act_EARTH_WORM9",
+      "kind": "Worm",
+      "idleClip": 297,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 300,
+      "actionClip": 76,
+      "clipIds": [
+        297,
+        100,
+        76,
+        300,
+        298,
+        296,
+        299,
+        309,
+        310,
+        533
+      ],
+      "clipNames": [
+        "EarthWorm_IdleLookAround",
+        "EarthWorm_Idle",
+        "EarthWorm_Bite",
+        "EarthWorm_Flatten",
+        "EarthWorm_Appear",
+        "EarthWorm_Rise",
+        "EarthWorm_IdleRoarRight",
+        "EarthWorm_IdleRoarLeft",
+        "EarthWorm_Damaged",
+        "EarthWorm_Dazed"
+      ],
+      "soundIds": [
+        776,
+        40,
+        39,
+        40,
+        65535,
+        27,
+        31,
+        10,
+        779,
+        780,
+        790,
+        791,
+        792
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 605,
+      "resource": "beach_726",
+      "sourceName": "act_GLOBAL_BUTTERFLY_BLUE",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "beach",
+      "objectId": 604,
+      "resource": "beach_725",
+      "sourceName": "act_GLOBAL_BUTTERFLY_GREEN",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "beach",
+      "objectId": 603,
+      "resource": "beach_724",
+      "sourceName": "act_GLOBAL_BUTTERFLY_ORANGE",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "beach",
+      "objectId": 295,
+      "resource": "beach_281",
+      "sourceName": "act_BEACH_BALL1",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        19,
+        19,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 300,
+      "resource": "beach_284",
+      "sourceName": "act_WUMPA_NUT",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        233,
+        234,
+        77,
+        65535
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 218,
+      "resource": "beach_472",
+      "sourceName": "act_GLOBAL_MONKEY2",
+      "kind": "Enemy",
+      "idleClip": 640,
+      "walkClip": 638,
+      "runClip": 641,
+      "hitClip": 1003,
+      "actionClip": 704,
+      "clipIds": [
+        640,
+        638,
+        704,
+        1192,
+        655,
+        659,
+        641,
+        691,
+        696,
+        1191,
+        1189,
+        1003,
+        1190,
+        1199,
+        1000,
+        1001,
+        1002,
+        690,
+        639,
+        656,
+        702
+      ],
+      "clipNames": [
+        "Monkey_Idle",
+        "Monkey_Walk",
+        "Monkey_Throw",
+        "Monkey_DeathSlid",
+        "Monkey_DamageGeneric",
+        "Monkey_Jump",
+        "Monkey_Run",
+        "Monkey_IdleScratch",
+        "Monkey_IdleYawn",
+        "Monkey_SlidPose",
+        "Monkey_PunchedPose",
+        "Monkey_SpunPose",
+        "Monkey_DeathSpun",
+        "Monkey_Alterted",
+        "Monkey_TreeShake",
+        "Monkey_ClimbStart",
+        "Monkey_ClimbStop",
+        "Monkey_TreeIdle",
+        "Monkey_ClimbTree",
+        "Monkey_Punched",
+        "Monkey_Eat"
+      ],
+      "soundIds": [
+        114,
+        116,
+        117,
+        40,
+        115,
+        19,
+        65535,
+        77,
+        118
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 824,
+      "resource": "beach_912",
+      "sourceName": "act_EARTH_FISHFOUNTAIN_BLUE",
+      "kind": "Prop",
+      "idleClip": 1197,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1197
+      ],
+      "clipNames": [
+        "Earth_FishFountain_Blue_Idle"
+      ],
+      "soundIds": [
+        309,
+        310,
+        314,
+        315,
+        316,
+        309
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 825,
+      "resource": "beach_911",
+      "sourceName": "act_EARTH_FISHFOUNTAIN_PINK",
+      "kind": "Prop",
+      "idleClip": 1198,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1198
+      ],
+      "clipNames": [
+        "Earth_FishFountain_Pink_Idle"
+      ],
+      "soundIds": [
+        309,
+        310,
+        314,
+        315,
+        316,
+        309
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 180,
+      "resource": "beach_40",
+      "sourceName": "act_GLOBAL_CRAB",
+      "kind": "Crab",
+      "idleClip": 626,
+      "walkClip": 35,
+      "runClip": 35,
+      "hitClip": 627,
+      "actionClip": -1,
+      "clipIds": [
+        626,
+        33,
+        35,
+        674,
+        32,
+        31,
+        34,
+        627,
+        57
+      ],
+      "clipNames": [
+        "Crab_Idle",
+        "Crab_StrageLeft",
+        "Crab_Walk",
+        "Crab_DeathGeneric",
+        "Crab_StrafeRight",
+        "Crab_ShellHide",
+        "Crab_ShellShow",
+        "Crab_Spun",
+        "Crab_ShellIdle"
+      ],
+      "soundIds": [
+        65535,
+        70,
+        65535,
+        40,
+        65535,
+        19,
+        97,
+        9
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 766,
+      "resource": "beach_882",
+      "sourceName": "act_EARTH_NATIVE_SLEDGE",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        19
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 763,
+      "resource": "beach_869",
+      "sourceName": "act_TRAINING_EXPLODING_IDOL_HEAD7",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1130,
+        1131
+      ],
+      "clipNames": [
+        "Training_ExplodingIdolHead_Collapse",
+        "Training_ExplodingIdolHead_Flip"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 644,
+      "resource": "beach_756",
+      "sourceName": "act_RIGID_CANNON",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        63,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "beach",
+      "objectId": 376,
+      "resource": "beach_444",
+      "sourceName": "act_MONKEY_ROCK",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 766,
+      "resource": "bossarea_882",
+      "sourceName": "act_EARTH_NATIVE_SLEDGE1",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        19
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 603,
+      "resource": "bossarea_724",
+      "sourceName": "act_GLOBAL_BUTTERFLY_ORANGE2",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 604,
+      "resource": "bossarea_725",
+      "sourceName": "act_GLOBAL_BUTTERFLY_GREEN2",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 605,
+      "resource": "bossarea_726",
+      "sourceName": "act_GLOBAL_BUTTERFLY_BLUE2",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 620,
+      "resource": "bossarea_733",
+      "sourceName": "act_TRAINING_MINIBOSS_ARENA_FLOOR7",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 625,
+      "resource": "bossarea_736",
+      "sourceName": "act_TRAINING_MINIBOSS_STAIR_CHUNK",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 627,
+      "resource": "bossarea_743",
+      "sourceName": "act_TRAINING_MINIBOSS_CENTRAL_ALTAR",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 638,
+      "resource": "bossarea_753",
+      "sourceName": "act_TRAINING_MINIBOSS_STONEDOOR",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1087,
+      "resource": "bossarea_1114",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_CRUNCH",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 396,
+      "resource": "bossarea_496",
+      "sourceName": "act_CORTEX_HOVERBOARD",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        320,
+        22,
+        166,
+        40
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1079,
+      "resource": "bossarea_433",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_DINGODILE",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1089,
+      "resource": "bossarea_1115",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_KONG",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1088,
+      "resource": "bossarea_1116",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_NOXIDE",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1085,
+      "resource": "bossarea_1117",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_PINSTRIP",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1091,
+      "resource": "bossarea_1118",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_POLA",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1090,
+      "resource": "bossarea_1119",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_RIPPERROO1",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "bossarea",
+      "objectId": 1086,
+      "resource": "bossarea_1120",
+      "sourceName": "act_CORTEX_TRAINING_FAKE_TINY",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "docent",
+      "objectId": 1157,
+      "resource": "docent_1142",
+      "sourceName": "act_GENERIC_GREY_STONE_DOOR",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1648
+      ],
+      "clipNames": [
+        "Generic_GreyStoneDoor_Open"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 306,
+      "resource": "highpath_268",
+      "sourceName": "act_PIRANHAPLANT4",
+      "kind": "Enemy",
+      "idleClip": 276,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 275,
+      "actionClip": -1,
+      "clipIds": [
+        276,
+        285,
+        275,
+        272,
+        273,
+        274,
+        311,
+        485,
+        628
+      ],
+      "clipNames": [
+        "PiranhaPlant_Idle",
+        "PiranhaPlant_ShootSpitball",
+        "PiranhaPlant_Death",
+        "PiranhaPlant_Alerted",
+        "PiranhaPlant_BiteLeft",
+        "PiranhaPlant_BiteRight",
+        "PiranhaPlant_IdleAlerted",
+        "PiranhaPlant_BiteFront",
+        "PiranhaPlant_DeathSquished"
+      ],
+      "soundIds": [
+        65535,
+        152,
+        152,
+        40,
+        153,
+        65535,
+        156,
+        156,
+        154,
+        155
+      ]
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 188,
+      "resource": "highpath_505",
+      "sourceName": "old_act_TRAINING_SWINGING_LOG",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        269,
+        269,
+        40,
+        637
+      ]
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 184,
+      "resource": "highpath_489",
+      "sourceName": "act_TRAINING_PATH_PLATFORM2",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        802,
+        803,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 603,
+      "resource": "highpath_724",
+      "sourceName": "act_GLOBAL_BUTTERFLY_ORANGE1",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 604,
+      "resource": "highpath_725",
+      "sourceName": "act_GLOBAL_BUTTERFLY_GREEN1",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 605,
+      "resource": "highpath_726",
+      "sourceName": "act_GLOBAL_BUTTERFLY_BLUE1",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "highpath",
+      "objectId": 182,
+      "resource": "highpath_497",
+      "sourceName": "act_GLOBAL_SKUNK",
+      "kind": "Enemy",
+      "idleClip": 671,
+      "walkClip": 667,
+      "runClip": 670,
+      "hitClip": 672,
+      "actionClip": -1,
+      "clipIds": [
+        671,
+        667,
+        664,
+        665,
+        670,
+        1202,
+        1203,
+        1201,
+        1200,
+        672,
+        666,
+        1226,
+        1225,
+        1007,
+        1008
+      ],
+      "clipNames": [
+        "Skunk_Idle",
+        "Skunk_Walk",
+        "Skunk_Bite",
+        "Skunk_DeathGenetic",
+        "Skunk_Run",
+        "Skunk_IdleShowoff",
+        "Skunk_IdleStandup",
+        "Skunk_Slid",
+        "Skunk_Punched",
+        "Skunk_SpunPose",
+        "Skunk_DeathFlattened",
+        "Skunk_DamangedLandOnBack",
+        "Skunk_DamangedLand",
+        "Skunk_TurnAroundLeft",
+        "Skunk_TurnAroundRight"
+      ],
+      "soundIds": [
+        162,
+        160,
+        160,
+        40,
+        161,
+        19,
+        162,
+        77,
+        163
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 819,
+      "resource": "huba_376",
+      "sourceName": "act_EARTH_TRIBESMAN_SHIELDBEARER1",
+      "kind": "Enemy",
+      "idleClip": 295,
+      "walkClip": 941,
+      "runClip": 287,
+      "hitClip": 1222,
+      "actionClip": 345,
+      "clipIds": [
+        295,
+        941,
+        345,
+        334,
+        291,
+        353,
+        287,
+        164,
+        1177,
+        350,
+        1180,
+        1181,
+        1222,
+        451,
+        1179,
+        1178,
+        960,
+        1174,
+        980,
+        981,
+        301,
+        448
+      ],
+      "clipNames": [
+        "Tribesman_Idle",
+        "Tribesman_WalkDragging",
+        "Tribesman_Throw",
+        "Tribesman_DeathGeneric",
+        "Tribesman_Alterted",
+        "Tribesman_DamageGeneric",
+        "Tribesman_Run",
+        "Tribesman_IdleLookout",
+        "Tribesman_Earth_IdleLookAround",
+        "Tribesman_CarryFrontRun",
+        "Tribesman_Earth_SlidPose",
+        "Tribesman_Earth_PunchedPose",
+        "Tribesman_Earth_SpunPose",
+        "Tribesman_DamageGenericShort",
+        "Tribesman_Earth_DeathSpun",
+        "Tribesman_Earth_DeathSlid",
+        "Tribesman_RunScared",
+        "Tribesman_Earth_Stab",
+        "Tribesman_CarryStrafeLeft",
+        "Tribesman_CarryStrafeRight",
+        "Tribesman_Dragging",
+        "Tribesman_CarryPose"
+      ],
+      "soundIds": [
+        187,
+        194,
+        195,
+        40,
+        196,
+        19,
+        65535,
+        183,
+        188,
+        189,
+        190,
+        191,
+        184,
+        185,
+        186,
+        192,
+        193
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 763,
+      "resource": "huba_869",
+      "sourceName": "act_TRAINING_EXPLODING_IDOL_HEAD2",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1130,
+        1131
+      ],
+      "clipNames": [
+        "Training_ExplodingIdolHead_Collapse",
+        "Training_ExplodingIdolHead_Flip"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 765,
+      "resource": "huba_870",
+      "sourceName": "act_GLOBAL_BOMB",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        63
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 609,
+      "resource": "huba_727",
+      "sourceName": "act_GLOBAL_HAYBALE4",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 644,
+      "resource": "huba_756",
+      "sourceName": "act_RIGID_CANNON1",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        63,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 313,
+      "resource": "huba_300",
+      "sourceName": "act_BIRDCLUMP8",
+      "kind": "Ambient",
+      "idleClip": 325,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        325
+      ],
+      "clipNames": [
+        "BirdClump_Flap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "huba",
+      "objectId": 180,
+      "resource": "huba_40",
+      "sourceName": "old_act_GLOBAL_CRAB4",
+      "kind": "Crab",
+      "idleClip": 626,
+      "walkClip": 35,
+      "runClip": 35,
+      "hitClip": 627,
+      "actionClip": -1,
+      "clipIds": [
+        626,
+        33,
+        35,
+        674,
+        32,
+        31,
+        34,
+        627,
+        57
+      ],
+      "clipNames": [
+        "Crab_Idle",
+        "Crab_StrageLeft",
+        "Crab_Walk",
+        "Crab_DeathGeneric",
+        "Crab_StrafeRight",
+        "Crab_ShellHide",
+        "Crab_ShellShow",
+        "Crab_Spun",
+        "Crab_ShellIdle"
+      ],
+      "soundIds": [
+        65535,
+        70,
+        65535,
+        40,
+        65535,
+        19,
+        97,
+        9
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 182,
+      "resource": "huba_497",
+      "sourceName": "act_GLOBAL_SKUNK6",
+      "kind": "Enemy",
+      "idleClip": 671,
+      "walkClip": 667,
+      "runClip": 670,
+      "hitClip": 672,
+      "actionClip": -1,
+      "clipIds": [
+        671,
+        667,
+        664,
+        665,
+        670,
+        1202,
+        1203,
+        1201,
+        1200,
+        672,
+        666,
+        1226,
+        1225,
+        1007,
+        1008
+      ],
+      "clipNames": [
+        "Skunk_Idle",
+        "Skunk_Walk",
+        "Skunk_Bite",
+        "Skunk_DeathGenetic",
+        "Skunk_Run",
+        "Skunk_IdleShowoff",
+        "Skunk_IdleStandup",
+        "Skunk_Slid",
+        "Skunk_Punched",
+        "Skunk_SpunPose",
+        "Skunk_DeathFlattened",
+        "Skunk_DamangedLandOnBack",
+        "Skunk_DamangedLand",
+        "Skunk_TurnAroundLeft",
+        "Skunk_TurnAroundRight"
+      ],
+      "soundIds": [
+        162,
+        160,
+        160,
+        40,
+        161,
+        19,
+        162,
+        77,
+        163
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 767,
+      "resource": "huba_872",
+      "sourceName": "act_GLOBAL_BARREL",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 116,
+      "resource": "huba_423",
+      "sourceName": "act_GLOBAL_BAT_DARKPURPLE8",
+      "kind": "Ambient",
+      "idleClip": 913,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 1092,
+      "actionClip": -1,
+      "clipIds": [
+        542,
+        1092,
+        543,
+        914,
+        1090,
+        1091,
+        911,
+        912,
+        913
+      ],
+      "clipNames": [
+        "Bat_Fly",
+        "Bat_SpunPose",
+        "Bat_SleepToFly",
+        "Bat_SleepHeadShake",
+        "Bat_Glide",
+        "Bat_SpunGlide",
+        "Bat_SleepLookAround",
+        "Bat_SleepShake",
+        "Bat_SleepIdle"
+      ],
+      "soundIds": [
+        787,
+        775,
+        772,
+        40,
+        783,
+        19,
+        773,
+        77,
+        788
+      ]
+    },
+    {
+      "chunk": "huba",
+      "objectId": 603,
+      "resource": "huba_724",
+      "sourceName": "act_GLOBAL_BUTTERFLY_ORANGE4",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "huba",
+      "objectId": 604,
+      "resource": "huba_725",
+      "sourceName": "act_GLOBAL_BUTTERFLY_GREEN4",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "huba",
+      "objectId": 605,
+      "resource": "huba_726",
+      "sourceName": "act_GLOBAL_BUTTERFLY_BLUE4",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 306,
+      "resource": "hubb_268",
+      "sourceName": "act_PIRANHAPLANT5",
+      "kind": "Enemy",
+      "idleClip": 276,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 275,
+      "actionClip": -1,
+      "clipIds": [
+        276,
+        285,
+        275,
+        272,
+        273,
+        274,
+        311,
+        485,
+        628
+      ],
+      "clipNames": [
+        "PiranhaPlant_Idle",
+        "PiranhaPlant_ShootSpitball",
+        "PiranhaPlant_Death",
+        "PiranhaPlant_Alerted",
+        "PiranhaPlant_BiteLeft",
+        "PiranhaPlant_BiteRight",
+        "PiranhaPlant_IdleAlerted",
+        "PiranhaPlant_BiteFront",
+        "PiranhaPlant_DeathSquished"
+      ],
+      "soundIds": [
+        65535,
+        152,
+        152,
+        40,
+        153,
+        65535,
+        156,
+        156,
+        154,
+        155
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 182,
+      "resource": "hubb_497",
+      "sourceName": "act_GLOBAL_SKUNK3",
+      "kind": "Enemy",
+      "idleClip": 671,
+      "walkClip": 667,
+      "runClip": 670,
+      "hitClip": 672,
+      "actionClip": -1,
+      "clipIds": [
+        671,
+        667,
+        664,
+        665,
+        670,
+        1202,
+        1203,
+        1201,
+        1200,
+        672,
+        666,
+        1226,
+        1225,
+        1007,
+        1008
+      ],
+      "clipNames": [
+        "Skunk_Idle",
+        "Skunk_Walk",
+        "Skunk_Bite",
+        "Skunk_DeathGenetic",
+        "Skunk_Run",
+        "Skunk_IdleShowoff",
+        "Skunk_IdleStandup",
+        "Skunk_Slid",
+        "Skunk_Punched",
+        "Skunk_SpunPose",
+        "Skunk_DeathFlattened",
+        "Skunk_DamangedLandOnBack",
+        "Skunk_DamangedLand",
+        "Skunk_TurnAroundLeft",
+        "Skunk_TurnAroundRight"
+      ],
+      "soundIds": [
+        162,
+        160,
+        160,
+        40,
+        161,
+        19,
+        162,
+        77,
+        163
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 188,
+      "resource": "hubb_505",
+      "sourceName": "act_TRAINING_SWINGING_LOG11",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        269,
+        269,
+        40,
+        637
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 187,
+      "resource": "hubb_506",
+      "sourceName": "act_TRAINING_FALLING_LOG1",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        831
+      ],
+      "clipNames": [
+        "Training_FallingLog_Fall"
+      ],
+      "soundIds": [
+        151,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 313,
+      "resource": "hubb_300",
+      "sourceName": "act_BIRDCLUMP",
+      "kind": "Ambient",
+      "idleClip": 325,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        325
+      ],
+      "clipNames": [
+        "BirdClump_Flap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 116,
+      "resource": "hubb_423",
+      "sourceName": "act_GLOBAL_BAT_DARKPURPLE10",
+      "kind": "Ambient",
+      "idleClip": 913,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 1092,
+      "actionClip": -1,
+      "clipIds": [
+        542,
+        1092,
+        543,
+        914,
+        1090,
+        1091,
+        911,
+        912,
+        913
+      ],
+      "clipNames": [
+        "Bat_Fly",
+        "Bat_SpunPose",
+        "Bat_SleepToFly",
+        "Bat_SleepHeadShake",
+        "Bat_Glide",
+        "Bat_SpunGlide",
+        "Bat_SleepLookAround",
+        "Bat_SleepShake",
+        "Bat_SleepIdle"
+      ],
+      "soundIds": [
+        787,
+        775,
+        772,
+        40,
+        783,
+        19,
+        773,
+        77,
+        788
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 41,
+      "resource": "hubb_272",
+      "sourceName": "act_EARTH_WORM",
+      "kind": "Worm",
+      "idleClip": 297,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 300,
+      "actionClip": 76,
+      "clipIds": [
+        297,
+        100,
+        76,
+        300,
+        298,
+        296,
+        299,
+        309,
+        310,
+        533
+      ],
+      "clipNames": [
+        "EarthWorm_IdleLookAround",
+        "EarthWorm_Idle",
+        "EarthWorm_Bite",
+        "EarthWorm_Flatten",
+        "EarthWorm_Appear",
+        "EarthWorm_Rise",
+        "EarthWorm_IdleRoarRight",
+        "EarthWorm_IdleRoarLeft",
+        "EarthWorm_Damaged",
+        "EarthWorm_Dazed"
+      ],
+      "soundIds": [
+        776,
+        40,
+        39,
+        40,
+        65535,
+        27,
+        31,
+        10,
+        779,
+        780,
+        790,
+        791,
+        792
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 833,
+      "resource": "hubb_923",
+      "sourceName": "act_TRAINING_CAVE_BLOCKER",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 819,
+      "resource": "hubb_376",
+      "sourceName": "act_EARTH_TRIBESMAN_SHIELDBEARER2",
+      "kind": "Enemy",
+      "idleClip": 295,
+      "walkClip": 941,
+      "runClip": 287,
+      "hitClip": 1222,
+      "actionClip": 345,
+      "clipIds": [
+        295,
+        941,
+        345,
+        334,
+        291,
+        353,
+        287,
+        164,
+        1177,
+        350,
+        1180,
+        1181,
+        1222,
+        451,
+        1179,
+        1178,
+        960,
+        1174,
+        980,
+        981,
+        301,
+        448
+      ],
+      "clipNames": [
+        "Tribesman_Idle",
+        "Tribesman_WalkDragging",
+        "Tribesman_Throw",
+        "Tribesman_DeathGeneric",
+        "Tribesman_Alterted",
+        "Tribesman_DamageGeneric",
+        "Tribesman_Run",
+        "Tribesman_IdleLookout",
+        "Tribesman_Earth_IdleLookAround",
+        "Tribesman_CarryFrontRun",
+        "Tribesman_Earth_SlidPose",
+        "Tribesman_Earth_PunchedPose",
+        "Tribesman_Earth_SpunPose",
+        "Tribesman_DamageGenericShort",
+        "Tribesman_Earth_DeathSpun",
+        "Tribesman_Earth_DeathSlid",
+        "Tribesman_RunScared",
+        "Tribesman_Earth_Stab",
+        "Tribesman_CarryStrafeLeft",
+        "Tribesman_CarryStrafeRight",
+        "Tribesman_Dragging",
+        "Tribesman_CarryPose"
+      ],
+      "soundIds": [
+        187,
+        194,
+        195,
+        40,
+        196,
+        19,
+        65535,
+        183,
+        188,
+        189,
+        190,
+        191,
+        184,
+        185,
+        186,
+        192,
+        193
+      ]
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 603,
+      "resource": "hubb_724",
+      "sourceName": "act_GLOBAL_BUTTERFLY_ORANGE3",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 604,
+      "resource": "hubb_725",
+      "sourceName": "act_GLOBAL_BUTTERFLY_GREEN3",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubb",
+      "objectId": 605,
+      "resource": "hubb_726",
+      "sourceName": "act_GLOBAL_BUTTERFLY_BLUE3",
+      "kind": "Ambient",
+      "idleClip": 328,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        900,
+        327,
+        328,
+        903
+      ],
+      "clipNames": [
+        "Butterfly_SlowFlap",
+        "Butterfly_Fly",
+        "Butterfly_Idle",
+        "Butterfly_FastFlap"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubboat1",
+      "objectId": 794,
+      "resource": "hubboat1_894",
+      "sourceName": "act_NATIVE_TRANSPORT_BOAT2",
+      "kind": "Prop",
+      "idleClip": 1439,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1439
+      ],
+      "clipNames": [
+        "NativeTransportBoat_Idle"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        840,
+        841,
+        842,
+        843
+      ]
+    },
+    {
+      "chunk": "hubboat2",
+      "objectId": 794,
+      "resource": "hubboat2_894",
+      "sourceName": "act_NATIVE_TRANSPORT_BOAT",
+      "kind": "Prop",
+      "idleClip": 1439,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1439
+      ],
+      "clipNames": [
+        "NativeTransportBoat_Idle"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        840,
+        841,
+        842,
+        843
+      ]
+    },
+    {
+      "chunk": "hubc",
+      "objectId": 1067,
+      "resource": "hubc_1112",
+      "sourceName": "act_SEAPILLAR1",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1574
+      ],
+      "clipNames": [
+        "SeaPillar_Rise"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 658,
+      "resource": "hubd_768",
+      "sourceName": "act_TIKI_MON",
+      "kind": "Prop",
+      "idleClip": 1032,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 1073,
+      "actionClip": 1062,
+      "clipIds": [
+        1032,
+        1033,
+        1073,
+        1029,
+        1034,
+        1038,
+        1042,
+        1043,
+        1045,
+        1052,
+        1053,
+        1054,
+        1057,
+        1058,
+        1062,
+        1063,
+        1300
+      ],
+      "clipNames": [
+        "TikiMon_Idle",
+        "TikiMon_Grab",
+        "TikiMon_DeathStart",
+        "TikiMon_Intro",
+        "TikiMon_SpinAround",
+        "TikiMon_DamagedChoke",
+        "TikiMon_IdleToLaser",
+        "TikiMon_LaserIdle",
+        "TikiMon_Roar",
+        "TikiMon_FistSlams",
+        "TikiMon_Shuffle",
+        "TikiMon_IdleToShuffle",
+        "TikiMon_BurrowEnd",
+        "TikiMon_BurrowStart",
+        "TikiMon_AttackHandR",
+        "TikiMon_AttackHandL",
+        "TikiMon_LaserStart"
+      ],
+      "soundIds": [
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        622
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 611,
+      "resource": "hubd_654",
+      "sourceName": "act_GLOBAL_CHICKEN1",
+      "kind": "Chicken",
+      "idleClip": 906,
+      "walkClip": 910,
+      "runClip": 908,
+      "hitClip": 909,
+      "actionClip": 907,
+      "clipIds": [
+        906,
+        910,
+        907,
+        908,
+        909,
+        840,
+        841
+      ],
+      "clipNames": [
+        "Chicken_Idle",
+        "Chicken_Walk",
+        "Chicken_GroundPeck",
+        "Chicken_Run",
+        "Chicken_Spun",
+        "Chicken_Cluck",
+        "Chicken_Flap"
+      ],
+      "soundIds": [
+        82,
+        83,
+        84,
+        82,
+        86,
+        87,
+        88,
+        40
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 621,
+      "resource": "hubd_272",
+      "sourceName": "act_WHACKAWORM_WORM",
+      "kind": "Prop",
+      "idleClip": 297,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 300,
+      "actionClip": -1,
+      "clipIds": [
+        297,
+        100,
+        76,
+        300,
+        298,
+        296,
+        299,
+        309,
+        310,
+        533
+      ],
+      "clipNames": [
+        "EarthWorm_IdleLookAround",
+        "EarthWorm_Idle",
+        "EarthWorm_Bite",
+        "EarthWorm_Flatten",
+        "EarthWorm_Appear",
+        "EarthWorm_Rise",
+        "EarthWorm_IdleRoarRight",
+        "EarthWorm_IdleRoarLeft",
+        "EarthWorm_Damaged",
+        "EarthWorm_Dazed"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 299,
+      "resource": "hubd_279",
+      "sourceName": "old_act_WUMPA_TREE7",
+      "kind": "WumpaTree",
+      "idleClip": 697,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": 294,
+      "clipIds": [
+        697,
+        284,
+        294,
+        963,
+        964
+      ],
+      "clipNames": [
+        "WumpaTree_Sway",
+        "WumpaTree_GrowTall",
+        "WumpaTree_Shake",
+        "WumpaTree_GrowSmall",
+        "WumpaTree_GrowMedium"
+      ],
+      "soundIds": [
+        235,
+        65535,
+        65535,
+        65535,
+        41
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 652,
+      "resource": "hubd_715",
+      "sourceName": "act_EARTH_EMU_FARMER",
+      "kind": "Prop",
+      "idleClip": 1011,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 946,
+      "actionClip": -1,
+      "clipIds": [
+        946,
+        953,
+        1010,
+        1011,
+        1253
+      ],
+      "clipNames": [
+        "Earth_EmuFarmer_Death",
+        "Earth_EmuFarmer_TalkLong",
+        "Earth_EmuFarmer_DeathPose",
+        "Earth_EmuFarmer_DeathIdle",
+        "Earth_EmuFarmer_Cutscene_Shot1"
+      ],
+      "soundIds": []
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 794,
+      "resource": "hubd_894",
+      "sourceName": "act_NATIVE_TRANSPORT_BOAT3",
+      "kind": "Prop",
+      "idleClip": 1439,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1439
+      ],
+      "clipNames": [
+        "NativeTransportBoat_Idle"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        840,
+        841,
+        842,
+        843
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 41,
+      "resource": "hubd_272",
+      "sourceName": "act_EARTH_WORM",
+      "kind": "Worm",
+      "idleClip": 297,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": 300,
+      "actionClip": 76,
+      "clipIds": [
+        297,
+        100,
+        76,
+        300,
+        298,
+        296,
+        299,
+        309,
+        310,
+        533
+      ],
+      "clipNames": [
+        "EarthWorm_IdleLookAround",
+        "EarthWorm_Idle",
+        "EarthWorm_Bite",
+        "EarthWorm_Flatten",
+        "EarthWorm_Appear",
+        "EarthWorm_Rise",
+        "EarthWorm_IdleRoarRight",
+        "EarthWorm_IdleRoarLeft",
+        "EarthWorm_Damaged",
+        "EarthWorm_Dazed"
+      ],
+      "soundIds": [
+        776,
+        40,
+        39,
+        40,
+        65535,
+        27,
+        31,
+        10,
+        779,
+        780,
+        790,
+        791,
+        792
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 609,
+      "resource": "hubd_727",
+      "sourceName": "act_GLOBAL_HAYBALE6",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "hubd",
+      "objectId": 1163,
+      "resource": "hubd_2",
+      "sourceName": "act_CORTEX_CONSTRAINT",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    },
+    {
+      "chunk": "pier",
+      "objectId": 794,
+      "resource": "pier_894",
+      "sourceName": "act_NATIVE_TRANSPORT_BOAT",
+      "kind": "Prop",
+      "idleClip": 1439,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        1439
+      ],
+      "clipNames": [
+        "NativeTransportBoat_Idle"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        840,
+        841,
+        842,
+        843
+      ]
+    },
+    {
+      "chunk": "pier",
+      "objectId": 803,
+      "resource": "pier_376",
+      "sourceName": "act_EARTH_TRIBESMAN3",
+      "kind": "Enemy",
+      "idleClip": 295,
+      "walkClip": 941,
+      "runClip": 287,
+      "hitClip": 1222,
+      "actionClip": 345,
+      "clipIds": [
+        295,
+        941,
+        345,
+        334,
+        291,
+        353,
+        287,
+        164,
+        1177,
+        350,
+        1180,
+        1181,
+        1222,
+        451,
+        1179,
+        1178,
+        960,
+        1174
+      ],
+      "clipNames": [
+        "Tribesman_Idle",
+        "Tribesman_WalkDragging",
+        "Tribesman_Throw",
+        "Tribesman_DeathGeneric",
+        "Tribesman_Alterted",
+        "Tribesman_DamageGeneric",
+        "Tribesman_Run",
+        "Tribesman_IdleLookout",
+        "Tribesman_Earth_IdleLookAround",
+        "Tribesman_CarryFrontRun",
+        "Tribesman_Earth_SlidPose",
+        "Tribesman_Earth_PunchedPose",
+        "Tribesman_Earth_SpunPose",
+        "Tribesman_DamageGenericShort",
+        "Tribesman_Earth_DeathSpun",
+        "Tribesman_Earth_DeathSlid",
+        "Tribesman_RunScared",
+        "Tribesman_Earth_Stab"
+      ],
+      "soundIds": [
+        187,
+        194,
+        195,
+        40,
+        196,
+        19,
+        65535,
+        183,
+        188,
+        189,
+        190,
+        191,
+        184,
+        185,
+        186,
+        192,
+        193
+      ]
+    },
+    {
+      "chunk": "pier",
+      "objectId": 567,
+      "resource": "pier_685",
+      "sourceName": "act_GLOBAL_SEAGULL3",
+      "kind": "Ambient",
+      "idleClip": 884,
+      "walkClip": 889,
+      "runClip": 889,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [
+        884,
+        889,
+        885,
+        886,
+        896,
+        895,
+        883,
+        882,
+        898
+      ],
+      "clipNames": [
+        "Seagull_SitIdleFlap",
+        "Seagull_Walk",
+        "Seagull_SitIdleLookAround",
+        "Seagull_SitIdleScratch",
+        "Seagull_Land",
+        "Seagull_TakeOff",
+        "Seagull_Glide",
+        "Seagull_Fly",
+        "Seagull_TakeOffHigh"
+      ],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        93,
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "chunk": "pier",
+      "objectId": 767,
+      "resource": "pier_872",
+      "sourceName": "act_GLOBAL_BARREL",
+      "kind": "Prop",
+      "idleClip": -1,
+      "walkClip": -1,
+      "runClip": -1,
+      "hitClip": -1,
+      "actionClip": -1,
+      "clipIds": [],
+      "clipNames": [],
+      "soundIds": [
+        65535,
+        65535,
+        65535,
+        65535
+      ]
+    }
+  ]
+}
