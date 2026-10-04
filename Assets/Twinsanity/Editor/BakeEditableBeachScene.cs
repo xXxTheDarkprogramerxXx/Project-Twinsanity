@@ -28,10 +28,26 @@ public static class BakeEditableBeachScene
         Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
         BeachLevelRuntime runtime = UnityEngine.Object.FindObjectOfType<BeachLevelRuntime>();
         if (runtime == null) throw new InvalidOperationException("BeachLevel.unity has no BeachLevelRuntime component.");
-        if (runtime.useEditableScene || runtime.transform.Find("Editable Chunks") != null)
+        //if (runtime.useEditableScene || runtime.transform.Find("Editable Chunks") != null)
+        //{
+        //    Debug.Log("BeachLevel.unity is already editable. Edit and save it normally; baking again would erase your changes.");
+        //    return;
+        //}
+
         {
-            Debug.Log("BeachLevel.unity is already editable. Edit and save it normally; baking again would erase your changes.");
-            return;
+            Transform existing = runtime.transform.Find("Editable Chunks");
+            if (existing != null) UnityEngine.Object.DestroyImmediate(existing.gameObject);
+
+            Transform spawn = runtime.transform.Find("Crash Spawn");
+            if (spawn != null) UnityEngine.Object.DestroyImmediate(spawn.gameObject);
+
+            Transform ocean = runtime.transform.Find("Beach ocean");
+            if (ocean != null) UnityEngine.Object.DestroyImmediate(ocean.gameObject);
+
+            Transform sun = runtime.transform.Find("Beach sunlight");
+            if (sun != null) UnityEngine.Object.DestroyImmediate(sun.gameObject);
+
+            runtime.useEditableScene = false;
         }
 
         if (!File.Exists(BackupPath) && !AssetDatabase.CopyAsset(ScenePath, BackupPath))

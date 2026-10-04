@@ -131,7 +131,15 @@ public class BeachLevelRuntime : MonoBehaviour
             BuildItems();
 
             foreach (KeyValuePair<string, GameObject> chunk in chunkRoots)
+            {
+                chunk.Value.transform.localScale = new Vector3(-1f, 1f, 1f);
                 chunk.Value.SetActive(chunk.Key == "Beach");
+            }
+        }
+        else
+        {
+            foreach (KeyValuePair<string, GameObject> chunk in chunkRoots)
+                chunk.Value.transform.localScale = new Vector3(-1f, 1f, 1f);
         }
 
         crateSound = Resources.Load<AudioClip>("BeachAudio/CrateBreak");
@@ -441,9 +449,11 @@ public class BeachLevelRuntime : MonoBehaviour
         GameObject pickup = new GameObject("Opening Aku Aku pickup");
         pickup.transform.SetParent(chunkRoots["Beach"].transform, true);
         pickup.transform.position = position;
+        
 
         GameObject maskModel = BuildItemModel("AkuMask", pickup.transform);
         maskModel.transform.localScale = Vector3.one * 1.6f;
+        maskModel.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
 
         SphereCollider trigger = pickup.AddComponent<SphereCollider>();
         trigger.isTrigger = true;
@@ -507,10 +517,17 @@ public class BeachLevelRuntime : MonoBehaviour
                 for (int v = 0; v < vertexCount; v++)
                 {
                     vertices[v] = new Vector3(reader.ReadSingle(), reader.ReadSingle(), reader.ReadSingle());
-                    uv[v] = new Vector2(1f - reader.ReadSingle(), reader.ReadSingle());
+
+                    float u = reader.ReadSingle();
+                    float texV = reader.ReadSingle();
+
+                    if (name == "AkuMask")
+                        uv[v] = new Vector2(u, texV);
+                    else
+                        uv[v] = new Vector2(1f - u, 1f - texV);
+
                     colors[v] = new Color32(reader.ReadByte(), reader.ReadByte(), reader.ReadByte(), reader.ReadByte());
                 }
-
                 int[] triangles = new int[triangleCount * 3];
 
                 for (int t = 0; t < triangles.Length; t++)
@@ -587,9 +604,11 @@ public class BeachLevelRuntime : MonoBehaviour
 
             GameObject visual = new GameObject("Aku Aku visual");
             visual.transform.SetParent(followerObject.transform, false);
+            
 
             GameObject maskModel = BuildItemModel("AkuMask", visual.transform);
             maskModel.transform.localScale = Vector3.one * 1.15f;
+
 
             akuFollower = followerObject.AddComponent<AkuAkuFollower>();
             akuFollower.target = player.transform;

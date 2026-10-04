@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\scripts\\beachlevelruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|c:\\users\\eonvw\\source\\repos\\project-twinsanity\\assets\\twinsanity\\scripts\\beachlevelruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\beachlevelruntime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB7153DB-CA80-875A-8F90-3F81357731B6}|Assembly-CSharp-Editor.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\editor\\bakeeditablebeachscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB7153DB-CA80-875A-8F90-3F81357731B6}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\twinsanity\\editor\\bakeeditablebeachscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\scripts\\crashplayablecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\crashplayablecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\scripts\\crashplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\crashplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|c:\\users\\eonvw\\source\\repos\\project-twinsanity\\assets\\twinsanity\\scripts\\crashriganimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\scripts\\crashriganimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\crashriganimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\scripts\\crashplayablecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|solutionrelative:assets\\twinsanity\\scripts\\crashplayablecharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BECBE9AF-5BC6-BF64-C8DE-452501F4832E}|Assembly-CSharp.csproj|C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\assets\\twinsanity\\scripts\\beachplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "BakeEditableBeachScene.cs",
+              "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Editor\\BakeEditableBeachScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Twinsanity\\Editor\\BakeEditableBeachScene.cs",
+              "ToolTip": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Editor\\BakeEditableBeachScene.cs",
+              "RelativeToolTip": "Assets\\Twinsanity\\Editor\\BakeEditableBeachScene.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAkwNYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T22:41:02.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BeachPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\BeachPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\BeachPlayerController.cs",
@@ -72,14 +89,14 @@
               "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
               "ToolTip": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
               "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\BeachLevelRuntime.cs",
-              "ViewState": "AgIAAO0BAAAAAAAAAAAWwPoBAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAMwI4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-03T21:41:56.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CrashPlayerController.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\CrashPlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\CrashPlayerController.cs",
@@ -87,24 +104,24 @@
               "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\CrashPlayerController.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAOsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-03T21:41:49.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-03T21:41:49.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CrashPlayableCharacter.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\CrashPlayableCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\CrashPlayableCharacter.cs",
               "ToolTip": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\CrashPlayableCharacter.cs",
               "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\CrashPlayableCharacter.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-03T21:34:21.61Z"
+              "WhenOpened": "2026-10-03T21:34:21.61Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TwinsanityCharacterRuntime.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\TwinsanityCharacterRuntime.cs",
               "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\TwinsanityCharacterRuntime.cs",
@@ -116,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CrashRigAnimator.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
               "RelativeDocumentMoniker": "Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
@@ -124,12 +141,11 @@
               "RelativeToolTip": "Assets\\Twinsanity\\Scripts\\CrashRigAnimator.cs",
               "ViewState": "AgIAAI0BAAAAAAAAAAAYwJsBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-03T21:15:12.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-03T21:15:12.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BuildEditableCrash.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\TwinsanityCharacter\\Editor\\BuildEditableCrash.cs",
               "RelativeDocumentMoniker": "Assets\\TwinsanityCharacter\\Editor\\BuildEditableCrash.cs",
@@ -141,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EditableCrashPlayer.cs",
               "DocumentMoniker": "C:\\Users\\eonvw\\source\\repos\\Project-Twinsanity\\Assets\\TwinsanityCharacter\\Scripts\\EditableCrashPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\TwinsanityCharacter\\Scripts\\EditableCrashPlayer.cs",
