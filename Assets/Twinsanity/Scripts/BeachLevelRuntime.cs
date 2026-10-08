@@ -289,7 +289,7 @@ public class BeachLevelRuntime : MonoBehaviour
             crateSound;
 
         if (clip != null)
-            AudioSource.PlayClipAtPoint(clip, position, effect == "spin" ? 0.5f : 0.75f);
+            AudioSource.PlayClipAtPoint(clip, position, effect == "spin" ? 0.75f : 0.75f);
     }
 
     public static Vector3 ChunkOffset(string name)
@@ -462,7 +462,7 @@ public class BeachLevelRuntime : MonoBehaviour
         GameObject pickup = new GameObject("Opening Aku Aku pickup");
         pickup.transform.SetParent(chunkRoots["Beach"].transform, true);
         pickup.transform.position = position;
-        
+
 
         GameObject maskModel = BuildItemModel("AkuMask", pickup.transform);
         maskModel.transform.localScale = Vector3.one * 1.6f;
@@ -617,7 +617,7 @@ public class BeachLevelRuntime : MonoBehaviour
 
             GameObject visual = new GameObject("Aku Aku visual");
             visual.transform.SetParent(followerObject.transform, false);
-            
+
 
             GameObject maskModel = BuildItemModel("AkuMask", visual.transform);
             maskModel.transform.localScale = Vector3.one * 1.15f;
@@ -731,6 +731,15 @@ public class BeachLevelRuntime : MonoBehaviour
             return false;
 
         masks--;
+
+
+        AudioClip sound = Resources.Load<AudioClip>("BeachAudio/AkuAkuDamage");
+        if (sound != null)
+        {
+            Vector3 position = player != null ? player.transform.position : transform.position;
+            AudioSource.PlayClipAtPoint(sound, position, 0.75f);
+        }
+
 
         if (akuFollower != null)
             akuFollower.SetLevel(masks);
@@ -879,39 +888,140 @@ public class BeachLevelRuntime : MonoBehaviour
 
 public class BeachItem : MonoBehaviour
 {
+    public HubActor fallingLogTarget;
+
     public string kind;
+
+    [Header("TNT")]
+    public float tntCountdownSeconds = 3f;
+    public float explosionRadius = 2.2f;
+    public AudioClip tntTickSound;
+    public GameObject explosionPrefab;
+    private AudioSource tntAudioSource;
 
     private Vector3 origin;
     private bool consumed;
     private int hits;
     private float fuse;
     private float nextHit;
+    private float nextBounce;
+    private int countdownNumber;
+    private TextMesh countdownText;
+    private Renderer[] itemRenderers;
+
+    private bool IsPaused => BeachLevelRuntime.Current != null && BeachLevelRuntime.Current.IsPaused;
 
     private void Start()
     {
         origin = transform.position;
+        itemRenderers = GetComponentsInChildren<Renderer>(true);
+
+        if (kind == "TntCrate" && tntTickSound == null)
+        {
+            tntTickSound = Resources.Load<AudioClip>("BeachAudio/TntTick");
+
+            if (tntTickSound == null)
+                Debug.LogWarning("Missing TNT beep: Resources/BeachAudio/TntTick.wav", this);
+        }
+        if (kind == "TntCrate")
+        {
+            BuildTntSolidCollider();
+        }
+
+    }
+    private void BuildTntSolidCollider()
+    {
+        if (transform.Find("TNT solid collision") != null) return;
+
+        Bounds bounds = new Bounds();
+        bool haveBounds = false;
+
+        foreach (MeshFilter filter in GetComponentsInChildren<MeshFilter>(true))
+        {
+            if (filter.sharedMesh == null) continue;
+
+            Bounds meshBounds = filter.sharedMesh.bounds;
+
+            for (int i = 0; i < 8; i++)
+            {
+                Vector3 corner = meshBounds.center + Vector3.Scale(meshBounds.extents, new Vector3(
+                    (i & 1) == 0 ? -1f : 1f,
+                    (i & 2) == 0 ? -1f : 1f,
+                    (i & 4) == 0 ? -1f : 1f));
+
+                Vector3 point = transform.InverseTransformPoint(filter.transform.TransformPoint(corner));
+
+                if (!haveBounds)
+                {
+                    bounds = new Bounds(point, Vector3.zero);
+                    haveBounds = true;
+                }
+                else bounds.Encapsulate(point);
+            }
+        }
+
+        if (!haveBounds)
+        {
+            Debug.LogWarning("TNT has no mesh to build its solid collider from.", this);
+            return;
+        }
+
+        GameObject solid = new GameObject("TNT solid collision");
+        solid.transform.SetParent(transform, false);
+
+        BoxCollider collider = solid.AddComponent<BoxCollider>();
+        collider.center = bounds.center;
+        collider.size = bounds.size;
+        collider.isTrigger = false;
     }
 
+    public void LandOnTnt(BeachPlayerController player)
+    {
+        if (kind != "TntCrate" || consumed || IsPaused || player == null)
+            return;
+
+        if (player.attacking)
+        {
+            Hit();
+            return;
+        }
+
+        if (Time.time < nextBounce) return;
+
+        nextBounce = Time.time + 0.2f;
+        ActivateTnt();
+        player.BounceFromCrate();
+
+        AudioClip sound = Resources.Load<AudioClip>("BeachAudio/CrateBounce");
+        if (sound != null)
+            AudioSource.PlayClipAtPoint(sound, transform.position, 0.75f);
+    }
     private void Update()
     {
-        if (kind == "CheckpointCrate" && !consumed && BeachLevelRuntime.Current != null)
+        if (IsPaused || consumed) return;
+
+        if (kind == "CheckpointCrate" && BeachLevelRuntime.Current != null)
         {
             Transform player = BeachLevelRuntime.Current.PlayerTransform;
             if (player != null && Mathf.Abs(player.position.y - transform.position.y) < 2f)
             {
                 Vector3 delta = player.position - transform.position;
                 delta.y = 0f;
-                if (delta.sqrMagnitude < 4f)
-                    Hit();
+                if (delta.sqrMagnitude < 4f) Hit();
             }
         }
 
         if (fuse > 0f)
         {
-            fuse -= Time.deltaTime;
+            fuse = Mathf.Max(0f, fuse - Time.deltaTime);
 
             if (fuse <= 0f)
+            {
                 Explode();
+                return;
+            }
+
+            UpdateCountdown();
         }
 
         if (!kind.Contains("Crate"))
@@ -921,80 +1031,215 @@ public class BeachItem : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        if (countdownText == null) return;
+
+        countdownText.transform.position = transform.position + Vector3.up * 1.3f;
+
+        Camera camera = Camera.main;
+        if (camera != null)
+            countdownText.transform.rotation = camera.transform.rotation;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        BeachPlayerController player = other.GetComponent<BeachPlayerController>();
+        if (consumed || IsPaused) return;
 
-        if (consumed || player == null)
-            return;
+        BeachPlayerController player = other.GetComponentInParent<BeachPlayerController>();
+        if (player == null) return;
 
         if (kind == "NitroCrate")
         {
             Explode();
-            player.TakeDamage();
             return;
         }
 
         if (kind.Contains("Crate"))
         {
-            if (player.attacking)
-                Hit();
-
+            HandleCrateContact(player);
             return;
         }
 
         consumed = true;
 
-        if (kind != "AkuMask")
-            BeachLevelRuntime.Current.PlayEffect("pickup", transform.position);
-        BeachLevelRuntime.Current.Collect(kind, transform.position);
+        if (BeachLevelRuntime.Current != null)
+        {
+            if (kind != "AkuMask")
+                BeachLevelRuntime.Current.PlayEffect("pickup", transform.position);
+
+            BeachLevelRuntime.Current.Collect(kind, transform.position);
+        }
 
         Destroy(gameObject);
     }
 
-    public void Hit()
+    private void OnTriggerStay(Collider other)
     {
-        if (!kind.Contains("Crate") || consumed || kind == "IronCrate")
-            return;
+        if (consumed || IsPaused || kind != "TntCrate") return;
 
-        if (kind == "TntCrate")
+        BeachPlayerController player = other.GetComponentInParent<BeachPlayerController>();
+        if (player != null) HandleCrateContact(player);
+    }
+
+    //private void HandleCrateContact(BeachPlayerController player)
+    //{
+    //    if (player.attacking)
+    //    {
+    //        Hit();
+    //        return;
+    //    }
+
+    //    if (kind != "TntCrate" || Time.time < nextBounce) return;
+
+    //    CharacterController controller = player.GetComponent<CharacterController>();
+    //    if (controller == null || controller.velocity.y >= -0.1f) return;
+
+    //    Vector3 centre = controller.transform.TransformPoint(controller.center);
+    //    float feetY = centre.y - controller.height * Mathf.Abs(controller.transform.lossyScale.y) * 0.5f;
+
+    //    // Use the visible crate bounds rather than the larger interaction sphere.
+    //    Bounds bounds = new Bounds();
+    //    bool haveBounds = false;
+
+    //    if (itemRenderers == null)
+    //        itemRenderers = GetComponentsInChildren<Renderer>(true);
+
+    //    foreach (Renderer renderer in itemRenderers)
+    //    {
+    //        if (renderer == null || !renderer.enabled) continue;
+
+    //        if (!haveBounds)
+    //        {
+    //            bounds = renderer.bounds;
+    //            haveBounds = true;
+    //        }
+    //        else bounds.Encapsulate(renderer.bounds);
+    //    }
+
+    //    if (!haveBounds) return;
+
+    //    const float edgeTolerance = 0.15f;
+    //    bool overTop =
+    //        centre.x >= bounds.min.x - edgeTolerance &&
+    //        centre.x <= bounds.max.x + edgeTolerance &&
+    //        centre.z >= bounds.min.z - edgeTolerance &&
+    //        centre.z <= bounds.max.z + edgeTolerance;
+
+    //    // Trigger colliders require a small tolerance around the visible top.
+    //    if (!overTop || feetY < bounds.max.y - 0.25f) return;
+
+    //    nextBounce = Time.time + 0.2f;
+    //    ActivateTnt();
+    //    player.BounceFromCrate();
+    //}
+
+    private void HandleCrateContact(BeachPlayerController player)
+    {
+        if (player.attacking) Hit();
+    }
+
+    private void ActivateTnt()
+    {
+        if (consumed || fuse > 0f) return;
+
+        fuse = Mathf.Max(0.1f, tntCountdownSeconds);
+        countdownNumber = 0;
+        UpdateCountdown();
+    }
+
+    private void UpdateCountdown()
+    {
+        int number = Mathf.Clamp(Mathf.CeilToInt(fuse), 1, 3);
+        if (number == countdownNumber) return;
+
+        countdownNumber = number;
+        SetTntCountdownTexture(number);
+
+        if (tntTickSound != null)
         {
-            if (fuse <= 0f)
+            if (tntAudioSource == null)
             {
-                fuse = 3f;
-                BeachLevelRuntime.Current.PlayEffect("crate", transform.position);
+                tntAudioSource = gameObject.AddComponent<AudioSource>();
+                tntAudioSource.playOnAwake = false;
+                tntAudioSource.spatialBlend = 1f;
+                tntAudioSource.rolloffMode = AudioRolloffMode.Linear;
+                tntAudioSource.minDistance = 4f;
+                tntAudioSource.maxDistance = 25f;
+                tntAudioSource.volume = 1f;
             }
 
+            tntAudioSource.PlayOneShot(tntTickSound);
+        }
+    }
+
+    private void SetTntCountdownTexture(int number)
+    {
+        string textureId = number == 3 ? "C92A7B2C" : number == 2 ? "BE2F5143" : "B334275A";
+
+        Texture2D texture = Resources.Load<Texture2D>("BeachItems/Textures/" + textureId);
+        if (texture == null)
+            texture = Resources.Load<Texture2D>("HubActors/Textures/" + textureId);
+
+        if (texture == null)
+        {
+            Debug.LogWarning("Missing TNT countdown texture: " + textureId, this);
             return;
         }
 
-        if (kind == "MultipleHitCrate")
+        if (itemRenderers == null)
+            itemRenderers = GetComponentsInChildren<Renderer>(true);
+
+        MaterialPropertyBlock properties = new MaterialPropertyBlock();
+
+        foreach (Renderer renderer in itemRenderers)
         {
-            if (Time.time < nextHit)
-                return;
+            if (renderer == null) continue;
 
-            nextHit = Time.time + 0.34f;
+            Material material = renderer.sharedMaterial;
+            if (material == null || material.mainTexture == null || material.mainTexture.name != "07818BAC")
+                continue;
 
-            if (++hits < 5)
-                return;
+            renderer.GetPropertyBlock(properties);
+            properties.SetTexture("_MainTex", texture);
+            renderer.SetPropertyBlock(properties);
         }
+    }
 
-        if (kind == "NitroCrate")
+    public void Hit()
+    {
+        if (IsPaused || !kind.Contains("Crate") || consumed || kind == "IronCrate")
+            return;
+
+        // Attacks detonate TNT; landing on top starts its countdown.
+        if (kind == "TntCrate" || kind == "NitroCrate")
         {
             Explode();
             return;
         }
 
+        if (kind == "MultipleHitCrate")
+        {
+            if (Time.time < nextHit) return;
+
+            nextHit = Time.time + 0.34f;
+            if (++hits < 5) return;
+        }
+
         consumed = true;
 
-        if (kind != "CheckpointCrate")
-            BeachLevelRuntime.Current.PlayEffect("crate", transform.position);
-        BeachLevelRuntime.Current.Collect(kind, transform.position);
-
-        if (kind == "CheckpointCrate")
+        if (BeachLevelRuntime.Current != null)
         {
-            BeachLevelRuntime.Current.AnimateCheckpointOpen(gameObject);
-            return;
+            if (kind != "CheckpointCrate")
+                BeachLevelRuntime.Current.PlayEffect("crate", transform.position);
+
+            BeachLevelRuntime.Current.Collect(kind, transform.position);
+
+            if (kind == "CheckpointCrate")
+            {
+                BeachLevelRuntime.Current.AnimateCheckpointOpen(gameObject);
+                return;
+            }
         }
 
         Destroy(gameObject);
@@ -1002,29 +1247,96 @@ public class BeachItem : MonoBehaviour
 
     private void Explode()
     {
-        if (consumed)
-            return;
+        if (consumed) return;
 
+        // Mark first so chain reactions cannot explode this crate twice.
         consumed = true;
+        fuse = 0f;
 
-        BeachLevelRuntime.Current.PlayEffect("explosion", transform.position);
+        if (fallingLogTarget != null)
+            fallingLogTarget.TriggerLogFall();
 
-        Collider[] hitsNearby = Physics.OverlapSphere(transform.position, 2.2f, ~0, QueryTriggerInteraction.Collide);
-
-        foreach (Collider nearby in hitsNearby)
+        if (countdownText != null)
         {
-            BeachPlayerController player = nearby.GetComponent<BeachPlayerController>();
+            Destroy(countdownText.gameObject);
+            countdownText = null;
+        }
 
-            if (player != null)
-                player.TakeDamage();
+        foreach (Collider collider in GetComponents<Collider>())
+            collider.enabled = false;
 
-            BeachItem item = nearby.GetComponent<BeachItem>();
+        if (BeachLevelRuntime.Current != null)
+            BeachLevelRuntime.Current.PlayEffect("explosion", transform.position);
 
+        if (explosionPrefab != null)
+        {
+            GameObject effect = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(effect, 5f);
+        }
+
+        Collider[] nearby = Physics.OverlapSphere(transform.position, explosionRadius, ~0, QueryTriggerInteraction.Collide);
+
+        // A character or crate can have multiple colliders.
+        HashSet<BeachPlayerController> affectedPlayers = new HashSet<BeachPlayerController>();
+        HashSet<BeachItem> affectedItems = new HashSet<BeachItem>();
+
+        foreach (Collider collider in nearby)
+        {
+            BeachPlayerController player = collider.GetComponentInParent<BeachPlayerController>();
+            if (player != null) affectedPlayers.Add(player);
+
+            BeachItem item = collider.GetComponentInParent<BeachItem>();
             if (item != null && item != this && item.kind != "IronCrate")
+                affectedItems.Add(item);
+        }
+
+        Debug.Log("TNT blast found " + affectedPlayers.Count + " player(s).", this);
+
+        foreach (BeachPlayerController player in affectedPlayers)
+        {
+            if (player == null) continue;
+
+            BeachLevelRuntime level = BeachLevelRuntime.Current;
+            int masksBefore = level != null ? level.masks : -1;
+            int livesBefore = level != null ? level.lives : -1;
+
+            player.TakeDamage();
+
+            Debug.Log(
+                "TNT damage: masks " + masksBefore + " -> " + (level != null ? level.masks : -1) +
+                ", lives " + livesBefore + " -> " + (level != null ? level.lives : -1),
+                player);
+        }
+
+        foreach (BeachItem item in affectedItems)
+        {
+            if (item == null || item.consumed) continue;
+
+            if (item.kind == "TntCrate" || item.kind == "NitroCrate")
+                item.Explode();
+            else
                 item.Hit();
         }
 
         Destroy(gameObject);
+    }
+
+    private void OnDisable()
+    {
+        if (countdownText != null)
+            countdownText.gameObject.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        if (countdownText != null)
+            countdownText.gameObject.SetActive(true);
+    }
+
+    private void OnDestroy()
+    {
+        if (countdownText != null)
+            Destroy(countdownText.gameObject);
     }
 }
 

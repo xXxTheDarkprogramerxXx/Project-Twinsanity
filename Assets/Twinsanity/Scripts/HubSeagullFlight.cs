@@ -18,8 +18,12 @@ public sealed class HubSeagullFlight : MonoBehaviour
     private HubActor actor;
     private Transform flightPlayer;
     private Vector3 home, homeUp, direction, orbitTarget, takeoffTarget;
-    private float stateTime, flightTime, decisionTime, idleTime, nextIdle, heldTime, takeoffLead;
-    private int idleClip = 884, takeoffClip = 895, heldClip = -1;
+    private float stateTime, flightTime, decisionTime, heldTime, takeoffLead;
+    private int takeoffClip = 895, heldClip = -1;
+    private enum GroundPhase { NotStarted, IdleClip, PauseBeforeLook, PauseBeforeWalk, TurnToPlayer, TurnToWalk, Walk }
+    [SerializeField] private GroundPhase groundPhase;
+    private Vector3 groundTarget;
+    private float groundTime, groundDelay;
     private bool decidingLanding;
     private const float FPS = 25f;
     public FlightState State => state;
@@ -32,7 +36,7 @@ public sealed class HubSeagullFlight : MonoBehaviour
         if (actor.definition == null || !actor.definition.resource.EndsWith("_685")) { enabled = false; return; }
         home = transform.position; homeUp = WorldAxis(Vector3.up);
         direction = WorldAxis(Vector3.forward); direction.y = 0f; direction.Normalize();
-        state = FlightState.Grounded; nextIdle = Random.Range(.5f, 2.5f);
+        state = FlightState.Grounded; groundPhase = GroundPhase.NotStarted;
     }
     private void Update()
     {
@@ -48,14 +52,7 @@ public sealed class HubSeagullFlight : MonoBehaviour
             case FlightState.Grounded:
                 if (player != null && NativeSquaredDistance(player.position, transform.position) < nativeTakeoffDistance * nativeTakeoffDistance)
                 { flightPlayer = player; BeginTakeoff(true); break; }
-                idleTime += dt;
-                if (idleTime >= nextIdle)
-                {
-                    idleTime = 0f; idleClip = Random.value < .5f ? 885 : 886;
-                    nextIdle = ClipDuration(idleClip) + Random.Range(.5f, 2.5f); actor.Play(idleClip, true);
-                }
-                if (idleTime >= ClipDuration(idleClip)) idleClip = 884;
-                actor.Play(idleClip); break;
+                UpdateGrounded(dt, player); break;
             case FlightState.TakingOff:
                 if (stateTime >= takeoffLead)
                     transform.position = Vector3.MoveTowards(transform.position, takeoffTarget, nativeMoveSpeed * dt);
@@ -100,11 +97,87 @@ public sealed class HubSeagullFlight : MonoBehaviour
                     transform.position = home;
                     if (flightPlayer != null && NativeSquaredDistance(flightPlayer.position, home) < 400f)
                     { BeginTakeoff(false); break; }
-                    heldClip = -1; ChangeState(FlightState.Grounded); idleTime = 0f; idleClip = 884;
-                    nextIdle = Random.Range(.5f, 2.5f); actor.Play(884, true);
+                    heldClip = -1; ChangeState(FlightState.Grounded); groundPhase = GroundPhase.NotStarted;
+                    actor.Play(884, true);
                 }
                 break;
         }
+    }
+    // COM_GLOBAL_SEAGULL_IDLE (3561), states 8/1/7 -> 2 -> 4 -> 5 -> 6 -> 11.
+    private void UpdateGrounded(float dt, Transform player)
+    {
+        groundTime += dt;
+        switch (groundPhase)
+        {
+            case GroundPhase.NotStarted:
+                BeginGroundIdle(); break;
+            case GroundPhase.IdleClip:
+                if (heldTime >= ClipDuration(heldClip))
+                    SetGroundPhase(GroundPhase.PauseBeforeLook, .5f + Random.value * 2.5f);
+                break;
+            case GroundPhase.PauseBeforeLook:
+                if (groundTime >= groundDelay)
+                {
+                    HoldClip(885);
+                    SetGroundPhase(GroundPhase.PauseBeforeWalk, .5f + Random.value * 2.5f);
+                }
+                break;
+            case GroundPhase.PauseBeforeWalk:
+                if (groundTime < groundDelay) break;
+                heldClip = -1; actor.Play(889, true);
+                // Original state5: 25% face player; otherwise home + horizontal noise2.
+                if (Random.value > .75f && player != null)
+                    SetGroundPhase(GroundPhase.TurnToPlayer, 0f);
+                else
+                {
+                    Vector3 offset = new Vector3(Random.Range(-2f, 2f), 0f, Random.Range(-2f, 2f));
+                    groundTarget = home + (transform.parent == null ? offset : transform.parent.TransformVector(offset));
+                    SetGroundPhase(GroundPhase.TurnToWalk, 0f);
+                }
+                break;
+            case GroundPhase.TurnToPlayer:
+                if (player == null || TurnOnGround(player.position - transform.position, dt)) BeginGroundIdle();
+                break;
+            case GroundPhase.TurnToWalk:
+                if (TurnOnGround(groundTarget - transform.position, dt)) SetGroundPhase(GroundPhase.Walk, 0f);
+                break;
+            case GroundPhase.Walk:
+                actor.Play(889);
+                // State11: GroundChase, MoveSpeed2, turn share4, squared tolerance1; timeout3s.
+                if (NativeSquaredDistance(transform.position, groundTarget) < 1f || groundTime > 3f)
+                { BeginGroundIdle(); break; }
+                Vector3 toward = groundTarget - transform.position; toward.y = 0f;
+                if (toward.sqrMagnitude < .000001f) { BeginGroundIdle(); break; }
+                direction = WorldAxis(Vector3.forward); direction.y = 0f; direction.Normalize();
+                direction = Vector3.Slerp(direction, toward.normalized, Mathf.Clamp01(4f * dt)).normalized;
+                Face(direction, 360f);
+                float nativeScale = transform.parent == null ? 1f :
+                    transform.parent.TransformVector(transform.parent.InverseTransformVector(direction).normalized).magnitude;
+                Vector3 next = transform.position + direction * (2f * nativeScale * dt);
+                // Unity floor projection substitutes the original object's ground collision handling.
+                if (Physics.Raycast(next + Vector3.up * nativeScale, Vector3.down, out RaycastHit ground,
+                    2f * nativeScale, ~0, QueryTriggerInteraction.Ignore) && ground.normal.y > .4f &&
+                    !ground.collider.transform.IsChildOf(transform) && Mathf.Abs(ground.point.y - transform.position.y) <= .75f * nativeScale)
+                    transform.position = new Vector3(next.x, ground.point.y, next.z);
+                else BeginGroundIdle();
+                break;
+        }
+    }
+    private void BeginGroundIdle()
+    {
+        // State8 Random > .75 chooses slot1 (884); Else chooses slot7 (885).
+        HoldClip(Random.value > .75f ? 884 : 885);
+        SetGroundPhase(GroundPhase.IdleClip, 0f);
+    }
+    private void SetGroundPhase(GroundPhase next, float delay)
+    { groundPhase = next; groundTime = 0f; groundDelay = delay; }
+    private bool TurnOnGround(Vector3 toward, float dt)
+    {
+        toward.y = 0f;
+        if (toward.sqrMagnitude < .000001f) return true;
+        Face(toward, 90f * dt);
+        Vector3 forward = WorldAxis(Vector3.forward); forward.y = 0f;
+        return Vector3.Angle(forward, toward) < .5f;
     }
     private void LateUpdate()
     {

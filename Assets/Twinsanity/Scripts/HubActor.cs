@@ -187,6 +187,12 @@ public sealed class HubActor : MonoBehaviour
             Sample(activeClip, previewFrame >= 0 && asset.clips.TryGetValue(activeClip, out Clip clip) ? previewFrame / clip.fps : clock, true);
             return;
         }
+        if (fallingLog)
+        {
+            clock += delta;
+            Sample(831, clock, false);
+            return;
+        }
         if (enableBehaviour && !defeated && actionRemaining <= 0f) Behave();
         clock += delta;
         Sample(activeClip, clock, actionRemaining <= 0f && !defeated);
@@ -228,7 +234,12 @@ public sealed class HubActor : MonoBehaviour
         string kind = definition.kind;
         if (kind == "Worm")
         {
-            if (nearby && Time.time > nextDecision) { OneShot(definition.actionClip); PlaySound(776); nextDecision = Time.time + 2.5f; }
+            if (nearby && Time.time > nextDecision)
+            {
+                OneShot(definition.actionClip);
+                PlaySound(UnityEngine.Random.value < 0.5f ? 779 : 780);
+                nextDecision = Time.time + 2.5f;
+            }
             return;
         }
         if (kind != "Chicken" && kind != "Crab") return;
@@ -282,10 +293,38 @@ public sealed class HubActor : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (defeated || definition == null) return;
+
         BeachPlayerController player = other.GetComponentInParent<BeachPlayerController>();
         if (player == null) return;
+
+        if (definition.kind == "Worm")
+        {
+            if (Time.time < nextHit) return;
+
+            CharacterController controller = player.GetComponent<CharacterController>();
+            if (controller != null)
+            {
+                Vector3 centre = controller.transform.TransformPoint(controller.center);
+                float feetY = centre.y - controller.height * Mathf.Abs(controller.transform.lossyScale.y) * 0.5f;
+
+                // Unity trigger approximation: descending onto the upper part of the worm.
+                bool stomp = controller.velocity.y < -0.1f && feetY > transform.position.y + 0.25f;
+
+                if (stomp && !player.attacking)
+                {
+                    nextHit = Time.time + 0.3f;
+                    OneShot(300);
+                    player.BounceFromWorm();
+                    PlaySound(776);
+                    return;
+                }
+            }
+        }
+
         if (player.attacking) { Hit(); return; }
-        if (definition.kind == "Crab" || definition.kind == "Worm" || definition.kind == "Enemy") player.TakeDamage();
+
+        if (definition.kind == "Crab" || definition.kind == "Worm" || definition.kind == "Enemy")
+            player.TakeDamage();
     }
     private void PlaySound(int id)
     {
@@ -304,4 +343,26 @@ public sealed class HubActor : MonoBehaviour
         SphereCollider trigger = fruit.AddComponent<SphereCollider>(); trigger.isTrigger = true; trigger.radius = .7f;
         fruit.AddComponent<BeachItem>().kind = "Wumpa";
     }
+
+    private bool fallingLog;
+
+    public void TriggerLogFall()
+    {
+        if (fallingLog || definition == null || definition.objectId != 187)
+            return;
+
+        Load();
+        if (asset == null || !asset.clips.ContainsKey(831))
+        {
+            Debug.LogWarning("Missing original falling-log animation 831.", this);
+            return;
+        }
+
+        fallingLog = true;
+        showBindPose = false;
+        previewClip = -1;
+        Play(831, true);
+        PlaySound(151);
+    }
+
 }

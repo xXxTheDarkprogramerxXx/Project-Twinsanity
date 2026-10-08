@@ -296,6 +296,10 @@ public class CrashRigAnimator : MonoBehaviour
         }
         ApplyFace(desired, frame, blend);
         playingClip = AnimationName(desired) + " / frame " + frame.ToString("F2");
+
+
+        damageTime = Mathf.Max(0f, damageTime - Time.deltaTime);
+
     }
 
     private void ApplyBindPose()
@@ -342,10 +346,15 @@ public class CrashRigAnimator : MonoBehaviour
 
     private int SelectClip()
     {
+        if (damageTime > 0f) return 1207;
         if (spinning) return 3;
         if (doubleJumpProgress >= 0f) return doubleJumpClip;
         if (sliding) return 54;
-        if (!grounded) return jumpElapsed >= 0f && jumpElapsed < GetClipDuration(jumpStartClip, 0.44f) ? jumpStartClip : jumpFallClip;
+        if (!grounded)
+        {
+            if (verticalSpeed > 0f) return jumpStartClip;
+            return jumpFallClip;
+        }
         if (landingTime > 0f && (movement <= 0.05f || landingTime > GetClipDuration(landingClip, 0.2f) - 0.12f)) return landingClip;
         if (crouching) return 8;
         return movement > 0.8f ? 2 : movement > 0.05f ? 1 : idleVariation >= 0 ? idleVariation : 0;
@@ -374,6 +383,7 @@ public class CrashRigAnimator : MonoBehaviour
         spinning = false;
         grounded = true;
         activeClip = -1;
+        damageTime = 0f;
         if (initialized) SetSpinVisible(false);
     }
 
@@ -677,6 +687,21 @@ public class CrashRigAnimator : MonoBehaviour
         foreach (SkinnedMeshRenderer renderer in facialRenderers)
             for (int shape = 0; shape < facialShapeCount; shape++) renderer.SetBlendShapeWeight(shape, 0f);
     }
+
+
+
+    private float damageTime;
+
+    public void PlayDamage()
+    {
+        showBindPose = false;
+        previewClip = -1;
+        previewFrame = -1;
+        ResetIdleVariations();
+        damageTime = GetClipDuration(1207, 0.4f);
+        activeClip = -1;
+    }
+
 
     private void OnDestroy()
     {

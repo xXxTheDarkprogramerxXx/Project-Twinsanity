@@ -216,6 +216,10 @@ public class CrashPlayerController : MonoBehaviour
         if (!ignoreProtection && BeachLevelRuntime.Current != null && BeachLevelRuntime.Current.ConsumeMask())
         {
             invulnerable = 1.5f;
+
+            CrashRigAnimator rig = model != null ? model.GetComponentInChildren<CrashRigAnimator>() : GetComponentInChildren<CrashRigAnimator>();
+            if (rig != null) rig.PlayDamage();
+
             return;
         }
 

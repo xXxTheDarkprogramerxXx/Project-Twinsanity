@@ -30,6 +30,8 @@ public class BeachPlayerController : MonoBehaviour
     private CrashRigAnimator rig;
     private float doubleJumpDuration = 0.48f;
     public float spinDuration = 0.32f;
+    private bool wormBounce;
+
 
     private void Start()
     {
@@ -106,6 +108,8 @@ public class BeachPlayerController : MonoBehaviour
                 slamming = false;
             }
 
+            wormBounce = false;
+
         }
 
         if (jumpPressed && jumpsUsed < 2)
@@ -129,7 +133,7 @@ public class BeachPlayerController : MonoBehaviour
                 doubleJumpTime = -1f;
         }
 
-        verticalSpeed -= gravity * Time.deltaTime;
+        verticalSpeed -= (wormBounce ? 50f : gravity) * Time.deltaTime;
         CollisionFlags collisions = controller.Move((move + Vector3.up * verticalSpeed) * Time.deltaTime);
         if ((collisions & CollisionFlags.Above) != 0 && verticalSpeed > 0f) verticalSpeed = 0f;
         bool animationGrounded = (controller.isGrounded || (collisions & CollisionFlags.Below) != 0) && verticalSpeed <= 0f;
@@ -204,6 +208,8 @@ public class BeachPlayerController : MonoBehaviour
         Physics.SyncTransforms();
         if (rig != null) rig.ResetActionState();
         PositionCamera(true);
+
+        wormBounce = false;
     }
 
     public void TakeDamage(bool ignoreProtection = false)
@@ -214,6 +220,10 @@ public class BeachPlayerController : MonoBehaviour
         if (!ignoreProtection && BeachLevelRuntime.Current != null && BeachLevelRuntime.Current.ConsumeMask())
         {
             invulnerable = 1.5f;
+
+            CrashRigAnimator rig = model != null ? model.GetComponentInChildren<CrashRigAnimator>() : GetComponentInChildren<CrashRigAnimator>();
+            if (rig != null) rig.PlayDamage();
+
             return;
         }
 
@@ -243,5 +253,48 @@ public class BeachPlayerController : MonoBehaviour
 
         cameraTransform.position = immediate ? desired : Vector3.Lerp(cameraTransform.position, desired, Mathf.Clamp01(Time.deltaTime * 10f));
         cameraTransform.LookAt(target);
+    }
+
+
+
+    public void BounceFromWorm()
+    {
+        wormBounce = true;
+        verticalSpeed = Mathf.Sqrt(2f * 50f * 10f);
+        jumpsUsed = 1;
+        doubleJumpTime = -1f;
+        slamming = false;
+
+        CrashRigAnimator animator = model != null ? model.GetComponentInChildren<CrashRigAnimator>() : GetComponentInChildren<CrashRigAnimator>();
+        if (animator != null) animator.NotifyJump(false);
+    }
+
+    public void BounceFromCrate()
+    {
+        wormBounce = false;
+        verticalSpeed = jumpSpeed;
+        jumpsUsed = 1;
+        doubleJumpTime = -1f;
+        slamming = false;
+
+        if (rig == null)
+            rig = model != null ? model.GetComponentInChildren<CrashRigAnimator>() : GetComponentInChildren<CrashRigAnimator>();
+
+        if (rig != null) rig.NotifyJump(false);
+    }
+
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (BeachLevelRuntime.Current != null && BeachLevelRuntime.Current.IsPaused)
+            return;
+
+        // Descending onto an upward-facing surface.
+        if (verticalSpeed > 0f || hit.normal.y < 0.5f)
+            return;
+
+        BeachItem item = hit.collider.GetComponentInParent<BeachItem>();
+        if (item != null && item.kind == "TntCrate")
+            item.LandOnTnt(this);
     }
 }
